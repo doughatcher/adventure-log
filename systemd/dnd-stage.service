@@ -1,0 +1,15 @@
+[Unit]
+Description=DnD Stage — session companion display
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/var/home/me/repos/dnd-stage
+Environment=PATH=/home/linuxbrew/.linuxbrew/bin:/home/me/.local/bin:/usr/local/bin:/usr/bin
+ExecStart=/home/linuxbrew/.linuxbrew/bin/uv run uvicorn server.main:app --host 0.0.0.0 --port 3200
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>⚔ DnD Stage</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- ── Header ── -->
+<div id="header">
+  <h1>⚔ DnD Stage</h1>
+  <input id="session-name" type="text" placeholder="Session name…" value="The Adventure Begins">
+  <div id="rec-indicator" title="Click or press R to toggle recording">
+    <span class="dot"></span>
+    <span id="rec-label">REC OFF</span>
+  </div>
+  <button id="btn-update" title="Press U to force update">Update Stage</button>
+  <span id="timer">00:00:00</span>
+  <button id="btn-end-session">End Session</button>
+</div>
+
+<!-- ── Stage grid ── -->
+<div id="stage">
+
+  <!-- Left col -->
+  <div class="panel" id="panel-scene">
+    <div class="panel-header"><span class="icon">🏰</span> Scene</div>
+    <div class="panel-body" id="panel-scene-body"><em>Awaiting session…</em></div>
+  </div>
+
+  <div class="panel" id="panel-map">
+    <div class="panel-header"><span class="icon">🗺</span> Map</div>
+    <div class="panel-body" id="panel-map-body"><em>No map yet.</em></div>
+  </div>
+
+  <!-- Center -->
+  <div class="panel" id="panel-story">
+    <div class="panel-header"><span class="icon">📜</span> Story Log</div>
+    <div class="panel-body" id="panel-story-body"><em>The story unfolds…</em></div>
+  </div>
+
+  <!-- Right col -->
+  <div class="panel" id="panel-party">
+    <div class="panel-header"><span class="icon">⚔</span> Party</div>
+    <div class="panel-body" id="panel-party-body"><em>Loading party…</em></div>
+  </div>
+
+  <div class="panel" id="panel-next">
+    <div class="panel-header"><span class="icon">🎯</span> Next Steps</div>
+    <div class="panel-body" id="panel-next-body"><em>Awaiting first update…</em></div>
+  </div>
+
+</div>
+
+<!-- ── Transcript bar ── -->
+<div id="transcript-bar">Transcript will appear here…</div>
+
+<!-- ── FAB: Add character ── -->
+<button id="fab-add-char" title="Add character (party member)">+</button>
+
+<!-- ── Character modal ── -->
+<div id="modal-overlay">
+  <div id="modal">
+    <h2 id="modal-title">Add Character</h2>
+    <div class="form-row">
+      <label>Name</label>
+      <input id="char-name" type="text" placeholder="Rides the Wake">
+    </div>
+    <div class="form-row">
+      <label>Class</label>
+      <input id="char-class" type="text" placeholder="Fighter, Rogue, Wizard…">
+    </div>
+    <div class="form-row">
+      <label>HP</label>
+      <div class="inline">
+        <input id="char-hp-cur" type="number" placeholder="Current" min="0">
+        <input id="char-hp-max" type="number" placeholder="Max" min="0">
+      </div>
+    </div>
+    <div class="form-row">
+      <label>AC</label>
+      <input id="char-ac" type="number" placeholder="Armor class" min="0">
+    </div>
+    <div class="form-row">
+      <label>Notes</label>
+      <textarea id="char-notes" rows="2" placeholder="Race, background, notable items…"></textarea>
+    </div>
+    <div class="modal-btns">
+      <button class="btn-cancel" id="btn-cancel-char">Cancel</button>
+      <button class="btn-primary" id="btn-save-char">Save</button>
+    </div>
+  </div>
+</div>
+
+<script src="/static/stage.js"></script>
+</body>
+</html>

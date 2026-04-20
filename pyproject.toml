@@ -1,0 +1,14 @@
+[project]
+name = "dnd-stage"
+version = "0.1.0"
+description = "D&D session stage — live AI-driven companion display"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.111",
+    "uvicorn[standard]>=0.29",
+    "python-multipart>=0.0.9",
+    "httpx>=0.27",
+    "watchfiles>=0.21",
+    "aiofiles>=23.2",
+    "python-frontmatter>=1.1",
+]
