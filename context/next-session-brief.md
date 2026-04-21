@@ -11,23 +11,23 @@ PARTY:
 - Vargr Stormcaller (Bard/College of Spirits) 49/49 HP AC 14
 
 RECENT EVENTS:
-- Party arrived at Shard C — Sea of Governance; first foothold in the maritime political zone
-- No local contacts, factions, or power brokers encountered yet — slate is blank
-- Long rest completed on arrival; all resources fully restored
-- Tier 2 magic items now accessible via Traveler's Beacon
-- Free Wand of Wonder confirmed as pending DM reward
-- Ship upgrades newly available: cannons, ballistas, swivel guns, figurehead commissions
-- Edwin (fifth party member) previously departed; party operates as four
+- Party arrived at Shard C — Sea of Governance; first entry into maritime political territory
+- Long rest completed on arrival; all HP, spell slots, and class features fully restored
+- No local contacts, factions, or power brokers encountered yet — party has zero intelligence on Shard C's political landscape
+- Edwin (former fifth party member) is absent; party operating as four
+- Tier 2 magic items now unlocked via Traveler's Beacon mechanic
+- Free Wand of Wonder confirmed as incoming DM reward
+- Ship weapon/defense upgrades available at Shard C (cannons, ballistas, swivel guns; larger hull not yet accessible)
 
 OPEN THREADS:
-- Rations, sea charts, and weapon maintenance unresolved — required before next leg of journey
-- Primary objective at Shard C unknown — governance/institutional power is under threat in some form
-- No local power players identified yet — naval authority, merchants, political factions all in play
-- Shard escalation pattern (nature → corruption → civilization) implies something larger; what follows Shard C?
+- Rations, sea charts, and weapon maintenance all unpurchased — journey cannot proceed without supply run
+- Shard C objective unknown — what specific governance crisis, power struggle, or institutional threat is in play here?
+- No local NPCs contacted; port/waystation holds merchants, naval authority, political figures, and shard-power brokers — all uninvestigated
+- Shard escalation pattern (nature → corruption → civilization) implies something beyond Shard C; what is Shard D?
 
 KEY NPCS:
-- None logged. First local contacts expected this session — vendors, faction representatives, or port authority figures likely entry points.
+- None established. Next session should introduce at least one local power broker, vendor, or naval/political contact at point of entry.
 
-PARTY CONDITION: Full HP, no conditions, all spell slots and class features restored. Party enters Shard C at peak readiness; resource expenditure this session will be the first meaningful drain since prior shard completion.
+PARTY CONDITION: Full HP, no conditions, all resources restored. Party is in optimal shape — this is the calm before engagement. No morale stress. The next session's friction is logistical and political, not physical.
 
-CAMPAIGN CONTEXT: Shard C is not a battlefield — it is a nervous system. The Sea of Governance controls trade routes, naval projection, and political communication across the known world; whoever brokers authority here shapes civilization itself. Danger here wears bureaucratic and mercantile masks: competing factions, information asymmetry, and institutional power rather than raw elemental force. The party has no established relationships and no charts — they are newcomers in a zone where knowing the right name matters as much as hitting the right target. Vargr's spirit-channeling may unlock historical context unavailable through official channels; Lyvriele's Fey Step and Granit's implacable steadiness will matter when negotiations collapse, as they do here.
+CAMPAIGN CONTEXT: Shard C is not hostile the way Shards A and B were hostile. Its danger is institutional — competing naval authorities, trade faction agendas, and shard-based power interests all converge on whoever controls these waters. The party enters as capable outsiders with cleared Shard credentials but no local relationships or intelligence. Supply logistics (rations, charts) are the immediate surface task; beneath it, someone at this port knows why the party is here or what Shard C needs from them. Vargr's spirit-channeling may be unusually relevant in a governance shard — the dead who died in political disputes leave particular kinds of echoes. The ship is a party asset; Shard C is the first location where it can be meaningfully upgraded.
