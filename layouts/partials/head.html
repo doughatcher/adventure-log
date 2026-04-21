@@ -48,7 +48,8 @@ nav {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  height: 48px;
+  min-height: 48px;
+  flex-wrap: wrap;
 }
 nav .site-title {
   font-family: 'Courier New', monospace;
@@ -57,11 +58,16 @@ nav .site-title {
   color: var(--text);
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 nav .site-title span { color: var(--accent2); }
 nav a { color: var(--text3); font-family: 'Courier New', monospace; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; }
 nav a:hover { color: var(--text); text-decoration: none; }
 nav .sep { flex: 1; }
+@media (max-width: 480px) {
+  nav { padding: 0.5rem 1rem; gap: 1rem; }
+  nav .github-link { display: none; }
+}
 
 main {
   max-width: 860px;
