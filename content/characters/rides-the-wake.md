@@ -5,6 +5,8 @@ hp_current: 68
 hp_max: 68
 last_updated: '2026-04-21'
 slug: rides-the-wake
+race: Human
+level: 7
 status: alive
 title: Rides the Wake
 ---

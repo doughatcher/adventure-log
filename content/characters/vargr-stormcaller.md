@@ -5,6 +5,8 @@ hp_current: 49
 hp_max: 49
 last_updated: '2026-04-21'
 slug: vargr-stormcaller
+race: Goliath
+level: 7
 status: alive
 title: Vargr Stormcaller
 ---

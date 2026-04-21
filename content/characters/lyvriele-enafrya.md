@@ -5,6 +5,8 @@ hp_current: 58
 hp_max: 58
 last_updated: '2026-04-21'
 slug: lyvriele-enafrya
+race: Eladrin
+level: 7
 status: alive
 title: Lyvriele Enafrya
 ---

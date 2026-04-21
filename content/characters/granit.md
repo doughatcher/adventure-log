@@ -5,6 +5,8 @@ hp_current: 52
 hp_max: 52
 last_updated: '2026-04-21'
 slug: granit
+race: Dwarf
+level: 7
 status: alive
 title: Granit
 ---
