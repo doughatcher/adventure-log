@@ -12,54 +12,51 @@
       "max_hp": 68,
       "ac": 12,
       "conditions": [],
-      "class": "Barbarian",
+      "class": "Barbarian / Path of the Berserker",
       "notes": "Human. Initiative +3. STR 17, CON 14, WIS 14. Rage active: +STR. Danger Sense: DEX saves vs visible effects.",
       "is_enemy": false,
-      "status": "alive"
+      "status": "alive",
+      "race": "Human",
+      "level": 7
     },
-    "granite": {
-      "name": "Granite",
-      "hp": 0,
-      "max_hp": 0,
-      "ac": 0,
+    "granit": {
+      "name": "Granit",
+      "hp": 52,
+      "max_hp": 52,
+      "ac": 18,
       "conditions": [],
-      "class": "",
+      "class": "Cleric / Life Domain",
       "notes": "",
       "is_enemy": false,
-      "status": "alive"
+      "status": "alive",
+      "race": "Dwarf",
+      "level": 7
     },
-    "livrielle": {
-      "name": "Livrielle",
-      "hp": 0,
-      "max_hp": 0,
-      "ac": 0,
+    "lyvriele-enafrya": {
+      "name": "Lyvriele Enafrya",
+      "hp": 58,
+      "max_hp": 58,
+      "ac": 17,
       "conditions": [],
-      "class": "",
+      "class": "Fighter / Samurai",
       "notes": "",
       "is_enemy": false,
-      "status": "alive"
+      "status": "alive",
+      "race": "Eladrin",
+      "level": 7
     },
-    "vardar": {
-      "name": "Vardar",
-      "hp": 0,
-      "max_hp": 0,
-      "ac": 0,
+    "vargr-stormcaller": {
+      "name": "Vargr Stormcaller",
+      "hp": 49,
+      "max_hp": 49,
+      "ac": 14,
       "conditions": [],
-      "class": "",
+      "class": "Bard / College of Spirits",
       "notes": "",
       "is_enemy": false,
-      "status": "alive"
-    },
-    "edwin": {
-      "name": "Edwin",
-      "hp": 0,
-      "max_hp": 0,
-      "ac": 0,
-      "conditions": [],
-      "class": "",
-      "notes": "",
-      "is_enemy": false,
-      "status": "alive"
+      "status": "alive",
+      "race": "Goliath",
+      "level": 7
     }
   },
   "last_updated": "2026-04-21T01:26:08.763423+00:00"
