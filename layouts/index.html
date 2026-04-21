@@ -20,7 +20,7 @@
       </li>
       {{ end }}
     </ul>
-    <a class="more" href="/sessions/">View all sessions &rarr;</a>
+    <a class="more" href="{{ "sessions/" | relURL }}">View all sessions &rarr;</a>
     {{ else }}
     <p style="color:var(--text3);font-size:0.9rem">No sessions yet. End a session to generate the first journal entry.</p>
     {{ end }}
@@ -33,7 +33,7 @@
     <div class="char-grid" style="grid-template-columns:1fr">
       {{ range $chars }}{{ if ne .Params.status "dead" }}{{ partial "char-card.html" . }}{{ end }}{{ end }}
     </div>
-    <a class="more" href="/characters/">Full roster &rarr;</a>
+    <a class="more" href="{{ "characters/" | relURL }}">Full roster &rarr;</a>
     {{ else }}
     <p style="color:var(--text3);font-size:0.9rem">Party roster will appear after the first session.</p>
     {{ end }}
