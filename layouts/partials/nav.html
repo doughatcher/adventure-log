@@ -1,7 +1,7 @@
 <nav>
-  <a href="{{ "/" | relURL }}" class="site-title">&#9876; <span>{{ .Site.Title }}</span></a>
-  <a href="{{ "sessions/" | relURL }}">Sessions</a>
-  <a href="{{ "characters/" | relURL }}">Characters</a>
+  <a href="{{ "/" | absURL }}" class="site-title">&#9876; <span>{{ .Site.Title }}</span></a>
+  <a href="{{ "sessions/" | absURL }}">Sessions</a>
+  <a href="{{ "characters/" | absURL }}">Characters</a>
   <div class="sep"></div>
   <a href="https://github.com/doughatcher/adventure-log" target="_blank">&#8599; GitHub</a>
 </nav>
