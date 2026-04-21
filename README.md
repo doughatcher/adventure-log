@@ -6,6 +6,24 @@ A live D&D session companion that listens to your table, tracks HP and combat st
 
 ---
 
+## Screenshots
+
+**Start screen** — shown when no session is in progress. Click to begin or load a past session.
+
+![Start screen](docs/screenshot-start.png)
+
+**Live session** — party tracker, color-coded transcript log (DM / PC / Roll / OOC), AI-updated scene and next-steps panels, and map graph. The decision helper pops up automatically when the AI detects an active fork in play.
+
+![Live session](docs/screenshot-live.png)
+
+![Live session — clean view](docs/screenshot-live-clean.png)
+
+**Past sessions** — browse archived sessions, view scene/story/transcript tabs, download the MP3 recording, or load the session into the main stage for review.
+
+![History modal](docs/screenshot-history.png)
+
+---
+
 ## What It Does
 
 | Feature | How |
