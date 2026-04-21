@@ -3,8 +3,12 @@ languageCode = "en-us"
 title = "The Adventure Begins"
 
 [params]
-  description = "A living campaign journal"
+  description = "A living campaign journal — generated from live session telemetry"
   campaign = "The Adventure Begins"
+  campaign_system = "D&D 5e (2024)"
+  campaign_setting = "The Shard Sea"
+  party_level = 7
+  current_shard = "Shard C — Sea of Governance"
 
 [markup.goldmark.renderer]
   unsafe = true
