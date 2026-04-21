@@ -54,19 +54,19 @@ IMPORTANT RULES:
 - Every sentence in every panel must be complete — never cut off mid-sentence.
 
 ## PANEL: scene
-(2-4 vivid sentences describing the current IN-GAME location and atmosphere — base on current state location={location})
+Line 1: ONE punchy sentence (≤12 words, present tense, vivid, no "the party"). Then 1-2 sentences of optional supporting detail on separate lines.
 
 ## PANEL: story-log
-(growing bullet list of major IN-GAME session events only, keep all previous, add newest last)
+(growing bullet list of major IN-GAME events only, keep all previous, add newest last)
 
 ## PANEL: party
 (each character: name HP/max AC, active conditions — enemies listed separately)
 
 ## PANEL: next-steps
-(3-5 complete sentences: immediate actions, tactical options, or — if shopping/downtime — specific gear recommendations by class)
+3-5 bullets. Each bullet: ≤7 words, starts with a verb, no full sentences. If shopping/downtime, suggest specific items by class.
 
 ## PANEL: map
-(ASCII art only, max 12 lines, use +/-/| characters, label locations inline, no prose)
+(Mermaid graph TD diagram showing locations and connections — use node labels for rooms/areas, edge labels for paths/doors. Include character positions if known. No ASCII art, no prose.)
 
 ## DECISION: (ONLY include this block if there is an active, clear choice being discussed right now — shopping options, path splits, tactical decisions. OMIT entirely if no active decision.)
 TITLE: (one short question, e.g. "What should Rides the Wake buy?")

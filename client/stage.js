@@ -91,27 +91,50 @@ function injectSceneBeat(content) {
   if (wasAtBottom) requestAnimationFrame(() => { logBody.scrollTop = logBody.scrollHeight; });
 }
 
+function renderScene(content) {
+  const text = content.replace(/^## PANEL:.*$/mg, '').replace(/^#+\s+/mg, '').trim();
+  if (!text) return '';
+  const m = text.match(/^([^.!?\n]+[.!?]?)\n?([\s\S]*)$/);
+  const headline = m ? m[1].trim() : text;
+  const detail = m ? m[2].trim() : '';
+  return `<p class="scene-headline">${md_inline(escHtml(headline))}</p>` +
+    (detail ? `<p class="scene-detail">${md_inline(escHtml(detail))}</p>` : '');
+}
+
+let _lastAsciiMap = '';
+
+async function renderMap(content, el) {
+  let stripped = content
+    .replace(/^## PANEL:.*$/mg, '')
+    .replace(/^```[a-z]*\n?/mg, '')
+    .replace(/^```$/mg, '')
+    .replace(/^[-*]\s+\*\*[^*]+\*\*:?\s*/mg, '')
+    .trim();
+  _lastAsciiMap = stripped;
+  const modalAscii = document.getElementById('map-modal-ascii');
+  if (modalAscii) modalAscii.textContent = stripped;
+  if (window._mermaid && /^(graph|flowchart)/m.test(stripped)) {
+    try {
+      const id = 'mmap' + Date.now();
+      const { svg } = await window._mermaid.render(id, stripped);
+      el.innerHTML = `<div class="mermaid">${svg}</div>`;
+      return;
+    } catch (e) { /* fall through to pre */ }
+  }
+  el.innerHTML = `<pre>${escHtml(stripped)}</pre>`;
+}
+
 function setPanel(name, content) {
   const p = PANELS[name];
   if (!p) return;
   const el = p.el();
   const wrap = p.wrap();
   if (!el || !content) return;
-  // Scene: also inject a beat into the log
-  if (name === 'scene') injectSceneBeat(content);
-  // Map gets raw preformatted rendering — strip markdown/code fences, keep ASCII
-  if (name === 'map') {
-    let stripped = content
-      .replace(/^## PANEL:.*$/mg, '')   // remove panel header
-      .replace(/^```[^\n]*$/mg, '')      // remove code fence markers
-      .replace(/^\s*`\s*$/mg, '')        // remove lone backtick lines
-      .replace(/^[-*]\s+\*\*[^*]+\*\*:?\s*/mg, '') // strip "- **Title**:" lines
-      .trim();
-    _lastAsciiMap = stripped;
-    el.innerHTML = `<pre>${escHtml(stripped)}</pre>`;
-    // Sync modal ASCII if open
-    const modalAscii = document.getElementById('map-modal-ascii');
-    if (modalAscii) modalAscii.textContent = stripped;
+  if (name === 'scene') {
+    injectSceneBeat(content);
+    el.innerHTML = renderScene(content);
+  } else if (name === 'map') {
+    renderMap(content, el);
   } else {
     el.innerHTML = renderMd(content);
   }
@@ -121,7 +144,6 @@ function setPanel(name, content) {
 }
 
 // ── Map modal ──
-let _lastAsciiMap = '';
 
 function openMapModal() {
   const overlay = document.getElementById('map-modal-overlay');
@@ -744,6 +766,100 @@ function closeDecision() {
   document.getElementById('decision-overlay').classList.remove('open');
 }
 
+// ── Session history ──
+let _historyCurrentTs = null;
+let _historyCurrentData = null;
+let _historyCurrentTab = 'scene';
+
+function openHistory() {
+  document.getElementById('history-overlay').classList.add('open');
+  loadHistoryList();
+}
+
+function closeHistory() {
+  document.getElementById('history-overlay').classList.remove('open');
+}
+
+async function loadHistoryList() {
+  const list = document.getElementById('history-list');
+  list.innerHTML = '<div style="padding:12px;color:var(--text3);font-size:12px">Loading…</div>';
+  try {
+    const sessions = await fetch('/api/sessions').then(r => r.json());
+    list.innerHTML = '';
+    if (!sessions.length) {
+      list.innerHTML = '<div style="padding:12px;color:var(--text3);font-size:12px">No archived sessions yet.</div>';
+      return;
+    }
+    for (const s of sessions) {
+      const el = document.createElement('div');
+      el.className = 'history-session-item';
+      el.dataset.ts = s.ts;
+      const name = s.session_name || s.ts;
+      const loc = s.location ? ` · ${s.location}` : '';
+      el.innerHTML = `
+        <div class="history-session-ts">${s.ts}${loc}</div>
+        <div class="history-session-name">${escHtml(name)}</div>
+        ${s.scene_headline ? `<div class="history-session-scene">${escHtml(s.scene_headline)}</div>` : ''}
+      `;
+      el.addEventListener('click', () => loadHistorySession(s.ts, el));
+      list.appendChild(el);
+    }
+  } catch (e) {
+    list.innerHTML = '<div style="padding:12px;color:var(--red);font-size:12px">Failed to load sessions.</div>';
+  }
+}
+
+async function loadHistorySession(ts, itemEl) {
+  // Mark active in list
+  document.querySelectorAll('.history-session-item').forEach(el => el.classList.remove('active'));
+  itemEl.classList.add('active');
+  _historyCurrentTs = ts;
+  const detail = document.getElementById('history-detail-content');
+  const empty = document.getElementById('history-detail-empty');
+  detail.classList.remove('hidden');
+  empty.style.display = 'none';
+  document.getElementById('history-tab-body').innerHTML = '<div style="color:var(--text3);font-size:12px">Loading…</div>';
+  try {
+    _historyCurrentData = await fetch(`/api/sessions/${ts}`).then(r => r.json());
+    document.getElementById('history-detail-ts').textContent = ts;
+    document.getElementById('history-detail-name').textContent = _historyCurrentData.state?.session_name || ts;
+    const recLink = document.getElementById('history-recording-link');
+    if (_historyCurrentData.has_recording) {
+      recLink.href = `/api/recording/${ts}`;
+      recLink.classList.remove('hidden');
+    } else {
+      recLink.classList.add('hidden');
+    }
+    renderHistoryTab(_historyCurrentTab);
+  } catch (e) {
+    document.getElementById('history-tab-body').innerHTML = '<div style="color:var(--red)">Failed to load session.</div>';
+  }
+}
+
+function renderHistoryTab(tab) {
+  _historyCurrentTab = tab;
+  document.querySelectorAll('.history-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+  const body = document.getElementById('history-tab-body');
+  if (!_historyCurrentData) return;
+  if (tab === 'scene') {
+    body.innerHTML = renderScene(_historyCurrentData.scene || '');
+    if (_historyCurrentData.next_steps) {
+      body.innerHTML += '<hr style="margin:12px 0;border-color:var(--sep)">' + renderMd(_historyCurrentData.next_steps);
+    }
+  } else if (tab === 'log') {
+    body.innerHTML = renderMd(_historyCurrentData.story_log || '');
+  } else if (tab === 'transcript') {
+    const lines = (_historyCurrentData.transcript || '').split('\n').filter(l => l.trim());
+    body.innerHTML = lines.map(l => {
+      const m = l.match(/^\*\*\[(\d+:\d+:\d+)\]\*\*\s*(.+)/);
+      if (m) return `<div class="log-line"><span class="log-ts">${escHtml(m[1])}</span>${escHtml(m[2])}</div>`;
+      return '';
+    }).filter(Boolean).join('');
+  } else if (tab === 'next') {
+    body.innerHTML = renderMd(_historyCurrentData.next_steps || '');
+  }
+}
+
 async function saveCharacter() {
   const name = document.getElementById('char-name').value.trim();
   if (!name) { alert('Name required'); return; }
@@ -817,6 +933,10 @@ document.addEventListener('DOMContentLoaded', async () => {
   document.getElementById('btn-save-char').addEventListener('click', saveCharacter);
   document.getElementById('btn-cancel-char').addEventListener('click', closeModal);
   document.getElementById('decision-close').addEventListener('click', closeDecision);
+  document.getElementById('btn-history').addEventListener('click', openHistory);
+  document.getElementById('history-close').addEventListener('click', closeHistory);
+  document.getElementById('history-overlay').addEventListener('click', e => { if (e.target === e.currentTarget) closeHistory(); });
+  document.querySelectorAll('.history-tab').forEach(t => t.addEventListener('click', () => renderHistoryTab(t.dataset.tab)));
   document.getElementById('btn-observe').addEventListener('click', () => {
     currentCharacter = null;
     localStorage.removeItem('dnd-stage-character');

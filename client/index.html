@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>DnD Stage</title>
   <link rel="stylesheet" href="/static/style.css">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: false, theme: 'dark', themeVariables: { fontSize: '11px' } });
+    window._mermaid = mermaid;
+  </script>
 </head>
 <body>
 
@@ -28,6 +33,7 @@
   </div>
   <span id="timer">0:00:00</span>
   <div class="header-actions">
+    <button class="btn" id="btn-history" title="Past sessions">&#8635;</button>
     <button class="btn" id="btn-update" title="U to force update">Update</button>
     <button class="btn btn-danger" id="btn-end-session">End</button>
   </div>
@@ -145,6 +151,36 @@
     <div class="modal-btns">
       <button class="btn-modal-cancel" id="btn-cancel-char">Cancel</button>
       <button class="btn-modal-save" id="btn-save-char">Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- Session history modal -->
+<div id="history-overlay">
+  <div id="history-modal">
+    <div id="history-header">
+      <span id="history-title">&#8635; Past Sessions</span>
+      <button id="history-close">&#10005;</button>
+    </div>
+    <div id="history-body">
+      <div id="history-list"><!-- session list --></div>
+      <div id="history-detail">
+        <div id="history-detail-empty">Select a session to view it.</div>
+        <div id="history-detail-content" class="hidden">
+          <div id="history-detail-header">
+            <span id="history-detail-ts"></span>
+            <span id="history-detail-name"></span>
+            <a id="history-recording-link" class="hidden" href="#" target="_blank">&#9654; Recording</a>
+          </div>
+          <div id="history-tabs">
+            <button class="history-tab active" data-tab="scene">Scene</button>
+            <button class="history-tab" data-tab="log">Story Log</button>
+            <button class="history-tab" data-tab="transcript">Transcript</button>
+            <button class="history-tab" data-tab="next">Next Steps</button>
+          </div>
+          <div id="history-tab-body"></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

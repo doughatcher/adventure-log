@@ -398,7 +398,78 @@ async def end_session():
         for f in AUDIO_DIR.glob("chunk_*.webm"):
             f.unlink()
 
+    # Commit archived session to git
+    git_msg = f"Session archive: {ts}"
+    try:
+        subprocess.run(["git", "add", str(archive_dir)], cwd=str(BASE_DIR), capture_output=True)
+        result = subprocess.run(
+            ["git", "commit", "-m", git_msg],
+            cwd=str(BASE_DIR), capture_output=True, text=True
+        )
+        if result.returncode == 0:
+            print(f"[session] Git commit: {git_msg}")
+        else:
+            print(f"[session] Git commit skipped: {result.stderr.strip()}")
+    except Exception as e:
+        print(f"[session] Git commit failed: {e}")
+
     return {"ok": True, "archived_to": str(archive_dir), "recording": recording_path}
+
+
+@app.get("/api/sessions")
+async def list_sessions():
+    """List all archived sessions, newest first."""
+    if not SESSIONS_ARCHIVE_DIR.exists():
+        return []
+    sessions = []
+    for d in sorted(SESSIONS_ARCHIVE_DIR.iterdir(), reverse=True):
+        if not d.is_dir():
+            continue
+        entry = {"ts": d.name, "has_recording": (d / "recording.mp3").exists()}
+        scene_file = d / "scene.md"
+        if scene_file.exists():
+            lines = [l.strip() for l in scene_file.read_text().splitlines()
+                     if l.strip() and not l.startswith("#")]
+            entry["scene_headline"] = lines[0][:120] if lines else ""
+        state_file = d / "state.json"
+        if state_file.exists():
+            try:
+                s = json.loads(state_file.read_text())
+                entry["session_name"] = s.get("session_name", "")
+                entry["location"] = s.get("location", "")
+            except Exception:
+                pass
+        sessions.append(entry)
+    return sessions
+
+
+@app.get("/api/sessions/{ts}")
+async def get_session(ts: str):
+    """Return full contents of an archived session."""
+    d = SESSIONS_ARCHIVE_DIR / ts
+    if not d.exists():
+        raise HTTPException(404, "Session not found")
+    data: dict = {"ts": ts}
+    for fname in ("scene.md", "story-log.md", "transcript.md", "next-steps.md", "map.md", "party.md"):
+        f = d / fname
+        key = fname.replace(".md", "").replace("-", "_")
+        data[key] = f.read_text() if f.exists() else ""
+    state_file = d / "state.json"
+    if state_file.exists():
+        try:
+            data["state"] = json.loads(state_file.read_text())
+        except Exception:
+            data["state"] = {}
+    data["has_recording"] = (d / "recording.mp3").exists()
+    return data
+
+
+@app.get("/api/recording/{ts}")
+async def get_recording(ts: str):
+    mp3 = SESSIONS_ARCHIVE_DIR / ts / "recording.mp3"
+    if not mp3.exists():
+        raise HTTPException(404, "Recording not found")
+    return FileResponse(str(mp3), media_type="audio/mpeg", filename=f"{ts}.mp3")
 
 
 @app.get("/api/recording/latest")
