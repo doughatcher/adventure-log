@@ -1,7 +1,33 @@
+# Python
 __pycache__/
 *.pyc
+*.pyo
 .venv/
-.env
 *.egg-info/
 dist/
 .uv/
+
+# Environment — never commit secrets
+.env
+.env.local
+.env.*.local
+
+# Session data — runtime state, not source code
+session/transcript.md
+session/state.json
+session/scene.md
+session/story-log.md
+session/party.md
+session/next-steps.md
+session/map.md
+session/audio/
+
+# Character data — populated at runtime
+data/characters/*.md
+
+# Archived sessions
+data/sessions/
+
+# OS
+.DS_Store
+Thumbs.db
