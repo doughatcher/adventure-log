@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>{{ partial "head.html" . }}</head>
+<body>
+{{ partial "nav.html" . }}
+<main>{{ block "main" . }}{{ end }}</main>
+<footer><p>{{ .Site.Title }} &mdash; Campaign Journal &mdash; <a href="https://github.com/doughatcher/game-telemetry">doughatcher/game-telemetry</a></p></footer>
+</body>
+</html>

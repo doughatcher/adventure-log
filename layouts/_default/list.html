@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="section-header">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div>{{ . }}</div>{{ end }}
+</div>
+
+{{ if eq .Section "characters" }}
+<div class="char-grid">
+  {{ range .Pages }}{{ partial "char-card.html" . }}{{ end }}
+</div>
+{{ else }}
+<ul class="session-list">
+  {{ range .Pages }}
+  <li class="session-item">
+    <div class="session-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+    <div class="session-meta">
+      {{ .Date.Format "January 2, 2006" }}
+      {{ with .Params.location }}&nbsp;·&nbsp; {{ . }}{{ end }}
+    </div>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
+{{ end }}

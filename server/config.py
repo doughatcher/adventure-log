@@ -7,6 +7,9 @@ DATA_DIR = BASE_DIR / "data"
 CHARACTERS_DIR = DATA_DIR / "characters"
 SESSIONS_ARCHIVE_DIR = DATA_DIR / "sessions"
 
+CONTEXT_DIR = BASE_DIR / "context"
+NEXT_SESSION_BRIEF_FILE = CONTEXT_DIR / "next-session-brief.md"
+
 # ── GitHub release publishing ──
 GITHUB_REPO  = os.environ.get("GITHUB_REPO",  "doughatcher/game-telemetry")
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")

@@ -1,0 +1,10 @@
+baseURL = "https://doughatcher.github.io/game-telemetry/"
+languageCode = "en-us"
+title = "The Adventure Begins"
+
+[params]
+  description = "A living campaign journal"
+  campaign = "The Adventure Begins"
+
+[markup.goldmark.renderer]
+  unsafe = true

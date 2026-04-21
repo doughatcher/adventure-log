@@ -10,6 +10,7 @@ from .config import (
     TRANSCRIPT_FILE, CHARACTERS_DIR, STATE_FILE,
     GEMMA_STATE_TRIGGER_CHARS, GEMMA_STATE_DEBOUNCE_SECS,
     GEMMA_PANEL_TRIGGER_CHARS, GEMMA_PANEL_DEBOUNCE_SECS,
+    NEXT_SESSION_BRIEF_FILE,
 )
 
 SYSTEM_PROMPT = """You are a precise D&D session state tracker. Output only what is asked, in exact format specified. No extra commentary."""
@@ -278,6 +279,17 @@ def _read_party_data() -> str:
     return "\n\n".join(parts) if parts else "No character data yet."
 
 
+def _read_campaign_brief() -> str:
+    """Read context/next-session-brief.md if available. Injected into AI prompts."""
+    if not NEXT_SESSION_BRIEF_FILE.exists():
+        return ""
+    text = NEXT_SESSION_BRIEF_FILE.read_text().strip()
+    # Skip the placeholder file
+    if "No sessions archived yet" in text:
+        return ""
+    return f"\n\nCAMPAIGN CONTEXT (from last session):\n{text}\n"
+
+
 async def _broadcast_state():
     if _broadcast_callback and STATE_FILE.exists():
         try:
@@ -298,7 +310,8 @@ async def _do_state_update():
         except Exception:
             pass
     party_data = _read_party_data()
-    prompt = STATE_PROMPT.format(
+    campaign_brief = _read_campaign_brief()
+    prompt = (campaign_brief + STATE_PROMPT).format(
         transcript=transcript[-2000:],  # last ~2000 chars is plenty
         party_data=party_data,
         current_state=current_state,
@@ -343,7 +356,8 @@ async def _do_panel_update():
             location = json.loads(current_state).get("location") or "unknown"
         except Exception:
             pass
-    prompt = PANEL_PROMPT.format(
+    campaign_brief = _read_campaign_brief()
+    prompt = (campaign_brief + PANEL_PROMPT).format(
         transcript=transcript[-3000:],
         party_data=party_data,
         current_state=current_state,

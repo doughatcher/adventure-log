@@ -1,0 +1,19 @@
+{{ $hp := .Params.hp_current | default 0 }}
+{{ $max := .Params.hp_max | default 0 }}
+{{ $pct := 100 }}
+{{ if gt $max 0 }}{{ $pct = div (mul $hp 100) $max }}{{ end }}
+{{ $low := lt $pct 30 }}
+{{ $status := .Params.status | default "alive" }}
+<div class="char-card">
+  <div class="char-name"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+  <div class="char-class">{{ .Params.class | default "Unknown" }}</div>
+  {{ if gt $max 0 }}
+  <div class="hp-bar-wrap">
+    <div class="hp-bar-fill{{ if $low }} low{{ end }}" style="width:{{ $pct }}%"></div>
+  </div>
+  <div class="hp-label">{{ $hp }} / {{ $max }} HP &nbsp;·&nbsp; AC {{ .Params.ac | default "?" }}</div>
+  {{ end }}
+  {{ if ne $status "alive" }}
+  <div class="char-status {{ $status }}">{{ $status }}</div>
+  {{ end }}
+</div>

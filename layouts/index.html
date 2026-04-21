@@ -1,0 +1,42 @@
+{{ define "main" }}
+<div class="home-hero">
+  <h1>{{ .Site.Title }}</h1>
+  <p class="tagline">{{ .Site.Params.description }}</p>
+</div>
+{{ .Content }}
+<div class="home-sections">
+  <div class="home-section">
+    <h2>&#9676; Recent Sessions</h2>
+    {{ $sessions := (where .Site.RegularPages "Section" "sessions") | first 5 }}
+    {{ if $sessions }}
+    <ul class="session-list">
+      {{ range $sessions }}
+      <li class="session-item">
+        <div class="session-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+        <div class="session-meta">
+          {{ .Date.Format "January 2, 2006" }}
+          {{ with .Params.location }}&nbsp;·&nbsp; {{ . }}{{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+    <a class="more" href="/sessions/">View all sessions &rarr;</a>
+    {{ else }}
+    <p style="color:var(--text3);font-size:0.9rem">No sessions yet. End a session to generate the first journal entry.</p>
+    {{ end }}
+  </div>
+
+  <div class="home-section">
+    <h2>&#9678; Party</h2>
+    {{ $chars := where .Site.RegularPages "Section" "characters" }}
+    {{ if $chars }}
+    <div class="char-grid" style="grid-template-columns:1fr">
+      {{ range $chars }}{{ if ne .Params.status "dead" }}{{ partial "char-card.html" . }}{{ end }}{{ end }}
+    </div>
+    <a class="more" href="/characters/">Full roster &rarr;</a>
+    {{ else }}
+    <p style="color:var(--text3);font-size:0.9rem">Party roster will appear after the first session.</p>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

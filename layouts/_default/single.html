@@ -1,0 +1,42 @@
+{{ define "main" }}
+{{ if eq .Section "characters" }}
+  {{ $hp := .Params.hp_current | default 0 }}
+  {{ $max := .Params.hp_max | default 0 }}
+  {{ $pct := 100 }}
+  {{ if gt $max 0 }}{{ $pct = div (mul $hp 100) $max }}{{ end }}
+  {{ $low := lt $pct 30 }}
+  <h1>{{ .Title }}</h1>
+  <div class="char-page">
+    <article class="content">{{ .Content }}</article>
+    <aside class="sidebar">
+      <dl>
+        <dt>Class</dt><dd>{{ .Params.class | default "Unknown" }}</dd>
+        {{ if gt $max 0 }}
+        <div class="stat-row">
+          <div class="stat"><div class="val">{{ $hp }}</div><div class="lbl">HP</div></div>
+          <div class="stat"><div class="val">{{ $max }}</div><div class="lbl">Max</div></div>
+          <div class="stat"><div class="val">{{ .Params.ac | default "?" }}</div><div class="lbl">AC</div></div>
+        </div>
+        <dt>Health</dt>
+        <dd>
+          <div class="hp-bar-wrap" style="margin-top:4px">
+            <div class="hp-bar-fill{{ if $low }} low{{ end }}" style="width:{{ $pct }}%"></div>
+          </div>
+        </dd>
+        {{ end }}
+        <dt>Status</dt><dd>{{ .Params.status | default "alive" }}</dd>
+        {{ with .Params.last_updated }}<dt>Updated</dt><dd>{{ . }}</dd>{{ end }}
+      </dl>
+    </aside>
+  </div>
+{{ else }}
+  <article>
+    <h1>{{ .Title }}</h1>
+    <div class="meta">
+      <span>&#9676; {{ .Date.Format "January 2, 2006" }}</span>
+      {{ with .Params.location }}<span>&#8982; {{ . }}</span>{{ end }}
+    </div>
+    <div class="content">{{ .Content }}</div>
+  </article>
+{{ end }}
+{{ end }}
