@@ -1,0 +1,66 @@
+{
+  "session_name": "The Adventure Begins",
+  "date": "2026-04-20",
+  "location": "shard-c-sea-of-governance",
+  "combat_active": false,
+  "round": 0,
+  "initiative_order": [],
+  "characters": {
+    "rides-the-wake": {
+      "name": "Rides the Wake",
+      "hp": 68,
+      "max_hp": 68,
+      "ac": 12,
+      "conditions": [],
+      "class": "Barbarian",
+      "notes": "Human. Initiative +3. STR 17, CON 14, WIS 14. Rage active: +STR. Danger Sense: DEX saves vs visible effects.",
+      "is_enemy": false,
+      "status": "alive"
+    },
+    "granite": {
+      "name": "Granite",
+      "hp": 0,
+      "max_hp": 0,
+      "ac": 0,
+      "conditions": [],
+      "class": "",
+      "notes": "",
+      "is_enemy": false,
+      "status": "alive"
+    },
+    "livrielle": {
+      "name": "Livrielle",
+      "hp": 0,
+      "max_hp": 0,
+      "ac": 0,
+      "conditions": [],
+      "class": "",
+      "notes": "",
+      "is_enemy": false,
+      "status": "alive"
+    },
+    "vardar": {
+      "name": "Vardar",
+      "hp": 0,
+      "max_hp": 0,
+      "ac": 0,
+      "conditions": [],
+      "class": "",
+      "notes": "",
+      "is_enemy": false,
+      "status": "alive"
+    },
+    "edwin": {
+      "name": "Edwin",
+      "hp": 0,
+      "max_hp": 0,
+      "ac": 0,
+      "conditions": [],
+      "class": "",
+      "notes": "",
+      "is_enemy": false,
+      "status": "alive"
+    }
+  },
+  "last_updated": "2026-04-21T01:26:08.763423+00:00"
+}
