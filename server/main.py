@@ -232,6 +232,17 @@ class Character(BaseModel):
     notes: str = ""
 
 
+class CharacterUpdate(BaseModel):
+    """Partial update — only provided fields are changed."""
+    name: str | None = None
+    char_class: str | None = None
+    hp_current: int | None = None
+    hp_max: int | None = None
+    ac: int | None = None
+    notes: str | None = None
+    conditions: list[str] | None = None
+
+
 def _slug(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
@@ -309,12 +320,34 @@ async def add_character(char: Character):
 
 
 @app.patch("/api/characters/{slug}")
-async def update_character(slug: str, char: Character):
+async def update_character(slug: str, update: CharacterUpdate):
     path = CHARACTERS_DIR / f"{slug}.md"
     if not path.exists():
         raise HTTPException(404, "Character not found")
-    _write_char_file(slug, char)
-    _sync_char_to_state(slug, char)
+
+    # Read existing frontmatter so partial updates don't wipe other fields
+    existing_chars = await list_characters()
+    existing = next((c for c in existing_chars if c.get("slug") == slug or c.get("name", "").lower().replace(" ", "-") == slug), {})
+
+    merged = Character(
+        name=update.name or existing.get("name", slug),
+        char_class=update.char_class if update.char_class is not None else existing.get("class", ""),
+        hp_current=update.hp_current if update.hp_current is not None else int(existing.get("hp_current", 0)),
+        hp_max=update.hp_max if update.hp_max is not None else int(existing.get("hp_max", 0)),
+        ac=update.ac if update.ac is not None else int(existing.get("ac", 0)),
+        notes=update.notes if update.notes is not None else existing.get("notes", ""),
+    )
+
+    _write_char_file(slug, merged)
+    _sync_char_to_state(slug, merged)
+
+    # Apply conditions directly to state if provided
+    if update.conditions is not None:
+        state = json.loads(STATE_FILE.read_text())
+        if slug in state.get("characters", {}):
+            state["characters"][slug]["conditions"] = update.conditions
+            STATE_FILE.write_text(json.dumps(state, indent=2))
+
     await _refresh_party_panel()
     await manager.broadcast({"type": "state", "data": json.loads(STATE_FILE.read_text())})
     return {"ok": True}

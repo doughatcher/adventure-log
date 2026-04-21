@@ -11,8 +11,14 @@ CONTEXT_DIR = BASE_DIR / "context"
 NEXT_SESSION_BRIEF_FILE = CONTEXT_DIR / "next-session-brief.md"
 
 # ── GitHub release publishing ──
-GITHUB_REPO  = os.environ.get("GITHUB_REPO",  "doughatcher/game-telemetry")
+GITHUB_REPO  = os.environ.get("GITHUB_REPO",  "doughatcher/adventure-log")
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
+
+# ── DnD Beyond integration ──
+DDB_CAMPAIGN_ID    = os.environ.get("DDB_CAMPAIGN_ID",    "6805334")
+DDB_COOKIE         = os.environ.get("DDB_COOKIE",         "")
+DDB_CHARACTER_IDS  = os.environ.get("DDB_CHARACTER_IDS",  "")
+DDB_POLL_INTERVAL  = int(os.environ.get("DDB_POLL_INTERVAL", "60"))
 
 # ── External services (override via .env or environment) ──
 OLLAMA_BASE  = os.environ.get("OLLAMA_BASE",  "http://localhost:11434")

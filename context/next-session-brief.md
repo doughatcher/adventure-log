@@ -1,29 +1,47 @@
 # Next Session Brief
 
-*Auto-generated. Do not edit — will be overwritten after each session.*
+*Last updated: 2026-04-20. Auto-regenerated after each session — edit only if manually overriding.*
 
-LOCATION: Shard C — Sea of Governance (arrived end of session, no further exploration logged)
+---
 
-PARTY:
-- Rides the Wake (Barbarian/Berserker) 68/68 HP AC 12
-- Granit (Cleric/Life Domain) 52/52 HP AC 18
-- Lyvriele Enafrya (Fighter/Samurai) 58/58 HP AC 17
-- Vargr Stormcaller (Bard/College of Spirits) 49/49 HP AC 14
+## WHERE WE ARE
 
-RECENT EVENTS:
-- Party arrived at Shard C in the Sea of Governance — first foothold in this political zone
-- No combat this session; arrival was uneventful or travel-focused
-- Session represents a transition point — end of one leg of journey, start of next
+**Location:** Shard C — Sea of Governance
+The party has made landfall. They arrived at the end of the previous session — uneventful crossing, the sea acknowledged their presence without violence. They are now at some form of port or waystation within Shard C, the great maritime political zone. This is a place where ships dock, deals are struck, and power is administered rather than seized.
 
-OPEN THREADS:
-- Full rest pending — party has not yet recovered stamina/resources post-travel
-- Rations must be purchased before next journey leg departs
-- Local sea charts need study — destination or route not yet determined
-- Weapons require maintenance before next expected combat engagement
+---
 
-KEY NPCS:
-- None logged — Shard C contacts, vendors, and political figures not yet encountered or named
+## PARTY STATUS
 
-PARTY CONDITION: All four characters are at full HP with no active conditions — physically fresh but logistically unprepared for the next leg. Resource expenditure from prior travel unknown; assume spell slots and class features may need confirmation after rest.
+| Character | HP | AC | Conditions | Notes |
+|-----------|----|----|------------|-------|
+| Rides the Wake | 68/68 | 12 | None | Full. Human Barbarian/Berserker. superterran. |
+| Granit | 52/52 | 18 | None | Full. Dwarf Cleric/Life. LesCubistes. |
+| Lyvriele Enafrya | 58/58 | 17 | None | Full. Eladrin Fighter/Samurai. dpottergg. |
+| Vargr Stormcaller | 49/49 | 14 | None | Full. Goliath Bard/Spirits. chrispotter. |
 
-CAMPAIGN CONTEXT: The Sea of Governance is a politically charged maritime region where trade routes, shard-based power structures, and naval authority intersect. Shard C is a node in this network — likely a port, administrative hub, or waystation with merchant traffic, local factions, and information to exploit. The world has agency; delays in resupply or chart study could mean missed intelligence or rivals moving first. Gritty tone means vendors may gouge, charts may be incomplete, and even a rest in port carries risk.
+Long rest completed on arrival. All resources (spell slots, rage uses, Bardic Inspiration, class features) should be fully restored.
+
+---
+
+## WHAT NEEDS TO HAPPEN NEXT
+
+**Immediate logistics (flagged last session):**
+1. **Rations** — Purchase before the party moves again. The ship or next leg of travel requires provisions.
+2. **Sea charts** — Need local charts. Destination or objective within Shard C is not yet established.
+3. **Equipment check** — Weapons and gear should be maintained while at port. This is the last comfortable opportunity before whatever comes next.
+
+**Investigation priorities:**
+- Make contact with someone who knows Shard C — a harbormaster, merchant guild contact, local faction representative, or information broker
+- Understand the political landscape: who controls what, who is fighting whom, what the current tension is
+- Find out what the actual objective here is — the Shard system implies the party has a purpose at Shard C beyond resupply
+
+---
+
+## CAMPAIGN CONTEXT FOR THE AI
+
+The party is at Level 7 in the third major zone of the campaign. Shard A (nature) and Shard B (corruption) are behind them. Shard C represents civilization and governance — the most complex terrain yet because the enemy here may not be a creature but a system, an institution, or a person with legitimate authority.
+
+Tone: Gritty, consequential, world-has-agency. Combat at level 7 can kill characters. Resources matter. The DM (TheShantyman) runs NPCs with genuine agendas.
+
+The AI should treat every panel as if the party is one bad decision away from something going very wrong — because at level 7 in a gritty campaign, they are.
