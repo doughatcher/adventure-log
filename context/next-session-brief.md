@@ -26,10 +26,32 @@ Long rest completed on arrival. All resources (spell slots, rage uses, Bardic In
 
 ## WHAT NEEDS TO HAPPEN NEXT
 
-**Immediate logistics (flagged last session):**
-1. **Rations** — Purchase before the party moves again. The ship or next leg of travel requires provisions.
-2. **Sea charts** — Need local charts. Destination or objective within Shard C is not yet established.
-3. **Equipment check** — Weapons and gear should be maintained while at port. This is the last comfortable opportunity before whatever comes next.
+**Traveler's Beacon (confirmed available at next stop):**
+1. **Free Wand of Wonder** — Party earned one for free. Richard confirmed: "Y'all can get one for free at the next Traveler's Beacon." Wild magic chaos item, 100-entry table — prepare for havoc.
+2. **Tier 2 magic items** — All Tier 2 items now purchasable. Source: [UA Magic Item Prices](https://www.reddit.com/r/UnearthedArcana/comments/1jiu7jg/dd_2024_magic_item_prices_crafting_shops_and_loot/)
+3. **Sell rate** — Selling loot returns half price. Exception: gems sell at full value.
+
+**Known gear purchases made at last session:**
+- Lyvriele: 2x +1 weapons (2,500 gp) + Cloak of Protection (2,500 gp) — ~1,416 gp remaining from 6,416 gp
+- Vargr: Ring of Swimming + Cloak of Protection + Luckstone = 3,500 gp total
+
+**Ship upgrades (newly available in Shard C waters):**
+
+| Weapon | Damage | Effect | Cost |
+|--------|--------|--------|------|
+| Light Cannon | 2d10 bludgeoning | Basic cannon | 500 gp |
+| Standard Cannon | 3d10 bludgeoning | Reliable main weapon | 1,000 gp |
+| Heavy Cannon | 4d10 bludgeoning | High damage, slower | 2,500 gp |
+| Light Ballista | 2d10 piercing | Accurate, simple | 500 gp |
+| Heavy Ballista | 3d10 piercing | Pins targets / damages sails | 1,500 gp |
+| Swivel Guns | 1d10 | Anti-boarding / deck defense | 200 gp |
+
+Richard noted: "You won't find a bigger ship yet, but you will find more powerful things for your ship." A **figurehead** was also discussed — craftsmen can be found at any port.
+
+**Immediate logistics:**
+1. **Rations** — Purchase before the next leg of travel.
+2. **Sea charts** — Local charts for Shard C waters needed.
+3. **Ship upgrades** — First real chance to meaningfully upgrade weapons/defense.
 
 **Investigation priorities:**
 - Make contact with someone who knows Shard C — a harbormaster, merchant guild contact, local faction representative, or information broker

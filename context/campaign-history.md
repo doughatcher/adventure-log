@@ -95,6 +95,18 @@ The world is organized around Shards — regions of concentrated elemental or co
 
 ---
 
+## Economy & Equipment
+
+**Selling loot:** Half price. Exception — gems sell at full value.
+
+**Traveler's Beacon** is the campaign's shopping mechanic — designated rest/trade waypoints between shards where the party can buy, sell, and upgrade. Richard controls what tier of items is available.
+
+- **Tier 2 items** unlocked as of level 7 / Shard C arrival
+- Source pricing: [UA Magic Item Prices 2024](https://www.reddit.com/r/UnearthedArcana/comments/1jiu7jg/dd_2024_magic_item_prices_crafting_shops_and_loot/)
+- **Free Wand of Wonder** incoming — party reward confirmed by DM at level-up
+
+**The Ship** is a persistent party asset. In Shard C, a wider range of weapon and defense upgrades become available, though a larger hull is not yet accessible. Weapon options include light/standard/heavy cannons, ballistas, and swivel anti-boarding guns. A figurehead can be commissioned at any port with craftsmen.
+
 ## Key NPCs
 
 *(To be populated as the campaign progresses)*
