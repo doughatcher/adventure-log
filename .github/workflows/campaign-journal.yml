@@ -5,6 +5,12 @@ on:
     branches: [main]
     paths:
       - "data/sessions/**"
+      - "content/**"
+      - "layouts/**"
+      - "static/**"
+      - "assets/**"
+      - "hugo.toml"
+      - ".github/workflows/**"
   workflow_dispatch:
 
 permissions:
