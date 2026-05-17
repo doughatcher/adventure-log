@@ -3,7 +3,8 @@ ac: 14
 class: Bard / College of Spirits
 hp_current: 49
 hp_max: 49
-last_updated: '2026-04-21'
+last_updated: '2026-05-17'
+race: Goliath (Cloud Giant variant)
 slug: vargr-stormcaller
 status: alive
 title: Vargr Stormcaller
