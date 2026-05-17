@@ -1,9 +1,10 @@
 ---
 ac: 17
-class: Fighter / Samurai
+class: Fighter / Samurai (crossbow)
 hp_current: 58
 hp_max: 58
-last_updated: '2026-04-21'
+last_updated: '2026-05-17'
+race: Eladrin
 slug: lyvriele-enafrya
 status: alive
 title: Lyvriele Enafrya

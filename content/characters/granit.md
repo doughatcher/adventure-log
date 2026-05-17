@@ -3,7 +3,8 @@ ac: 18
 class: Cleric / Life Domain
 hp_current: 52
 hp_max: 52
-last_updated: '2026-04-21'
+last_updated: '2026-05-17'
+race: Dwarf
 slug: granit
 status: alive
 title: Granit
