@@ -1,16 +1,14 @@
 ---
-date: '2026-05-05T00:00:00Z'
+date: '2026-05-17T00:00:00Z'
 location: ''
 source_archive: adventurer-poc-test-101228
 title: Session
 ---
 
-The ink is still wet on these pages, and the chronicler confesses there is little enough to record — not because nothing happened, but because the world held its breath between one chapter and the next. The Shardsea of Governance lay ahead, vast and patient as only systems of power can afford to be, and the party had not yet pressed their boots to its docks nor their eyes to its horizon. Some moments in a voyage are like this: the pause between the drawing of breath and the word spoken, the stillness of water before a stone breaks its surface.
+The harbor smelled of salt and old rope and the particular kind of waiting that accumulates in places where ships come and go but the people stay. The party had arrived at the Shardsea of Governance with full packs and clear eyes — a rare condition, and one they had learned not to waste. After the volcanic fury of the Elements and the creeping wrongness that had saturated Nature's Wrath, the docks of this place felt almost ordinary. Almost. There was something in the way the harbormaster's clerks moved between vessels, in the way every conversation seemed to carry a second meaning just beneath its surface, that reminded the four of them they had stepped into a different kind of danger.
 
-Rides the Wake, Granit, Lyvriele, and Vargr stood at the threshold of something new. Behind them, the lessons of corrupted nature and elemental fury — the pyres of Pyroskarn, the drowned shrines of Tidecross, the hollow name-thieving magic of Feyblossom. Ahead, a different kind of danger entirely. Governance does not announce itself with fang or flame. It comes in triplicate, stamped and sealed, and you often do not know it has taken something from you until the accounting is complete.
+Granit stood at the prow of the ship as it settled against the dock, steady as the name suggested, reading the port the way a physician reads a patient — not for what was said but for what was held back. Lyvriele had already catalogued the exits. Rides the Wake watched the water. Vargr watched everything else, turning impressions over in his mind the way a gambler turns coins, looking for the weight of what a place remembered. They had supplies to purchase, charts to find, and no contact yet among the power brokers of a sea that ran on brokered power. The objective ahead remained a shape without edges.
 
-What the chronicle can say with certainty is this: the party arrived whole. Whatever rests had been taken, whatever wounds had closed during the crossing, they came to the Shardsea of Governance without the weight of fresh injury. That itself is worth noting. The world is not always so generous with its pauses.
+What was certain was the pattern. Elements, then corruption, then civilization — each shardsea a new vocabulary of threat, each one asking something different from the four of them. The leylines the Compass had shown them, riddled with that dark purple miasma spreading like bruised blood through the veins of the world, had not stopped spreading simply because the party had moved on. Someone or something was behind it, patient and systematic, and here in the Shardsea of Governance — where trade routes were law and law was leverage — whatever came next would not announce itself with fire or feral screaming. It would come dressed as paperwork.
 
-The work that lay ahead — the charts to acquire, the rations to barter for, the ship to tend, the names and faces of power to learn — none of it had yet begun. But the party had survived enough to know that preparation is its own form of courage. Someone, somewhere in the web of maritime politics and shard-bound authority that defined these waters, did not yet know that four weathered travelers had arrived. That advantage, thin as it was, belonged to them.
-
-For now, the harbor smelled of salt and ambition, and the Shardsea waited.
+They made fast the ship and stepped ashore together, four figures trailing sea-wind and hard-won scars, into a city that was already deciding what to make of them.

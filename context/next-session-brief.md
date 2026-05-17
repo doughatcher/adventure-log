@@ -2,33 +2,35 @@
 
 *Auto-generated. Do not edit — will be overwritten after each session.*
 
-LOCATION: Shardsea of Governance — port of entry, exact hub TBD; ships dock here, power is brokered here
+LOCATION: Shardsea of Governance — arrival port (specific node TBD; administrative/trade hub, ships docking, power being brokered)
+
 PARTY:
-- Rides the Wake (Barbarian/Berserker) HP 68/68 AC 12
-- Granit (Cleric/Life) HP 52/52 AC 18
-- Lyvriele Enafrya (Fighter/Samurai) HP 58/58 AC 17
-- Vargr Stormcaller (Bard/College of Spirits) HP 49/49 AC 14
+- Rides the Wake (Barbarian/Berserker) 68/68 AC 12
+- Granit (Cleric/Life Domain) 52/52 AC 18
+- Lyvriele Enafrya (Fighter/Samurai) 58/58 AC 17
+- Vargr Stormcaller (Bard/College of Spirits) 49/49 AC 14
 
 RECENT EVENTS:
-- Party completed two full shardseas (Elements, Nature's Wrath) and arrived at Shardsea of Governance
-- Compass of Lost Tides activated after slaying Frostmaul — revealed corrupted leylines spreading dark purple miasma across the world
-- Shardsea of Elements cleared: volcanic elemental slain (Pyroskarn), wind serpent slain (Zephyrine), Frostmaul the Devourer slain (Glaciarra)
-- Shardsea of Nature's Wrath cleared: Feywild bleed contained (Feyblossom), fused-corruption creatures defeated (Verdantreach), ocean spirit Vaeloryn summoned and slain (Tidecross)
-- Party reached Level 7; Tier 2 items now accessible at Traveler's Beacon
-- DM confirmed Free Wand of Wonder owed to party as level-up reward
-- A fifth member, Edwin, has departed — party now operates as four
-- No local contacts, factions, or power brokers yet encountered in Shardsea of Governance
+- Party cleared Shardsea of Elements (volcanic elemental, wind serpent, corrupted yeti Frostmaul slain)
+- Compass of Lost Tides activated post-Frostmaul — revealed world leyline map corrupted by dark purple miasma spreading globally
+- Party cleared Shardsea of Nature's Wrath (Feywild bleed on Feyblossom, fused creatures on Verdantreach, ocean spirit Vaeloryn slain on Tidecross)
+- Two full Shardseas cleared; pattern of escalation confirmed — nature → corruption → civilization
+- Party arrived at Shardsea of Governance; long rest completed; full resources restored
+- Edwin (fifth member) previously departed; party now operates as four
+- Tier 2 magic items now unlocked at Traveler's Beacon
+- Free Wand of Wonder owed to party as confirmed DM reward
+- Rations and sea charts not yet purchased; ship maintenance pending
+- No local contacts, factions, or power brokers engaged yet
 
 OPEN THREADS:
-- Rations must be purchased; sea charts for next destination must be obtained before departure
-- Shardsea of Governance objective undefined — what institutional or governmental threat is in play here?
-- Corrupted leylines revealed by Compass of Lost Tides — source and scope unknown, escalating
-- Ship upgrades available (cannons, ballistas, swivel guns, figurehead) — decisions pending
-- Wand of Wonder and Tier 2 magic item shopping unresolved
+- Primary objective at Shardsea of Governance undefined — what institutional power is threatened or in play?
+- Leyline corruption map (Compass of Lost Tides vision) implies a campaign-level antagonist or systemic threat; no leads yet
+- Local power brokers uncontacted — merchants, naval authority, political figures all competing in these waters
+- Ship upgrades (cannons, ballista, swivel guns, figurehead) now accessible; no purchases made
 
 KEY NPCS:
-- None yet established in Shardsea of Governance — first contact with local power brokers imminent
+- None established. First contact with Shardsea of Governance figures imminent.
 
-PARTY CONDITION: Full HP, all resources restored after long rest on arrival. No active conditions. Morale is high but the leyline vision has introduced cosmological dread — the party knows they are working against something larger than regional threats.
+PARTY CONDITION: Full HP, all spell slots and class features restored after long rest on arrival. No conditions, no exhaustion. Morale stable — two Shardseas cleared, Frostmaul's death delivered a world-scale revelation that reframes the stakes upward.
 
-CAMPAIGN CONTEXT: Shardsea of Governance controls civilization's nervous system — trade routes, naval authority, and institutional legitimacy all flow through these waters. Unlike raw elemental danger or spiritual corruption, the threats here move through people: competing merchants, naval commanders, political factions, and shard-empowered brokers who may not recognize the leyline corruption as an existential crisis or may be actively exploiting it. The pattern of shards is escalating in abstraction — Elements, Nature, now Civilization — suggesting the corrupted miasma is not random but is systematically targeting the structures that hold the world together. Vargr's ability to consult the dead may unlock institutional memory that living power brokers want buried.
+CAMPAIGN CONTEXT: Shardsea of Governance controls civilization's nervous system — trade routes, naval projection, and political authority all concentrate here. Unlike raw elemental danger or spiritual corruption, the threat vector here is institutional: competing factions, legal authority, and compromised power structures. The Compass of Lost Tides vision establishes that leyline corruption is spreading across the entire world, not contained to individual Shardseas — the party's work here is not isolated but part of a larger pattern with escalating urgency. Whoever or whatever is corrupting the leylines has reach. The Sea of Governance matters because controlling it means controlling the world's capacity to respond. First session in Shard C should establish who holds power, who is losing it, and what they want from four adventurers with the reputation to be trusted with civilization-level problems.
