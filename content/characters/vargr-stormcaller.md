@@ -1,8 +1,8 @@
 ---
-ac: 14
+ac: 15
 class: Bard / College of Spirits
-hp_current: 49
-hp_max: 49
+hp_current: 45
+hp_max: 45
 last_updated: '2026-05-17'
 race: Goliath (Cloud Giant variant)
 slug: vargr-stormcaller
