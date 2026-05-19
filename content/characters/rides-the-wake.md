@@ -1,8 +1,8 @@
 ---
-ac: 12
+ac: 13
 class: Barbarian / Path of the Berserker
-hp_current: 1
-hp_max: 50
+hp_current: 15
+hp_max: 54
 last_updated: '2026-05-19'
 slug: rides-the-wake
 status: alive

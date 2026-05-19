@@ -1,9 +1,9 @@
 ---
 ac: 15
 class: Bard / College of Spirits
-hp_current: 25
+hp_current: 38
 hp_max: 38
-last_updated: '2026-05-18'
+last_updated: '2026-05-19'
 race: Goliath (Cloud Giant variant)
 slug: vargr-stormcaller
 status: alive
