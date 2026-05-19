@@ -115,9 +115,9 @@ The world is organized around Shardseas — regions of concentrated elemental or
 
 ## Key NPCs
 
-*(To be populated as the campaign progresses)*
+**Cael Duren** — Freelance bounty collector, Shattered Reach. Not Guild-affiliated. Appeared at Pier Seven with two companions on the party's first night in Shard C. Issued a veiled threat ("the people I represent want what's in your hold"), named no patron, made no immediate move. Composure cracked slightly under Vargr's Performance pressure but held. Status: at large.
 
-None logged from prior sessions — Shardsea contacts, vendors, and political figures not yet encountered or named.
+**The Rebels (unnamed)** — Encountered in the city's lower streets following the bandit ambush. Non-hostile to the party. Identity, affiliation, and agenda unknown. Initial contact appears cautiously positive.
 
 ---
 
@@ -128,3 +128,15 @@ None logged from prior sessions — Shardsea contacts, vendors, and political fi
 - **Governance = power.** The Sea of Governance is named for a reason. Control of these waters means control of trade, communication, and military projection across the known world.
 - **Vargr can talk to the dead.** College of Spirits means the history of places is accessible through séance and channeling. This has been relevant before and will be again.
 - **Edwin was a fifth member who departed.** The party is now four. His absence is presumably known within the world.
+
+---
+
+## Session Log
+
+### Shard C — Session 1 (2026-05-18): Poison and Rebels
+
+The party made landfall at a city in the Sea of Governance and found trouble waiting at the docks. At Pier Seven, a freelance bounty collector named Cael Duren — operating out of the Shattered Reach, unaffiliated with any Guild — stood with two companions and a warning: someone wanted what was in the party's hold. He named no patron and made no move. Vargr answered him with music, low and unsettling, that pressed on the encounter harder than a drawn blade might have; Duren's composure held, but the tightening of his jaw said it cost him.
+
+Deeper in the city, three bandits with poison-coated daggers found them. The ambush was efficient and nearly decisive — Granit, Rides the Wake, and Vargr all went down. Lyvriele Enafrya kept her feet and kept the party alive. When the blades were still and the bodies cooling, the thing they had come looking for was within reach: rebels, somewhere in the tangle of the lower streets, apparently willing to talk.
+
+**NPCs introduced:** Cael Duren (bounty collector, Shattered Reach; patron unknown). Unnamed rebels (lower city; non-hostile to party).
