@@ -1,33 +1,35 @@
 # Next Session Brief
 
-*Auto-generated after session 2026-05-18. Do not edit — will be overwritten after each session.*
+*Auto-generated. Do not edit — will be overwritten after each session.*
 
-LOCATION: Shard C — Sea of Governance, city (lower streets / rebel safehouse area)
-
+LOCATION: Shardsea of Governance — unnamed port city, lower streets (post-ambush)
 PARTY:
-- Rides the Wake (Barbarian/Berserker) HP 1/54 AC 13 — *near death; went unconscious during bandit fight*
-- Granit (Cleric/Life Domain) HP **[DM check]** AC 14 — *went unconscious, needed death saves*
-- Lyvriele Enafrya (Fighter/Samurai) HP 53/53 AC 15 — *held the line; full health*
-- Vargr Stormcaller (Bard/College of Spirits) HP **[DM check]** AC 15 — *went unconscious during bandit fight*
+- Rides the Wake (Barbarian) HP: ?/68 AC: 12
+- Granit (Cleric) HP: ?/52 AC: 18
+- Lyvriele Enafrya (Fighter) HP: ?/58 AC: 17
+- Vargr Stormcaller (Bard) HP: ?/49 AC: 14
 
-RECENT EVENTS (Session 2026-05-18 — "Poison and Rebels"):
-- Party arrived at Shard C port; Cael Duren (freelance bounty collector, Shattered Reach) intercepted them at Pier 7 with two companions and a veiled threat about their cargo
-- Vargr performed under pressure (Performance 22); Duren's crew unsettled, he held composure but showed cracks
-- Three bandits with poison daggers ambushed the party in the city — efficient, nearly decisive
-- Granit, Rides the Wake, and Vargr went unconscious; Lyvriele alone kept them alive
-- Party defeated all three bandits; found rebels in the city's lower streets (non-hostile initial contact)
-- *Note: No Plaud audio captured for this session; record built from channel debrief + live session companion data.*
+RECENT EVENTS:
+- Cael Duren, freelance bounty collector (Shattered Reach), met party at Pier Seven with veiled threat: "the people I represent want what's in your hold" — patron unnamed, no move made
+- Three bandits with poison-coated daggers ambushed the party in the lower city — near-decisive; Granit, Rides the Wake, and Vargr all downed
+- Lyvriele alone kept her feet and prevented a total party wipe
+- Bandits neutralized; bodies available for searching/identification
+- Rebels located in lower city following the ambush — initial contact non-hostile
+- Party has not yet purchased rations, sea charts, or completed equipment maintenance
+- No contact made with local institutional power brokers, merchants, or naval authority
+- Ship weapon and defense upgrades available at Shard C — not yet pursued
+- Free Wand of Wonder (DM-confirmed level-up reward) not yet distributed
 
 OPEN THREADS:
-- **Who hired Duren?** Someone knew the party was coming and knew what they're carrying. That's intelligence, not luck.
-- **Party HP is dire** — Rides the Wake at 1 HP, two others at unknown depleted HP. Long rest before any engagement is not optional.
-- **The rebels** — who are they, what's their cause, what do they know about Shard C's governance crisis? This is the first real local contact.
-- Rations and sea charts still not acquired (carried forward from session setup)
-- Wand of Wonder distribution still pending (DM-confirmed party reward)
-- The spreading purple leyline corruption — Shard C's governance crisis may be a local expression of it
+- Who hired Cael Duren, and what do they believe is in the party's hold?
+- What do the rebels want, who are they fighting against, and what do they offer in exchange for alliance?
+- Poison-dagger bandits — are they connected to Duren's patron, the rebels' enemies, or a third faction?
+- What is the party's specific objective within the Shardsea of Governance?
 
 KEY NPCS:
-- **Cael Duren** — Bounty collector, Shattered Reach; not Guild. Patron unknown. Had two companions. Retreated after Vargr's performance; status: at large and presumably still watching.
-- **The Rebels** (unnamed) — Encountered in city lower streets. Non-hostile. "You all don't seem like bad people." Affiliation, agenda, and numbers unknown. First real political contact in Shard C.
+- Cael Duren: Freelance bounty collector, Shattered Reach, no Guild affiliation; threatened the party at Pier Seven; patron unknown; composure pressured by Vargr but held; at large
+- The Rebels (unnamed): Lower city, unknown affiliation and agenda; non-hostile to party; available for contact immediately following ambush
 
-PARTY CONDITION: Severely depleted. Long rest is indicated before next meaningful engagement. The rebels represent an opportunity — whether for shelter, rest, information, or alliance — that the party would be wise not to squander while they're this vulnerable.
+PARTY CONDITION: Three of four members went down in the ambush — significant resources expended, likely healing spell slots and possibly HD spent. Exact current HP unknown pending DM confirmation. Morale is functional but the near-wipe will register; the party knows this city has teeth.
+
+CAMPAIGN CONTEXT: The Shardsea of Governance controls civilization's nervous system — trade routes, naval authority, and institutional power all concentrate here. Unlike the raw elemental danger of Shard A or the spiritual corruption of Shard B, the threat here is structural: competing factions, hidden patrons, and political leverage. The party arrived into a power struggle already in motion — someone knows they're here, knows what they're carrying (or believes they do), and moved against them within hours of landfall. The rebels in the lower city suggest an existing conflict between institutional authority and an organized opposition. Vargr's College of Spirits access means the history of this place and its dead are potential intelligence sources. The leyline corruption seen in the Compass of Lost Tides vision remains the macro-threat threading through all three Shardseas — whatever is happening here likely connects to it.
