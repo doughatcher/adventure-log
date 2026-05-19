@@ -1,3 +1,0 @@
-## PANEL: scene
-
-*New session.*

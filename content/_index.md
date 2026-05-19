@@ -22,9 +22,26 @@ The Sea of Governance is named for a reason. Whoever controls these waters contr
 
 ---
 
+## Where We Are
+
+The party made landfall in the Sea of Governance on May 18th. Within minutes of clearing the gangway, they were warned — politely, professionally — that someone wanted what was in their hold. Before the night was out they had visited a temple of Bahamut whose priest could not say much but said enough, acquired weapons at a merchant near the Scarecrow, and survived a coordinated ambush in the lower streets that left three of the four lying in the gutter.
+
+Lyvriele Enafrya did not fall. That will matter.
+
+The rebels they came to find have apparently made contact. Whether that is fortune or the next layer of complication has not been established.
+
+**Current party condition:** Alive. Diminished. One long rest from functional — if they get one.
+
+---
+
 ## The Party
 
-Four adventurers. Level 7. Two Shards cleared. One ahead. The accounting comes due.
+| Character | Class | HP |
+|-----------|-------|----|
+| Rides the Wake | Barbarian / Berserker | 1 / 54 |
+| Granit | Cleric / Life Domain | 13 / 38 |
+| Lyvriele Enafrya | Fighter / Samurai | 53 / 53 |
+| Vargr Stormcaller | Bard / College of Spirits | 25 / 38 |
 
 ---
 

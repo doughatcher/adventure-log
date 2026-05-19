@@ -1,3 +1,0 @@
-## PANEL: map
-
-*New session.*

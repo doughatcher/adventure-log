@@ -3,7 +3,7 @@ ac: 14
 class: Cleric / Life Domain
 hp_current: 13
 hp_max: 38
-last_updated: '2026-05-17'
+last_updated: '2026-05-18'
 race: Dwarf
 slug: granit
 status: alive
@@ -16,4 +16,4 @@ A dwarf cleric of the Life Domain — healer, anchor, the kind of steadiness a p
 
 Through two Shards, Granit has been the margin. Shard A's wild hostility and Shard B's escalating corruption both demanded the same thing: someone who could keep the others standing long enough to matter. The Life Domain amplifies healing in ways that are hard to quantify until the moment the math would have failed without them. Granit knows this and does not mention it.
 
-Now the party stands at the threshold of Shard C — the Sea of Governance — and Granit has arrived fully rested, fully resourced, and entirely unhurried. If the pattern of the Shards holds, this one will ask something different of the world's institutions than nature or corruption required. Granit, whose gods apparently permit all things, seems prepared for whatever that turns out to mean.
+The Sea of Governance announced itself plainly on the first night ashore: a poisoned dagger in a dark street, and then the numbers moving in the wrong direction fast. Granit went down before the healing could come back around. The death saves were real. The party survived, and so did Granit — but arrived at the other side of the encounter low on resources, poisoned, and diminished in ways that a night's rest will partially answer. Shard C does not test patience and endurance the way the first two did. It tests the margin differently.

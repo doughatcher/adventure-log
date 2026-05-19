@@ -1,3 +1,0 @@
-## PANEL: party
-
-*New session.*

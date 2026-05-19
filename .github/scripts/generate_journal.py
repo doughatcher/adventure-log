@@ -7,11 +7,17 @@ Reads the latest session archive, calls Claude to generate:
   2. content/characters/<slug>.md          — character pages (updated)
   3. context/next-session-brief.md         — dense AI context for next game
 
+Session archives must be named YYYY-MM-DD-HHMM (e.g. 2026-05-18-2100).
+Non-date-named directories in data/sessions/ are ignored.
+
+When multiple archives share the same calendar date, they are merged:
+the most recent (by time suffix) is treated as canonical for state/scene/
+story-log/next-steps, and all transcripts are concatenated chronologically.
+
 Usage:
     ANTHROPIC_API_KEY=... python .github/scripts/generate_journal.py
 """
 import json
-import os
 import re
 import sys
 from datetime import datetime, timezone
@@ -28,18 +34,37 @@ CONTEXT_DIR = REPO / "context"
 SESSIONS_DIR = DATA_DIR / "sessions"
 CHARS_DATA_DIR = DATA_DIR / "characters"
 
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}")
+
 MODEL = "claude-sonnet-4-6"
 client = anthropic.Anthropic()
 
 
-# ── Helpers ──
+# ── Session discovery ──
 
-def find_latest_session() -> Path | None:
+def _is_date_archive(d: Path) -> bool:
+    return d.is_dir() and bool(DATE_RE.match(d.name))
+
+
+def find_session_group() -> tuple[Path, list[Path]] | None:
+    """Return (canonical_archive, all_archives_same_date) for the latest session date.
+
+    canonical = the archive with the latest timestamp on the most recent date.
+    all_archives = every archive sharing that calendar date, sorted oldest-first.
+    Non-date-named directories are skipped entirely.
+    """
     if not SESSIONS_DIR.exists():
         return None
-    dirs = sorted([d for d in SESSIONS_DIR.iterdir() if d.is_dir()])
-    return dirs[-1] if dirs else None
+    archives = sorted([d for d in SESSIONS_DIR.iterdir() if _is_date_archive(d)])
+    if not archives:
+        return None
+    canonical = archives[-1]
+    date_prefix = canonical.name[:10]
+    same_day = [a for a in archives if a.name.startswith(date_prefix)]
+    return canonical, same_day
 
+
+# ── Helpers ──
 
 def read_file(path: Path, max_chars: int = 0) -> str:
     if not path.exists():
@@ -48,6 +73,44 @@ def read_file(path: Path, max_chars: int = 0) -> str:
     if max_chars and len(text) > max_chars:
         text = "...[truncated]\n" + text[-max_chars:]
     return text
+
+
+def merge_transcripts(archives: list[Path], max_chars: int = 8000) -> str:
+    """Concatenate transcripts from multiple archives, oldest first.
+
+    Whisper output is noisy — strip lines that look like ASR artefacts
+    (repeated filler phrases, URL spam, generic meta-commentary) before
+    passing to Claude so it spends tokens on actual game content.
+    """
+    NOISE = re.compile(
+        r"(character(?:s)? (?:are|is) often (?:called|described|used)|"
+        r"globalonenessproject\.org|www\.\S+\.(?:com|org|au)|"
+        r"audio from (?:a )?tabletop|tabletop role-playing game session|"
+        r"for more information|visit (?:our |the )?website|"
+        r"gameplay\s*$|sound effects from the game|"
+        r"the game(?:'s gameplay)? is (?:a game|played|pretty|also)|"
+        r"the character(?:'s character)? is (?:a|the) (?:human|monster|character))",
+        re.IGNORECASE,
+    )
+
+    parts = []
+    for archive in archives:
+        raw = read_file(archive / "transcript.md")
+        if not raw:
+            continue
+        lines = []
+        for line in raw.splitlines():
+            stripped = line.strip()
+            if stripped and not NOISE.search(stripped):
+                lines.append(line)
+        cleaned = "\n".join(lines).strip()
+        if cleaned:
+            parts.append(f"[from archive {archive.name}]\n{cleaned}")
+
+    combined = "\n\n".join(parts)
+    if max_chars and len(combined) > max_chars:
+        combined = "...[truncated]\n" + combined[-max_chars:]
+    return combined
 
 
 def load_existing_characters() -> dict[str, dict]:
@@ -96,10 +159,12 @@ def call_claude(system: str, user: str, max_tokens: int = 2000) -> str:
 # ── Phase 1: Session journal ──
 
 JOURNAL_SYSTEM = """You are a chronicler writing narrative session journals for a D&D campaign website.
-Style: in-world prose, past tense, evocative but not overwrought, 3-5 paragraphs.
+Style: in-world prose, past tense, evocative but not overwrought, 4-7 paragraphs.
 Write as an omniscient narrator who witnessed everything. Use character names, not player names.
-Include: what happened, dramatic moments, consequences, atmosphere.
-Omit: rules discussion, OOC chat, meta-game talk."""
+Include: what happened scene by scene, dramatic moments, consequences, atmosphere, NPC interactions.
+The transcript is a noisy Whisper transcription — extract real in-game dialogue and events; ignore
+out-of-character chatter, rules discussion, and any lines that are clearly transcription garbage.
+Omit: OOC chat, meta-game talk, rules mechanics. Prose only — no headers, no bullet points."""
 
 JOURNAL_USER = """Write a narrative journal entry for this D&D session.
 
@@ -112,7 +177,7 @@ STORY LOG (key events):
 NEXT STEPS (hooks going forward):
 {next_steps}
 
-TRANSCRIPT EXCERPT (last portion of session):
+TRANSCRIPT (cleaned Whisper output — extract real game events, ignore noise):
 {transcript}
 
 GAME STATE:
@@ -124,12 +189,12 @@ CAMPAIGN BACKGROUND:
 Output ONLY the journal prose — no titles, no headers, no frontmatter."""
 
 
-def generate_journal(archive: Path, state: dict, history: str) -> str:
+def generate_journal(canonical: Path, all_archives: list[Path], state: dict, history: str) -> str:
     print("[journal] Generating session narrative...")
-    scene = read_file(archive / "scene.md").replace("## PANEL: scene", "").strip()
-    story = read_file(archive / "story-log.md").replace("## PANEL: story-log", "").strip()
-    nexts = read_file(archive / "next-steps.md").replace("## PANEL: next-steps", "").strip()
-    transcript = read_file(archive / "transcript.md", max_chars=6000)
+    scene = read_file(canonical / "scene.md").replace("## PANEL: scene", "").strip()
+    story = read_file(canonical / "story-log.md").replace("## PANEL: story-log", "").strip()
+    nexts = read_file(canonical / "next-steps.md").replace("## PANEL: next-steps", "").strip()
+    transcript = merge_transcripts(all_archives, max_chars=8000)
     state_str = json.dumps(state, indent=2)[:2000]
     prose = call_claude(
         JOURNAL_SYSTEM,
@@ -141,28 +206,25 @@ def generate_journal(archive: Path, state: dict, history: str) -> str:
             state=state_str,
             history=history,
         ),
-        max_tokens=1500,
+        max_tokens=2000,
     )
     return prose
 
 
-def write_session_page(archive_name: str, prose: str, state: dict) -> Path:
+def write_session_page(canonical_name: str, prose: str, state: dict) -> Path:
     session_name = state.get("session_name") or "Session"
     location = state.get("location") or ""
-    # Archive directories are expected to be named YYYY-MM-DD-..., but tolerate
-    # legacy/test names by falling back to today's date so Hugo can still build.
-    date_str = archive_name[:10]
-    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date_str):
-        date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    date_str = canonical_name[:10]
 
     post = frontmatter.Post(
         prose,
         title=f"{session_name}",
         date=f"{date_str}T00:00:00Z",
         location=location,
-        source_archive=archive_name,
+        source_archive=canonical_name,
     )
-    out = CONTENT_DIR / "sessions" / f"{archive_name}.md"
+    # Write to the date-only stem so one canonical file exists per session date.
+    out = CONTENT_DIR / "sessions" / f"{date_str}-session.md"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(frontmatter.dumps(post))
     print(f"[journal] Wrote session page: {out}")
@@ -173,8 +235,8 @@ def write_session_page(archive_name: str, prose: str, state: dict) -> Path:
 
 CHAR_SYSTEM = """You are writing character profile pages for a D&D campaign website.
 For each character, write 2-4 short paragraphs of personality, inferred backstory, and what they did this session.
-Base inferences on how they spoke and acted. Be evocative but not overwrought.
-Use in-world perspective — these are real people in the world."""
+Base inferences on how they spoke and acted in the transcript. Ignore transcript noise (ASR garbage).
+Be evocative but not overwrought. Use in-world perspective — these are real people in the world."""
 
 CHAR_USER = """Update character profiles based on this session.
 
@@ -184,7 +246,7 @@ CHARACTERS IN GAME STATE:
 SESSION STORY LOG:
 {story_log}
 
-TRANSCRIPT EXCERPT:
+TRANSCRIPT (cleaned — extract real in-game moments only):
 {transcript}
 
 EXISTING CHARACTER PROFILES (preserve continuity, build on these):
@@ -198,7 +260,7 @@ For each character slug in the game state, output a block:
 Output ALL party characters (is_enemy=false). Skip enemies."""
 
 
-def generate_characters(archive: Path, state: dict) -> dict[str, str]:
+def generate_characters(canonical: Path, all_archives: list[Path], state: dict) -> dict[str, str]:
     print("[journal] Generating character profiles...")
     chars = state.get("characters", {})
     party = {s: c for s, c in chars.items() if not c.get("is_enemy") and c.get("status") != "dead"}
@@ -209,7 +271,6 @@ def generate_characters(archive: Path, state: dict) -> dict[str, str]:
     existing = load_existing_characters()
     existing_text = ""
     for slug, data in existing.items():
-        fm = data["frontmatter"]
         existing_text += f"\n### {slug}\n{data['body']}\n"
 
     char_list = "\n".join(
@@ -217,8 +278,8 @@ def generate_characters(archive: Path, state: dict) -> dict[str, str]:
         for s, c in party.items()
     )
 
-    story = read_file(archive / "story-log.md").replace("## PANEL: story-log", "").strip()
-    transcript = read_file(archive / "transcript.md", max_chars=4000)
+    story = read_file(canonical / "story-log.md").replace("## PANEL: story-log", "").strip()
+    transcript = merge_transcripts(all_archives, max_chars=5000)
 
     raw = call_claude(
         CHAR_SYSTEM,
@@ -231,7 +292,6 @@ def generate_characters(archive: Path, state: dict) -> dict[str, str]:
         max_tokens=2000,
     )
 
-    # Parse ## CHARACTER: <slug> ... ## END blocks
     results = {}
     for block in re.split(r"^## CHARACTER:\s*", raw, flags=re.MULTILINE):
         block = block.strip()
@@ -256,7 +316,6 @@ def write_character_pages(char_prose: dict[str, str], state: dict) -> None:
         char_data = chars.get(slug, {})
         stats = char_stats.get(slug, {})
 
-        # Load existing page to preserve any hand-written content
         existing_path = out_dir / f"{slug}.md"
         existing_fm = {}
         if existing_path.exists():
@@ -266,7 +325,6 @@ def write_character_pages(char_prose: dict[str, str], state: dict) -> None:
             except Exception:
                 pass
 
-        # Merge: game state wins for stats, existing wins for hand-written fields
         hp = char_data.get("hp") or stats.get("hp_current") or existing_fm.get("hp_current", 0)
         max_hp = char_data.get("max_hp") or stats.get("hp_max") or existing_fm.get("hp_max", 0)
         ac = char_data.get("ac") or stats.get("ac") or existing_fm.get("ac", 0)
@@ -324,10 +382,10 @@ PARTY CONDITION: <1-2 sentences on overall health, resources spent, morale>
 CAMPAIGN CONTEXT: <1 paragraph of world/setting context relevant to next session>"""
 
 
-def generate_brief(archive: Path, state: dict, history: str) -> str:
+def generate_brief(canonical: Path, state: dict, history: str) -> str:
     print("[journal] Generating next-session brief...")
-    story = read_file(archive / "story-log.md").replace("## PANEL: story-log", "").strip()
-    nexts = read_file(archive / "next-steps.md").replace("## PANEL: next-steps", "").strip()
+    story = read_file(canonical / "story-log.md").replace("## PANEL: story-log", "").strip()
+    nexts = read_file(canonical / "next-steps.md").replace("## PANEL: next-steps", "").strip()
     return call_claude(
         BRIEF_SYSTEM,
         BRIEF_USER.format(
@@ -343,45 +401,47 @@ def generate_brief(archive: Path, state: dict, history: str) -> str:
 def write_brief(brief: str) -> None:
     out = CONTEXT_DIR / "next-session-brief.md"
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(f"# Next Session Brief\n\n*Auto-generated. Do not edit — will be overwritten after each session.*\n\n{brief}\n")
+    out.write_text(
+        "# Next Session Brief\n\n"
+        "*Auto-generated. Do not edit — will be overwritten after each session.*\n\n"
+        f"{brief}\n"
+    )
     print(f"[journal] Wrote context brief: {out}")
 
 
 # ── Main ──
 
 def main():
-    archive = find_latest_session()
-    if not archive:
-        print("[journal] No session archives found. Exiting.")
+    result = find_session_group()
+    if not result:
+        print("[journal] No date-named session archives found. Exiting.")
         sys.exit(0)
 
-    print(f"[journal] Processing archive: {archive.name}")
+    canonical, all_archives = result
+    print(f"[journal] Canonical archive: {canonical.name}")
+    if len(all_archives) > 1:
+        print(f"[journal] Merging {len(all_archives)} archives for {canonical.name[:10]}: {[a.name for a in all_archives]}")
 
-    # Load state
-    state_path = archive / "state.json"
+    state_path = canonical / "state.json"
     state = json.loads(state_path.read_text()) if state_path.exists() else {}
 
-    # Load campaign history
     history = read_file(CONTEXT_DIR / "campaign-history.md")
 
-    # Phase 1: Journal
     try:
-        prose = generate_journal(archive, state, history)
-        write_session_page(archive.name, prose, state)
+        prose = generate_journal(canonical, all_archives, state, history)
+        write_session_page(canonical.name, prose, state)
     except Exception as e:
         print(f"[journal] ERROR — journal generation failed: {e}")
 
-    # Phase 2: Characters
     try:
-        char_prose = generate_characters(archive, state)
+        char_prose = generate_characters(canonical, all_archives, state)
         if char_prose:
             write_character_pages(char_prose, state)
     except Exception as e:
         print(f"[journal] ERROR — character generation failed: {e}")
 
-    # Phase 3: Brief
     try:
-        brief = generate_brief(archive, state, history)
+        brief = generate_brief(canonical, state, history)
         write_brief(brief)
     except Exception as e:
         print(f"[journal] ERROR — brief generation failed: {e}")
