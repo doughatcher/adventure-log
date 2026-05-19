@@ -1,9 +1,9 @@
 ---
 ac: 13
 class: Barbarian / Path of the Berserker
-hp_current: 54
+hp_current: 1
 hp_max: 54
-last_updated: '2026-05-17'
+last_updated: '2026-05-19'
 race: Human
 slug: rides-the-wake
 status: alive
