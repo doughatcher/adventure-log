@@ -35,6 +35,10 @@ SESSIONS_DIR = DATA_DIR / "sessions"
 CHARS_DATA_DIR = DATA_DIR / "characters"
 
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}")
+DATETIME_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})-(\d{4})$")
+
+# Archives whose timestamps are within this many hours of each other are merged.
+SESSION_MERGE_HOURS = 20
 
 MODEL = "claude-sonnet-4-6"
 client = anthropic.Anthropic()
@@ -46,22 +50,44 @@ def _is_date_archive(d: Path) -> bool:
     return d.is_dir() and bool(DATE_RE.match(d.name))
 
 
-def find_session_group() -> tuple[Path, list[Path]] | None:
-    """Return (canonical_archive, all_archives_same_date) for the latest session date.
+def _parse_archive_dt(d: Path) -> datetime | None:
+    """Parse YYYY-MM-DD-HHMM archive name to a UTC datetime, or None."""
+    m = DATETIME_RE.match(d.name)
+    if not m:
+        return None
+    try:
+        return datetime.strptime(f"{m.group(1)} {m.group(2)}", "%Y-%m-%d %H%M").replace(tzinfo=timezone.utc)
+    except ValueError:
+        return None
 
-    canonical = the archive with the latest timestamp on the most recent date.
-    all_archives = every archive sharing that calendar date, sorted oldest-first.
+
+def find_session_group() -> tuple[Path, list[Path]] | None:
+    """Return (canonical_archive, merged_group) for the latest session.
+
+    Archives are grouped when consecutive timestamps are within SESSION_MERGE_HOURS
+    of each other (handles sessions spanning midnight and same-day multi-archives).
+    canonical = the archive with the latest timestamp in the group.
     Non-date-named directories are skipped entirely.
     """
     if not SESSIONS_DIR.exists():
         return None
-    archives = sorted([d for d in SESSIONS_DIR.iterdir() if _is_date_archive(d)])
-    if not archives:
+
+    dated = [(d, _parse_archive_dt(d)) for d in SESSIONS_DIR.iterdir() if _is_date_archive(d)]
+    dated = [(d, dt) for d, dt in dated if dt is not None]
+    if not dated:
         return None
-    canonical = archives[-1]
-    date_prefix = canonical.name[:10]
-    same_day = [a for a in archives if a.name.startswith(date_prefix)]
-    return canonical, same_day
+    dated.sort(key=lambda x: x[1])
+
+    # Walk backwards from the latest archive, absorbing any that fall within the window.
+    canonical, canonical_dt = dated[-1]
+    group = [canonical]
+    for d, dt in reversed(dated[:-1]):
+        if (canonical_dt - dt).total_seconds() <= SESSION_MERGE_HOURS * 3600:
+            group.append(d)
+        else:
+            break
+    group.sort(key=lambda d: _parse_archive_dt(d))
+    return canonical, group
 
 
 # ── Helpers ──
@@ -211,10 +237,31 @@ def generate_journal(canonical: Path, all_archives: list[Path], state: dict, his
     return prose
 
 
+def find_existing_session_file(date_str: str) -> Path | None:
+    """Return an existing content/sessions file for this date, if any."""
+    sessions_dir = CONTENT_DIR / "sessions"
+    if not sessions_dir.exists():
+        return None
+    # Prefer files that start with the date prefix over generic -session.md
+    candidates = sorted(sessions_dir.glob(f"{date_str}*.md"))
+    # Exclude _index.md and the generic -session.md fallback so we land on any
+    # hand-named file (e.g. 2026-05-18-2100.md) before the generated one.
+    hand_named = [f for f in candidates if not f.name.endswith("-session.md") and not f.stem.startswith("_")]
+    if hand_named:
+        return hand_named[0]
+    generated = [f for f in candidates if f.name.endswith("-session.md")]
+    return generated[0] if generated else None
+
+
 def write_session_page(canonical_name: str, prose: str, state: dict) -> Path:
     session_name = state.get("session_name") or "Session"
     location = state.get("location") or ""
     date_str = canonical_name[:10]
+
+    # Reuse an existing file for this date rather than creating a parallel one.
+    existing = find_existing_session_file(date_str)
+    out = existing if existing else CONTENT_DIR / "sessions" / f"{date_str}-session.md"
+    out.parent.mkdir(parents=True, exist_ok=True)
 
     post = frontmatter.Post(
         prose,
@@ -223,9 +270,6 @@ def write_session_page(canonical_name: str, prose: str, state: dict) -> Path:
         location=location,
         source_archive=canonical_name,
     )
-    # Write to the date-only stem so one canonical file exists per session date.
-    out = CONTENT_DIR / "sessions" / f"{date_str}-session.md"
-    out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(frontmatter.dumps(post))
     print(f"[journal] Wrote session page: {out}")
     return out
