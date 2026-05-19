@@ -1,0 +1,19 @@
+{
+  "characters": {
+    "rides-the-wake": {
+      "ac": null,
+      "class": "",
+      "conditions": [],
+      "hp": 1,
+      "is_enemy": false,
+      "max_hp": 50,
+      "name": "Ride's the Wake",
+      "notes": "PC",
+      "status": "alive"
+    }
+  },
+  "combat_active": false,
+  "initiative_order": [],
+  "location": "unknown",
+  "round": 0
+}
