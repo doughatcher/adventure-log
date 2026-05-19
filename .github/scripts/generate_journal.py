@@ -215,6 +215,41 @@ CAMPAIGN BACKGROUND:
 Output ONLY the journal prose — no titles, no headers, no frontmatter."""
 
 
+TITLE_SYSTEM = """You write titles for D&D campaign journal entries.
+Rules: 2-5 words. Evocative, in-world, specific to what happened. No generic phrases like
+"Session", "The Adventure", "A New Chapter". Draw from a key moment, location, NPC, or turning point.
+Examples of good titles: "Poison and Rebels", "The Purposeful Currents", "Duren at Pier Seven",
+"What the Priest Would Not Say", "Lyvriele Does Not Fall"."""
+
+TITLE_USER = """Write a session title for this D&D session.
+
+SCENE AT SESSION END:
+{scene}
+
+STORY LOG:
+{story_log}
+
+TRANSCRIPT EXCERPT (first 1000 chars):
+{transcript_excerpt}
+
+Output ONLY the title — no quotes, no punctuation at the end, no explanation."""
+
+
+def generate_title(canonical: Path, all_archives: list[Path]) -> str:
+    scene = read_file(canonical / "scene.md").replace("## PANEL: scene", "").strip()
+    story = read_file(canonical / "story-log.md").replace("## PANEL: story-log", "").strip()
+    transcript = merge_transcripts(all_archives, max_chars=1000)
+    return call_claude(
+        TITLE_SYSTEM,
+        TITLE_USER.format(
+            scene=scene or "(not recorded)",
+            story_log=story or "(not recorded)",
+            transcript_excerpt=transcript or "(empty)",
+        ),
+        max_tokens=30,
+    )
+
+
 def generate_journal(canonical: Path, all_archives: list[Path], state: dict, history: str) -> str:
     print("[journal] Generating session narrative...")
     scene = read_file(canonical / "scene.md").replace("## PANEL: scene", "").strip()
@@ -242,10 +277,7 @@ def find_existing_session_file(date_str: str) -> Path | None:
     sessions_dir = CONTENT_DIR / "sessions"
     if not sessions_dir.exists():
         return None
-    # Prefer files that start with the date prefix over generic -session.md
     candidates = sorted(sessions_dir.glob(f"{date_str}*.md"))
-    # Exclude _index.md and the generic -session.md fallback so we land on any
-    # hand-named file (e.g. 2026-05-18-2100.md) before the generated one.
     hand_named = [f for f in candidates if not f.name.endswith("-session.md") and not f.stem.startswith("_")]
     if hand_named:
         return hand_named[0]
@@ -253,20 +285,38 @@ def find_existing_session_file(date_str: str) -> Path | None:
     return generated[0] if generated else None
 
 
-def write_session_page(canonical_name: str, prose: str, state: dict) -> Path:
-    session_name = state.get("session_name") or "Session"
+def is_hand_edited(path: Path) -> bool:
+    """Return True if this file should not be overwritten by the generator.
+
+    A file is hand-edited if it exists and has generated: false (or no generated field).
+    Files written by the generator carry generated: true.
+    """
+    if not path.exists():
+        return False
+    try:
+        post = frontmatter.load(str(path))
+        return not post.metadata.get("generated", False)
+    except Exception:
+        return True
+
+
+def write_session_page(canonical_name: str, title: str, prose: str, state: dict) -> Path | None:
     location = state.get("location") or ""
     date_str = canonical_name[:10]
 
-    # Reuse an existing file for this date rather than creating a parallel one.
     existing = find_existing_session_file(date_str)
+    if existing and is_hand_edited(existing):
+        print(f"[journal] Skipping session page — hand-edited file exists: {existing}")
+        return existing
+
     out = existing if existing else CONTENT_DIR / "sessions" / f"{date_str}-session.md"
     out.parent.mkdir(parents=True, exist_ok=True)
 
     post = frontmatter.Post(
         prose,
-        title=f"{session_name}",
+        title=title,
         date=f"{date_str}T00:00:00Z",
+        generated=True,
         location=location,
         source_archive=canonical_name,
     )
@@ -472,8 +522,10 @@ def main():
     history = read_file(CONTEXT_DIR / "campaign-history.md")
 
     try:
+        title = generate_title(canonical, all_archives)
+        print(f"[journal] Session title: {title}")
         prose = generate_journal(canonical, all_archives, state, history)
-        write_session_page(canonical.name, prose, state)
+        write_session_page(canonical.name, title, prose, state)
     except Exception as e:
         print(f"[journal] ERROR — journal generation failed: {e}")
 
