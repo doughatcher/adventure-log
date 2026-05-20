@@ -2,36 +2,35 @@
 
 *Auto-generated. Do not edit — will be overwritten after each session.*
 
-LOCATION: Shardsea of Governance — city in the lower streets, exact node unspecified; post-ambush site near rebel contact zone
+LOCATION: Shardsea of Governance — lower city, unnamed port settlement (Pier Seven district / rebel contact zone)
 
 PARTY:
-- Rides the Wake (Barbarian/Berserker) 1/50 AC 12 — CRITICAL; recently died and revived or stabilized; status precarious
-- Granit (Cleric/Life Domain) HP unknown/52 AC 18 — went down in ambush; current status unconfirmed
-- Lyvriele Enafrya (Fighter/Samurai) HP unknown/58 AC 17 — last standing in ambush; condition best of group
-- Vargr Stormcaller (Bard/College of Spirits) HP unknown/49 AC 14 — went down in ambush; current status unconfirmed
+- Rides the Wake (Barbarian/Berserker) 1/50 HP AC 12 [CRITICAL — near death, campaign history shows max HP 68 but session data shows 50/1]
+- Granit (Cleric/Life Domain) HP unknown/52 AC 18 [went down in bandit ambush, status uncertain]
+- Lyvriele Enafrya (Fighter/Samurai) HP unknown/58 AC 17 [held the line, only PC confirmed standing post-ambush]
+- Vargr Stormcaller (Bard/College of Spirits) HP unknown/49 AC 14 [went down in bandit ambush, status uncertain]
 
 RECENT EVENTS:
-- Rides the Wake reduced to 1 HP (effectively dead/stabilized) — party is in crisis state
-- Poison-coated dagger ambush nearly wiped the party; Granit, Rides the Wake, and Vargr all downed
-- Lyvriele held the line alone and kept the party alive — decisive individual action
-- Three bandits with coordinated poison tactics neutralized — professional hit, not random crime
-- Cael Duren issued veiled dock threat at Pier Seven — patron unnamed, wanted "what's in your hold"
-- Vargr's unsettling musical performance cracked Duren's composure but did not break him
-- Rebel contacts identified in lower city — non-hostile, willing to talk
-- Party has not yet accessed rebels; near-wipe intervened before contact was made
-- Inventory check and resupply still incomplete since landfall
-- Sea charts for next destination not yet obtained
+- Rides the Wake reduced to 1 HP (11 piercing damage received; session log notes death — treat as downed/stabilized pending DM confirmation)
+- Poison-coated dagger ambush: three bandits, nearly decisive — Granit, Rides the Wake, and Vargr all went down
+- Lyvriele single-handedly kept the party alive and ended the fight
+- Rebels located in lower city streets following ambush — non-hostile, apparently willing to talk
+- Cael Duren issued veiled threat at Pier Seven: unnamed patron wants what's in the party's hold
+- Duren's composure cracked under Vargr's Performance pressure but held — patron identity still unknown
+- Party made landfall at Sea of Governance city; no local faction contacts established yet
+- Dark purple miasma corrupting arcane leylines (seen via Compass of Lost Tides vision) remains unaddressed macro-threat
 
 OPEN THREADS:
-- Who hired Cael Duren — what is in the party's hold that someone wants badly enough to send a bounty collector and then poisoners
-- Rebel contact must be made — their identity, agenda, and value to the party's Shard C objective unknown
-- What is the party's actual objective in the Shardsea of Governance — institutional power is threatened but specifics unestablished
-- Party survival logistics: Rides the Wake at 1 HP, multiple members downed, no confirmed long rest available
+- Who is Cael Duren's patron and what specifically do they want from the party's hold?
+- Rebel contact must be made — identity, faction, agenda, and what alliance they offer
+- Party condition critical — healing resources needed urgently before any further engagement
+- What is the party's specific objective within the Shardsea of Governance?
+- Poison-coated daggers suggest organized opposition — who ordered the ambush?
 
 KEY NPCS:
-- Cael Duren: Freelance bounty collector, Shattered Reach; veiled threat at Pier Seven; composure held under pressure; patron and motive unknown; at large and presumably aware ambush occurred
-- The Rebels (unnamed): Lower city, non-hostile to party; agenda unknown; last known position near ambush site; contact window may be closing
+- Cael Duren: Freelance bounty collector, Shattered Reach, no Guild affiliation; veiled threat at Pier Seven; patron unnamed; at large, likely watching
+- The Rebels (unnamed): Lower city, encountered post-ambush; non-hostile to party; agenda and affiliation unknown; represent first potential local alliance
 
-PARTY CONDITION: Party is severely depleted — Rides the Wake at 1 HP, three of four members were downed in the ambush, spell slots and class resources heavily spent. Lyvriele is the only member in reliable fighting shape. A long rest is urgently needed but the street environment post-ambush is exposed and hostile; morale is functional but the near-wipe will register.
+PARTY CONDITION: Party is in dire shape — at least three members were downed in the ambush, Rides the Wake is at critical HP, and spell slots/class features were burned in a losing fight that Lyvriele barely salvaged. A short or long rest is urgently needed before any meaningful engagement; the party is in no condition to meet rebels, pursue Duren, or survive a second ambush.
 
-CAMPAIGN CONTEXT: The Shardsea of Governance controls civilization's nervous system — trade routes, naval authority, and institutional power all concentrate here. Someone is already moving against the party within hours of landfall: the Cael Duren approach was a warning, the poisoners were an escalation. The ambush was professional and targeted, suggesting the party's arrival was anticipated. The rebels operating in the lower city represent an opposing force to whatever power wants the party neutralized. The broader campaign pattern — corrupted leylines spreading dark miasma across the world — implies that Governance is not merely politically contested but cosmologically significant. Whatever is wrong here connects to what was wrong in Elements and Nature's Wrath.
+CAMPAIGN CONTEXT: The Shardsea of Governance controls civilization's trade, communication, and military infrastructure — power here is institutional and contested, not elemental. The party has arrived with a reputation and a hold full of something valuable enough to warrant hired bounty collectors and coordinated poisoned-blade ambushes on day one. The pattern across shards has escalated (nature → corruption → civilization), suggesting the leyline corruption seen after Glaciarra may have a political or institutional vector here. Whoever the rebels are opposing, and whoever Duren is working for, are likely two faces of the same governance struggle — and the party just got caught between them before they even found a tavern.
