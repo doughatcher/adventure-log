@@ -6,7 +6,7 @@ hp_max: 50
 last_updated: '2026-05-20'
 slug: rides-the-wake
 status: alive
-title: Ride's the Wake
+title: Rides the Wake
 ---
 
 Rides the Wake carries herself like someone accustomed to moving through rough water — patient in stillness, overwhelming in motion.
