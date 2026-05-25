@@ -49,7 +49,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add content/ context/next-session-brief.md
           git diff --staged --quiet || git commit -m "chore: update campaign journal [skip ci]"
-          git pull --rebase origin main
+          git pull --rebase -X theirs origin main
           git push || true
 
       - name: Setup Hugo
