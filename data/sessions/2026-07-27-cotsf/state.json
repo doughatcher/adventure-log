@@ -1,0 +1,53 @@
+{
+  "characters": {
+    "magnolia-reed": {
+      "ac": null,
+      "class": "Druid",
+      "conditions": [],
+      "hp": null,
+      "is_enemy": false,
+      "max_hp": null,
+      "name": "Magnolia Reed",
+      "notes": "Elf druid, played by Richard. Mind-controlled by shadow fey bard last session.",
+      "status": "alive"
+    },
+    "tam-holloway": {
+      "ac": null,
+      "class": "Ranger",
+      "conditions": [],
+      "hp": null,
+      "is_enemy": false,
+      "max_hp": null,
+      "name": "Tam Holloway",
+      "notes": "Human ranger, played by Ryan. Hostile stance toward fey authority — liability in court.",
+      "status": "alive"
+    },
+    "judith-quiney": {
+      "ac": null,
+      "class": "Rogue",
+      "conditions": [],
+      "hp": null,
+      "is_enemy": false,
+      "max_hp": null,
+      "name": "Judith \"ShankSpeare\" Quiney",
+      "notes": "Human rogue, played by Dan. Killed the shadow fey bard to break Magnolia's mind control.",
+      "status": "alive"
+    },
+    "aldric-voss": {
+      "ac": null,
+      "class": "Wizard",
+      "conditions": [],
+      "hp": null,
+      "is_enemy": false,
+      "max_hp": null,
+      "name": "Aldric Voss",
+      "notes": "Human wizard, played by Doug.",
+      "status": "alive"
+    }
+  },
+  "combat_active": false,
+  "initiative_order": [],
+  "level": 8,
+  "location": "Free City of Zobeck — approaching Shadow Road portal",
+  "round": 0
+}

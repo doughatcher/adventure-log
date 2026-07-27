@@ -140,3 +140,85 @@ The party made landfall at a city in the Sea of Governance and found trouble wai
 Deeper in the city, three bandits with poison-coated daggers found them. The ambush was efficient and nearly decisive — Granit, Rides the Wake, and Vargr all went down. Lyvriele Enafrya kept her feet and kept the party alive. When the blades were still and the bodies cooling, the thing they had come looking for was within reach: rebels, somewhere in the tangle of the lower streets, apparently willing to talk.
 
 **NPCs introduced:** Cael Duren (bounty collector, Shattered Reach; patron unknown). Unnamed rebels (lower city; non-hostile to party).
+
+---
+
+# Courts of the Shadow Fey (Interim Campaign)
+
+*Vargr Stormcaller (U60TPAE67) is DMing this interim campaign while Richard takes a break. Richard plays Magnolia Reed here. Keep all notes separate from the main campaign above.*
+
+**Module:** Courts of the Shadow Fey (Kobold Press / Midgard setting)
+**Setting:** Free City of Zobeck, Free City of the Crossroads
+**DM:** Vargr (Chris Potter, U60TPAE67)
+**Sessions:** 4 sessions June 2026 (Chapter 1); resumed 2026-07-27 (Chapter 2+)
+**Level:** 8 (as of 2026-07-27)
+**Ruleset:** D&D 2024 (5.5e)
+
+---
+
+## The Party
+
+### Magnolia Reed — Elf Druid (Richard / U60TTDYQJ)
+Elderly dark-skinned elf herbalist, Circle of Dreams druid. Magic item: Moon Sickle +1. Pragmatic about the shadow fey occupation — preventing unnecessary death matters more than governance form. Was mind-controlled by the shadow fey bard; Judith killed the bard rather than Magnolia.
+
+### Tam Holloway — Human Fey Wanderer Ranger (Ryan / U61NMP0UE)
+Strong liberty streak; nearly derailed the ambassador meeting over fey sovereignty. Magic item: Amulet of Proof against Detection and Location. Confrontational stance will be a liability in fey court.
+
+### Judith "ShankSpeare" Quiney — Human Rogue / Bard (Dan / UAJCRURDX)
+Concept: daughter of Sir Bill ShankSpeare, the "greatest spoken word assassin on the planet" — carving her own path. Took Magnolia's attack (mind control); chose to kill the bard instead of Magnolia.
+
+### Aldric Voss — Human Divination Wizard (Doug / U60UZB2FN)
+Self-taught wizard, weaponizes intelligence and social observation. Grew up near Zobeck, son of estate servants. Observant feat. Effective INT 18 (11 prepared spells). Notable prepared spells: Shield, Absorb Elements, Detect Thoughts, Counterspell, Dispel Magic, Misty Step, Fly, Hypnotic Pattern, Polymorph.
+
+---
+
+## Setting
+
+**Free City of Zobeck** is a former monarchy that claimed independence ~100 years ago when the royal line ended. The Shadow Fey courts view this differently: the monarchy held its right to rule by fey grant, and with no heirs, the claim reverts. The "free city" is, to them, unclaimed property.
+
+**Shadow Fey courts:**
+- Summer Court: ruled by the Queen (currently in session)
+- Winter Court: ruled by the King (transition in progress)
+- Shadow Fey seasons do not align to Material Realm seasons
+
+**The occupation:** Shadow Fey guards replaced the city watch at Zobeck's gates. Non-lethal — they teleport anyone who interferes, don't attack. Control without conquest.
+
+---
+
+## Court Impression Mechanic
+
+Vargr confirmed: there is a court-impression mechanic. The more the party impresses the high court through their actions, the better bonuses they receive. Background and species choices matter. Pompous elves dominate the fey courts — social outcast or country-bumpkin characters will struggle. The table needs to roleplay appropriately for a high-political setting.
+
+---
+
+## Key NPCs
+
+**Glanen Thelamandryne** (approximate) — Shadow Fey ambassador. Met at his residence in Zobeck. Nasty dogs at the door. Difficult negotiation — Tam nearly torpedoed it. Party landed barely on "friend." His colleague, posing as an owl on a stand, gifted the party bracers of defense.
+
+**High Priest Oleg** — Temple of Kors. Targeted by shadow fey assassins in Session 1. Survived (party intervened). Temple's operating permission revoked by fey authority.
+
+**Shadow Fey bard** — Combat encounter. Mind-controlled Magnolia against the party. Killed by Judith Quiney.
+
+---
+
+## Session Log
+
+### Chapter 1 (Sessions 1–4, June 2026)
+
+Full details lost — no in-game notes captured across 4 sessions. Reconstructed from Richard's pre-session recap (2026-07-27).
+
+Key events:
+- Party arrived in Zobeck during shadow fey occupation
+- Defended Temple of Kors; stopped assassination attempt on High Priest Oleg
+- Found Elvish note revoking temple authority
+- Shadow fey bard encounter: mind control on Magnolia; Judith killed the bard; Magnolia had stabbed Judith under compulsion
+- Research phase (libraries, fey contacts)
+- Ambassador Glanen Thelamandryne meeting; received bracers of defense from disguised owl-fey
+- Learned portal method and location for the Shadow Road
+- Party classified as "friends" by the ambassador (narrowly)
+
+### Chapter 2 — Session 5 (2026-07-27): The Shadow Road
+
+*(Session stub — in progress at time of writing. To be updated post-session.)*
+
+Party leveled to 8 before session. Food ordered by Vargr. Objective: open the Shadow Road portal, navigate to the Shadow Fey Courts, seek audience with the Summer Queen.
