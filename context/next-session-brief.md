@@ -2,38 +2,34 @@
 
 *Auto-generated. Do not edit — will be overwritten after each session.*
 
-**Campaign:** Courts of the Shadow Fey
-**Last session:** 2026-07-27 (Session 5)
-
----
-
-LOCATION: Shadow Fey realm — arrival point after crossing the Shadow Road; specific location within the realm not documented
-
+LOCATION: Shardsea of Governance — lower city streets, exact node unknown; following bandit ambush site
 PARTY:
-- Magnolia Reed (Druid / Circle of Dreams) Level 8 — alive; was mind-controlled by the bard in a prior session; status entering next session not confirmed
-- Tam Holloway (Ranger / Fey Wanderer) Level 8 — alive; strong anti-fey-authority stance is a known diplomatic liability
-- Judith "ShankSpeare" Quiney (Rogue / Swashbuckler) Level 8 — alive; chose party loyalty over retaliation when Magnolia attacked her under mind control
-- Aldric Voss (Wizard / Divination) Level 8 — alive; died by self-inflicted fireball this session, revived; lasting effects unknown
+- Rides the Wake (Barbarian/Berserker) 1/68 HP, AC 12 — CRITICAL
+- Granit (Cleric/Life Domain) unknown current HP/52 HP, AC 18 — went down in ambush, status post-stabilization unclear
+- Lyvriele Enafrya (Fighter/Samurai) unknown current HP/58 HP, AC 17 — held the line solo, presumed most intact
+- Vargr Stormcaller (Bard/College of Spirits) unknown current HP/49 HP, AC 14 — went down in ambush, status post-stabilization unclear
 
 RECENT EVENTS:
-- Party successfully entered the Shadow Fey realm via the Shadow Road
-- Shadow Road crossing involved a fight against "formidable foes" (names not captured)
-- Aldric Voss: fireball, death, revival — net result: alive, but check for lasting consequences (exhaustion, item damage, attunement loss)
-- Party is at Level 8; all resources depleted by the crossing unless a rest occurred
+- Rides the Wake at 1 HP — effectively dead on feet; one hit ends her
+- Poison-coated dagger ambush dropped Granit, Rides the Wake, and Vargr simultaneously; Lyvriele solo-stabilized the party
+- Three bandits neutralized; poison delivery was coordinated and targeted — not random street crime
+- Cael Duren (bounty collector, Shattered Reach) issued veiled threat at Pier Seven before ambush; patron unnamed; timing suspicious
+- Unnamed rebels made contact in lower city post-ambush; non-hostile; willing to talk
+- Party's ship hold contents are a known target — Duren's patron wants what's inside
+- Compass of Lost Tides previously revealed corrupted leylines spreading dark miasma across the world — escalating cosmological threat
+- Edwin (fifth party member) is absent; world-level parties may know this
 
-OPEN HOOKS:
-- The Shadow Fey Summer Court is in session; the Queen is in power and the seasonal transition toward Winter is in progress — the party's window for negotiating with the Summer Court may be limited
-- Tam's aggressive pro-freedom stance nearly derailed the ambassador negotiation; at court, there will be less room for that
-- The party's stated goal: find a way to preserve Zobeck's independence (or at least its citizens' safety) within the fey political structure — they came as "barely friends," not as adversaries
-- The Winter Court transition creates a potential source of leverage: if the Summer Queen is losing authority, she may want allies
-- What leverage does the party actually have to bring to court?
-- Cael Duren's patron and the contents of the party's hold remain unresolved threads
+OPEN THREADS:
+- Who is Cael Duren's patron and why do they want the ship's hold contents — ambush may be connected
+- Rebel contact must be followed up; agenda, affiliation, and ask all unknown
+- Party needs immediate medical stabilization before any further movement or negotiation
+- Shard C objective undefined — governance theme implies institutional power under threat; no local faction contact made yet
+- Ship resupply incomplete: rations, sea charts, and equipment maintenance all pending
 
-WHAT THE DM SHOULD PREP FOR:
-- First encounter with a named Shadow Fey court figure (beyond the ambassador)
-- Possible short/long rest before audience — party burned resources on the Shadow Road
-- Tam's player (Ryan) may need a check-in about whether the character has evolved since the ambassador meeting
+KEY NPCS:
+- Cael Duren: Freelance bounty collector, Shattered Reach, no Guild affiliation; veiled threat at Pier Seven; patron unknown; at large; possibly coordinated the ambush
+- The Rebels (unnamed): Lower city, non-hostile, cautiously positive first contact; agenda and affiliation unknown; awaiting party follow-up
 
----
+PARTY CONDITION: Party is critically depleted — three members downed and revived in a single ambush, Rides the Wake at 1 HP with no buffer against any threat. Spell slots and Channel Divinity heavily spent on emergency stabilization. Short rest is urgent minimum; long rest is strategically necessary but tactically dangerous given Duren's patron is actively hunting the party.
 
-*Previous brief (Shardsea arc) archived — see campaign-history.md.*
+CAMPAIGN CONTEXT: The Shardsea of Governance controls civilization's nervous system — trade, naval authority, and political power all intersect here. Unlike previous Shardseas (primal nature, essence corruption), this one's danger is institutional: factions with competing interests, bounty networks, and rebel cells operating beneath legitimate power structures. The party has no established allies, no local intelligence, and no knowledge of who governs these waters or why something has gone wrong here. Pattern of Shard escalation — nature, corruption, civilization — implies the threat at Shard C is existential to human political order. The leyline corruption vision from the Compass of Lost Tides suggests all three Shardseas are symptoms of a single spreading disease.
