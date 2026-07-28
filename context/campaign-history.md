@@ -140,3 +140,23 @@ The party made landfall at a city in the Sea of Governance and found trouble wai
 Deeper in the city, three bandits with poison-coated daggers found them. The ambush was efficient and nearly decisive — Granit, Rides the Wake, and Vargr all went down. Lyvriele Enafrya kept her feet and kept the party alive. When the blades were still and the bodies cooling, the thing they had come looking for was within reach: rebels, somewhere in the tangle of the lower streets, apparently willing to talk.
 
 **NPCs introduced:** Cael Duren (bounty collector, Shattered Reach; patron unknown). Unnamed rebels (lower city; non-hostile to party).
+
+---
+
+## Courts of the Shadow Fey (Interim Campaign — DM: Vargr)
+
+A second campaign running concurrently with the Shardsea arc. Vargr is DMing while the main campaign's DM (Richard) continues as a player. Setting: the published adventure *Courts of the Shadow Fey*, set in the Free City of Zobeck and the Shadow Fey realm.
+
+**Party (all Level 8 as of 2026-07-27):**
+- Magnolia Reed — Elven Druid (Circle of Dreams) — played by Richard
+- Tam Holloway — Human Ranger (Fey Wanderer) — played by Ryan
+- Judith "ShankSpeare" Quiney — Human Rogue (Swashbuckler) — played by Dan
+- Aldric Voss — Human Wizard (Divination) — played by Doug
+
+### Session log
+
+**Sessions 1–3 (2026-06-01, 2026-06-08, 2026-06-15):** No post-session notes captured. Party established in Zobeck, Shadow Fey occupation of the city began, temple of Kors attacked by Shadow Fey assassins (high priest Oleg protected). Shadow Fey bard encountered — bard mind-controlled Magnolia Reed, who attacked the party; Judith killed the bard rather than retaliating against her companion. Research and diplomacy phase undertaken.
+
+**Session 4 (2026-06-22):** Party met with the Shadow Fey ambassador Glanen Thelamandryne at his residence. Tense negotiation produced a fragile "barely friends" status. Owl in the ambassador's office revealed as fey in disguise — gifted party bracers of defense. Ambassador explained the fey political structure (Summer Court: Queen currently in power; Winter Court: King; Shadow Fey seasons independent of Material Realm calendar) and how to access the Shadow Realm via the Shadow Road. Party determined to make the crossing. Campaign paused ~4 weeks (Vargr and Richard both unavailable).
+
+**Session 5 (2026-07-27):** Party leveled to 8 and crossed into the Shadow Fey realm via the Shadow Road. Portal successfully created and opened. Formidable combat encountered during the crossing; foes not documented. Aldric Voss died by self-inflicted fireball and was revived. Party arrived in the Shadow Fey realm with the Summer Court in session and the seasonal transition toward Winter in progress.

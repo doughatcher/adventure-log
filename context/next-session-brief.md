@@ -2,35 +2,38 @@
 
 *Auto-generated. Do not edit — will be overwritten after each session.*
 
-LOCATION: Shardsea of Governance — city lower streets, exact node unspecified; post-ambush site near rebel contact point
+**Campaign:** Courts of the Shadow Fey
+**Last session:** 2026-07-27 (Session 5)
+
+---
+
+LOCATION: Shadow Fey realm — arrival point after crossing the Shadow Road; specific location within the realm not documented
+
 PARTY:
-- Rides the Wake (Barbarian/Berserker) 1/50 AC 12 — CRITICAL; story log conflict with campaign HP (68) noted, use 1/50 as current
-- Granit (Cleric/Life Domain) 52/52 AC 18 — assumed stabilized post-ambush
-- Lyvriele Enafrya (Fighter/Samurai) 58/58 AC 17 — assumed functional; held the line solo
-- Vargr Stormcaller (Bard/College of Spirits) 49/49 AC 14 — assumed stabilized post-ambush
+- Magnolia Reed (Druid / Circle of Dreams) Level 8 — alive; was mind-controlled by the bard in a prior session; status entering next session not confirmed
+- Tam Holloway (Ranger / Fey Wanderer) Level 8 — alive; strong anti-fey-authority stance is a known diplomatic liability
+- Judith "ShankSpeare" Quiney (Rogue / Swashbuckler) Level 8 — alive; chose party loyalty over retaliation when Magnolia attacked her under mind control
+- Aldric Voss (Wizard / Divination) Level 8 — alive; died by self-inflicted fireball this session, revived; lasting effects unknown
 
 RECENT EVENTS:
-- Rides the Wake is at 1 HP (critically wounded; story log records a death event — treat as downed-then-stabilized unless DM confirms death)
-- Bandit ambush with poison-coated daggers downed Granit, Rides the Wake, and Vargr simultaneously
-- Lyvriele single-handedly kept the party alive while three members were incapacitated
-- Rebels in the lower city made non-hostile contact post-ambush — willing to talk, identities unknown
-- Cael Duren (Shattered Reach, no Guild) issued veiled threat at Pier Seven regarding party's hold contents; patron unnamed
-- Vargr's unsettling musical performance cracked Duren's composure; threat deferred, not resolved
-- Party has not yet secured rations, sea charts, or local faction contacts
-- Ship weapons/defense upgrades available but unpurchased
-- The Grim Reaper flagged as most powerful monster in current context — nature/origin unknown
+- Party successfully entered the Shadow Fey realm via the Shadow Road
+- Shadow Road crossing involved a fight against "formidable foes" (names not captured)
+- Aldric Voss: fireball, death, revival — net result: alive, but check for lasting consequences (exhaustion, item damage, attunement loss)
+- Party is at Level 8; all resources depleted by the crossing unless a rest occurred
 
-OPEN THREADS:
-- Rides the Wake's status requires immediate triage — 1 HP, possible death ruling pending DM confirmation
-- Rebels must be identified: affiliation, agenda, what they want from the party
-- Cael Duren is at large — patron unknown, threat unresolved, may escalate
-- Party hold contents: something valuable enough to hire a Shattered Reach bounty collector; contents never confirmed in log
-- No short or long rest taken since ambush — spell slots, Channel Divinity, Rage uses unrecovered
+OPEN HOOKS:
+- The Shadow Fey Summer Court is in session; the Queen is in power and the seasonal transition toward Winter is in progress — the party's window for negotiating with the Summer Court may be limited
+- Tam's aggressive pro-freedom stance nearly derailed the ambassador negotiation; at court, there will be less room for that
+- The party's stated goal: find a way to preserve Zobeck's independence (or at least its citizens' safety) within the fey political structure — they came as "barely friends," not as adversaries
+- The Winter Court transition creates a potential source of leverage: if the Summer Queen is losing authority, she may want allies
+- What leverage does the party actually have to bring to court?
+- Cael Duren's patron and the contents of the party's hold remain unresolved threads
 
-KEY NPCS:
-- Cael Duren: Freelance bounty collector, Shattered Reach, no Guild; veiled threat issued at Pier Seven; patron unnamed; at large, likely watching
-- The Rebels (unnamed): Lower-city faction; non-hostile; post-ambush contact initiated; agenda and affiliation unknown; currently accessible
+WHAT THE DM SHOULD PREP FOR:
+- First encounter with a named Shadow Fey court figure (beyond the ambassador)
+- Possible short/long rest before audience — party burned resources on the Shadow Road
+- Tam's player (Ryan) may need a check-in about whether the character has evolved since the ambassador meeting
 
-PARTY CONDITION: Party is in a critically depleted state — three members were downed in the ambush, Rides the Wake is at 1 HP and may be dead pending DM ruling. No rest has occurred. Granit's healing resources are likely severely taxed. Lyvriele is the only member who may have exited combat at functional HP. A rest is not just advisable — it is urgent, and the environment (active hostile interest, unknown rebel contact nearby) makes resting dangerous.
+---
 
-CAMPAIGN CONTEXT: The Shardsea of Governance is civilization's chokepoint — whoever controls these waters controls trade, communication, and military projection. The party has arrived with something in their hold worth hiring bounty collectors over, in a city where rebels operate openly enough to approach strangers in the street after a knife-fight. The ambush was targeted and professional (poison-coated blades, three assailants, nearly decisive against a level-7 party), suggesting it was not random — someone either connected to Duren's patron or operating on parallel intelligence. The escalating pattern across shards (nature → corruption → governance) implies the threat here is institutional and human in character: competing power structures, compromised authority, something wrong at the level of law and control rather than wild force. The Grim Reaper reference sits uncontextualized and should be treated as a live threat flag.
+*Previous brief (Shardsea arc) archived — see campaign-history.md.*
