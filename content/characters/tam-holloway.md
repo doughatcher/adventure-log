@@ -4,7 +4,8 @@ campaign: courts-of-the-shadow-fey
 class: Ranger / Fey Wanderer
 hp_current: null
 hp_max: null
-last_updated: '2026-07-27'
+last_updated: '2026-07-28'
+level: 8
 slug: tam-holloway
 status: alive
 title: Tam Holloway

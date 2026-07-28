@@ -4,7 +4,8 @@ campaign: courts-of-the-shadow-fey
 class: Druid / Circle of Dreams
 hp_current: null
 hp_max: null
-last_updated: '2026-07-27'
+last_updated: '2026-07-28'
+level: 8
 slug: magnolia-reed
 status: alive
 title: Magnolia Reed
