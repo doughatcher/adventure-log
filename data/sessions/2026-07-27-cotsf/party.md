@@ -12,5 +12,6 @@ Strong liberty streak; nearly torpedoed the ambassador meeting over fey sovereig
 Took friendly fire from mind-controlled Magnolia; chose killing the bard over killing her friend.
 
 ### Aldric Voss — Human Wizard (Doug)
+Self-fireballed on the Shadow Road (Session 5); revived. No comment from the party.
 
 ### DM: Vargr (U60TPAE67)

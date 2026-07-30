@@ -20,6 +20,7 @@
 ### Aldric Voss
 - **Class:** Wizard | **Race:** Human | **Level:** 8
 - **Player:** Doug (U60UZB2FN)
+- **Notes:** Killed himself with his own fireball on the Shadow Road (Session 5); revived. No further comment from the party on record.
 
 ### DM
 - **Vargr** (U60TPAE67) — DMing CotSF during Richard's island-arc hiatus.

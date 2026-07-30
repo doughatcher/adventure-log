@@ -5,7 +5,7 @@ hp_current: 1
 hp_max: 50
 last_updated: '2026-07-28'
 slug: rides-the-wake
-status: alive
+status: dead
 title: Ride's the Wake
 ---
 

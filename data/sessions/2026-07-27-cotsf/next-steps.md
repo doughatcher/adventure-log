@@ -1,7 +1,8 @@
 ## PANEL: next-steps
 
-- Open the Shadow Road portal
-- Navigate the Shadow Road (the "dangerous route" — the ambassador and fey use "the bus")
-- Reach the Shadow Fey Courts; seek audience with the Summer Queen
-- Avoid triggering Tam's confrontational streak before reaching court
-- Zobeck's occupation continues; High Priest Oleg and the Temple of Kors status unresolved
+- ~~Open the Shadow Road portal~~ done
+- ~~Navigate the Shadow Road~~ done
+- Seek audience with the Summer Queen (party is in realm, court in session)
+- What does the party have to offer the Queen to make her want to help Zobeck?
+- Tam's confrontational stance toward fey authority remains a liability in court
+- Zobeck occupation continues; High Priest Oleg / Temple of Kors status unresolved

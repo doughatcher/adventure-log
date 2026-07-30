@@ -41,13 +41,13 @@
       "is_enemy": false,
       "max_hp": null,
       "name": "Aldric Voss",
-      "notes": "Human wizard, played by Doug.",
+      "notes": "Human wizard, played by Doug. Killed by self-inflicted fireball on Shadow Road (Session 5); revived.",
       "status": "alive"
     }
   },
   "combat_active": false,
   "initiative_order": [],
   "level": 8,
-  "location": "Free City of Zobeck — approaching Shadow Road portal",
+  "location": "Shadow Fey Realm — Summer Court (arrived Session 5, 2026-07-27)",
   "round": 0
 }

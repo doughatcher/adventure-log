@@ -1,6 +1,7 @@
 ## PANEL: scene
 
-*(Stub — to be updated during session.)*
+*(Updated 2026-07-29 after session played 2026-07-27.)*
 
-Location: Free City of Zobeck, shadow fey occupation active.
-Next: Shadow Road portal site.
+Location: Shadow Fey Realm — Summer Court.
+Party crossed the Shadow Road; arrived intact.
+Next: audience with the Summer Queen.

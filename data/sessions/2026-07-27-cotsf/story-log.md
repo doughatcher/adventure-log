@@ -14,4 +14,6 @@ The Shadow Fey have occupied Zobeck. Fey guards replaced the city watch; they te
 - Fey claim: the monarchy was granted rule by the courts; no monarchy = the courts reclaim what's theirs.
 - Party learned location + method to open a Shadow Road portal to the Fey Realm.
 
-**Session 2026-07-27 begins:** Party at level 8, heading to the Shadow Road portal.
+**Session 2026-07-27 (played):** Portal opened. Shadow Road crossed. Combat with formidable foes — level 8, survivable, not comfortable. Aldric Voss fireballed himself; revived. Party arrived in Shadow Fey realm intact. Summer Court is in session; Queen holds authority. Session log: https://doughatcher.github.io/adventure-log/sessions/2026-07-27-1900/
+
+**Current state:** Party is in the Shadow Fey realm, Summer Court. Audience with the Queen is next.

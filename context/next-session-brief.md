@@ -2,34 +2,35 @@
 
 *Auto-generated. Do not edit — will be overwritten after each session.*
 
-LOCATION: Shardsea of Governance — lower city streets, precise node unknown; port city where party made landfall
-PARTY:
-- Rides the Wake (Barbarian/Berserker) 1/50 HP AC 12 [CRITICAL — near death, canonical HP from game state overrides campaign file]
-- Granit (Cleric/Life Domain) HP unknown/52 AC 18 [went down in ambush, status post-revival unclear]
-- Lyvriele Enafrya (Fighter/Samurai) HP unknown/58 AC 17 [held the line solo during ambush, likely resource-depleted]
-- Vargr Stormcaller (Bard/College of Spirits) HP unknown/49 AC 14 [went down in ambush, status post-revival unclear]
+LOCATION: Shadow Fey realm — Summer Court (arrived end of Session 5, 2026-07-27)
 
-RECENT EVENTS:
-- Rides the Wake is at 1 HP — effectively dead or on the threshold; requires immediate healing before any action
-- Poison-coated dagger ambush by three bandits dropped Granit, Rides the Wake, and Vargr simultaneously
-- Lyvriele Enafrya sole party member standing during ambush; kept the party alive alone
-- Party made contact with unnamed rebels in lower city streets; disposition cautiously non-hostile
-- Cael Duren (Shattered Reach bounty collector) issued veiled threat at Pier Seven — patron unnamed, no move made yet
-- Duren's composure cracked under Vargr's Performance pressure but held; he knows the party's face now
-- Party has not yet secured rations, sea charts, or local faction contacts
-- Wand of Wonder reward confirmed by DM but not yet distributed
-- Ship weapons/figurehead upgrades available in port but not yet pursued
+PARTY: (All Level 8)
+- Magnolia Reed (Elf Druid — Richard) — previously mind-controlled by fey bard; Judith killed the bard to break it
+- Tam Holloway (Human Ranger — Ryan) — strong confrontational streak; nearly torpedoed ambassador meeting over fey sovereignty; liability in court
+- Judith "ShankSpeare" Quiney (Human Rogue — Dan) — took friendly fire from Magnolia; chose bard's life over easy retaliation
+- Aldric Voss (Human Wizard/Divination — Doug) — died by self-inflicted fireball on Shadow Road, revived; HP/AC at level 8 not confirmed
+
+RECENT EVENTS (Session 5 — 2026-07-27):
+- Party leveled to 8 in preparation for the Shadow Road crossing
+- Shadow Road portal successfully opened and entered
+- Formidable combat encounter on the Shadow Road (foe names not captured in session)
+- Aldric Voss died by self-inflicted fireball; revived by party (mechanism not confirmed — DM check on lasting consequences)
+- Party arrived in the Shadow Fey realm intact
+- Current season: Summer (Queen holds authority); transitioning toward Winter King's season
 
 OPEN THREADS:
-- What do the rebels want — and what can the party offer or trade to open a real alliance?
-- Who is Cael Duren's patron and what is "in the party's hold" that they want?
-- Governance Shardsea objective undefined — institutional or authority-level threat not yet revealed
-- Inventory, rations, and sea charts still unacquired; next leg of journey cannot begin without them
+- What does the party have to offer the Summer Queen? What leverage or gifts do they bring to negotiation?
+- Tam's confrontational posture toward fey authority — cost higher in court than on the road
+- The Shadow Fey Summer/Winter transition: political dynamics, who gains/loses as season shifts
+- Zobeck occupation continues; Temple of Kors situation unresolved back home
+- Aldric near-death: lasting consequences? Exhaustion, attunement, item loss? > [DM check]
+- The hold contents (what Cael Duren was hired to recover) — does it matter at court?
 
 KEY NPCS:
-- Cael Duren: Freelance bounty collector, Shattered Reach, unaffiliated; issued hold-threat at Pier Seven, patron unknown, at large and aware of the party
-- Unnamed Rebels: Lower city faction, non-hostile, agenda unknown; first contact made post-ambush, willing to talk
+- The Summer Queen: holds authority, the party's destination and ultimate negotiating partner
+- Glanen Thelamandryne: described the Shadow Road; provided route and how-to for the portal
+- The shadow fey bard (dead): mind-controlled Magnolia in a previous session; killed by Judith
 
-PARTY CONDITION: Party is severely depleted — three members dropped in the ambush, Rides the Wake is at 1 HP and effectively non-functional in combat. Healing resources (Granit's spell slots, Channel Divinity) likely heavily spent. A short or long rest is urgent before any further engagement; the party cannot absorb another encounter at current strength.
+PARTY CONDITION: Resources spent on Shadow Road crossing; Aldric revived this session. Full state at session start TBD — long rest may or may not have occurred.
 
-CAMPAIGN CONTEXT: The Shardsea of Governance is power in institutional form — not elemental fury or spiritual corruption but human systems of trade, law, and naval authority in tension with each other. The party arrived with a bounty already on something they carry and walked into a coordinated ambush on night one, suggesting they are already embedded in a conflict they don't yet understand. The rebels represent one axis of that conflict; Duren's unnamed patron represents another. The pattern across Shardseas has been escalation — primal nature, then essence-corruption, now civilization itself under pressure. Whatever threatens Governance threatens the connective tissue of the entire world. The party needs intelligence, allies, and medical attention, roughly in that order.
+CAMPAIGN CONTEXT: Courts of the Shadow Fey (Vargr DM). The party has been working toward the Summer Court since a novice ran into a tavern in Zobeck with bad news about the Temple of Kors. They have arrived. The Summer Court is in session but transitioning. The Queen has authority the party needs. The question is what they have to trade for it. Next session estimated ~2026-08-03.

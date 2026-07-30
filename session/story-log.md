@@ -12,4 +12,6 @@ The Free City of Zobeck has fallen under shadow — not through open war but thr
 - The party barely landed on the "friend" side of his friend/enemy calculation — Tam Holloway's insistence the city must remain free nearly derailed it
 - The party's goal: reach the Queen, pursue a peaceful resolution
 
-**Current state:** Party knows the location and method to open a Shadow Road portal to the Shadow Fey Realm. They are headed there.
+**Session 2026-07-27 (played):** Portal opened. Shadow Road crossed. The road was appropriately hostile for Level 8 — survivable, not comfortable. Combat with formidable foes along the route. Aldric Voss killed himself with his own fireball; he was revived. His companions said nothing, which was generous. The party arrived in the Shadow Fey realm intact. Summer Court is in session. The Queen holds the authority the party has been working toward since a novice ran into a Zobeck tavern with bad news about a temple. Session log: https://doughatcher.github.io/adventure-log/sessions/2026-07-27-1900/
+
+**Current state:** Party is in the Shadow Fey realm. Summer Court is in session. Audience with the Queen is the next step.
