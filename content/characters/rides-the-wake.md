@@ -3,16 +3,16 @@ ac: 12
 class: Barbarian / Path of the Berserker
 hp_current: 1
 hp_max: 50
-last_updated: '2026-08-04'
+last_updated: '2026-08-24'
 slug: rides-the-wake
 status: alive
 title: Ride's the Wake
 ---
 
-Rides the Wake carries herself like someone accustomed to moving through rough water — patient in stillness, overwhelming in motion.
+Rides the Wake carried herself like someone accustomed to moving through rough water — patient in stillness, overwhelming in motion.
 
-She is not reckless in the way people imagine barbarians to be. There is a current of deliberate purpose beneath the fury, a sense that the rage, when it comes, has been earned. Those who travel with her describe a quiet confidence that borders on the serene, right up until it doesn't. The name fits: she goes where the force has been and holds the line in the turbulence that follows.
+She was not reckless in the way people imagine barbarians to be. There was a current of deliberate purpose beneath the fury, a sense that the rage, when it came, had been earned. Those who traveled with her described a quiet confidence that bordered on the serene, right up until it didn't. The name fit: she went where the force had been and held the line in the turbulence that followed.
 
-Shard C claimed her. The same relentless arithmetic that had found her before found her again — piercing and poison stacking faster than anyone could answer — and this time there was no Healing Word quick enough, no margin left to borrow against. She went down fighting, which is the only way she knew how to go down. The others called her name in the aftermath, and the silence that answered was a different kind of water entirely. Someone — perhaps it was Leonard, a name spoken with the particular bitterness of people who need to put a face on what killed their friend — landed the blow that finished it. The party said the name like a curse and kept moving, because that is what she would have wanted.
+Shard C claimed her. The same relentless arithmetic that had found her before found her again — piercing and poison stacking faster than anyone could answer — and this time there was no Healing Word quick enough, no margin left to borrow against. She went down fighting, which was the only way she knew how to go down. The others called her name in the aftermath, and the silence that answered was a different kind of water entirely. Someone said it was Leonard who landed the killing blow, speaking the name with the particular bitterness of people who have just lost someone to something that should not have had a name at all.
 
-She is gone now, but the wake remains. The others are still moving through it.
+She is gone now, at 1 hit point when the session began and none when it ended. What remains is the space she occupied — in the line, in the party's margin for error, in the quiet that follows someone who knew how to be still.
