@@ -2,37 +2,35 @@
 
 *Auto-generated. Do not edit — will be overwritten after each session.*
 
-CAMPAIGN: Courts of the Shadow Fey — Session 7
-
-SCHEDULE: Next expected session is 2026-08-31. The 2026-08-17 and 2026-08-24 sessions were skipped/cancelled per #dnd channel notes.
-
-LOCATION: Shadow Fey Realm — Summer Court
+LOCATION: Shardsea of Governance — lower city streets (exact node unknown; urban setting near docks)
 
 PARTY:
-- Magnolia Reed — Elven Druid (Circle of Dreams), Level 8, played by Richard
-- Tam Holloway — Human Ranger (Fey Wanderer), Level 8, played by Ryan
-- Judith "ShankSpeare" Quiney — Human Rogue (Swashbuckler), Level 8, played by Dan
-- Aldric Voss — Human Wizard (Divination), Level 8, played by Doug
+- Rides the Wake (Barbarian/Berserker) 1/50 HP | AC 12 [CRITICAL — effectively dead per story log; game state conflict with campaign HP record]
+- Granit (Cleric/Life Domain) HP unknown/52 | AC 18 [went down in ambush; status unclear]
+- Lyvriele Enafrya (Fighter/Samurai) HP unknown/58 | AC 17 [last standing after ambush]
+- Vargr Stormcaller (Bard/College of Spirits) HP unknown/49 | AC 14 [went down in ambush; status unclear]
 
 RECENT EVENTS:
-- Session 6 (2026-08-03) was played, but no audio capture or full debrief has been logged.
-- Party entered the Shadow Fey Summer Court seeking audience with the Summer Queen.
-- Ambassador Glanen Thelamandryne remains a fragile contact after the prior "barely friends" negotiation.
-- The seasonal transition toward the Winter King is in progress, narrowing the party's window.
-- Session 7 was deferred on 2026-08-17, then deferred one more week on 2026-08-24.
+- Rides the Wake is at 1 HP or dead (story log says died; game state says 1 HP — DM must resolve this immediately)
+- Poison-dagger ambush (3 bandits) nearly wiped the party — Granit, Rides the Wake, and Vargr all dropped
+- Lyvriele single-handedly kept the party alive during the ambush; only member who held her feet
+- Cael Duren (bounty collector, Shattered Reach) issued veiled threat at Pier Seven — wants what's in the party's hold; patron unnamed
+- Rebels in the lower city made contact post-ambush; appear non-hostile; identity and agenda unknown
+- Vargr's musical performance pressured Duren's composure — cracked but held; Duren is at large
+- Party has not yet made contact with any local factions, power brokers, or naval authority
+- Compass of Lost Tides (prior arc) revealed corrupted leylines spreading dark miasma across the world — larger threat still unaddressed
 
 OPEN THREADS:
-- What can the party offer the Summer Queen that is stronger than a petition?
-- What happened during the Session 6 audience and how did Tam's posture affect court standing?
-- Zobeck remains under shadow fey occupation; High Priest Oleg and the Temple of Kors remain unresolved.
-- Aldric Voss was killed by self-inflicted fireball on the Shadow Road in Session 5 and revived; any lingering costs are not documented.
+- Rides the Wake's death/survival state must be adjudicated before anything else proceeds
+- Cael Duren's patron and the contents of the ship's hold — why is someone watching the party already?
+- The rebels: who are they, what do they want, and what can the party exchange for information or alliance?
+- Party has not yet sourced rations, sea charts, or established next destination in Shard C
+- Objective within Shardsea of Governance remains undefined — governance/institutional power is the theme; the specific threat is unidentified
 
 KEY NPCS:
-- Ambassador Glanen Thelamandryne: Shadow Fey ambassador; fragile ally/contact after tense negotiations.
-- The Summer Queen: current authority in the Shadow Fey court; audience sought by the party.
-- The Winter King: incoming seasonal authority; transition creates time pressure.
-- High Priest Oleg: Temple of Kors figure in occupied Zobeck; current status unresolved.
+- Cael Duren: Freelance bounty collector, Shattered Reach, no Guild affiliation; threatened the party at Pier Seven; patron unknown; at large and presumably still watching
+- The Rebels (unnamed): Lower city contacts; non-hostile; appeared after the ambush; identity, affiliation, and agenda unknown — first real local lead
 
-PARTY CONDITION: No new HP, gear, or condition updates were reported in the recent channel sweep. Carry forward the Session 6 state cautiously: party is at court, intact as far as documented, but Session 6 details remain pending.
+PARTY CONDITION: Party is critically depleted — multiple members were downed in the ambush, spell slots and class features heavily spent, and Rides the Wake is at death's door or dead. Lyvriele is the only member with unknown but functional HP. A short or long rest is urgently needed before any hostile encounter or meaningful NPC negotiation.
 
-CAMPAIGN CONTEXT: This is the interim Courts of the Shadow Fey campaign DM'd by Vargr while the main Shardsea campaign is paused. The active problem is political and fey-court-facing: Zobeck is occupied, the Summer Court is in session, Winter's claim is approaching, and the party needs leverage strong enough to move a queen.
+CAMPAIGN CONTEXT: The Shardsea of Governance controls civilization's nervous system — trade, communication, naval authority, and political power all converge here. The party arrived as unknowns and within hours were ambushed with poisoned weapons and marked by a bounty agent, suggesting their reputation or cargo preceded them. The corruption spreading across the world's leylines (revealed at the end of Shard A) remains the overarching threat, and governance infrastructure — courts, fleets, trade compacts — is exactly what that kind of corruption would need to compromise or co-opt. The rebels may represent internal resistance to whatever institutional capture is already in progress. The Grim Reaper has been flagged as the most powerful monster in the world — whether metaphorical or literal, this is an escalation marker the DM should hold in reserve.
