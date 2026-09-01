@@ -3,7 +3,7 @@ ac: 12
 class: Barbarian / Path of the Berserker
 hp_current: 1
 hp_max: 50
-last_updated: '2026-08-27'
+last_updated: '2026-09-01'
 slug: rides-the-wake
 status: alive
 title: Ride's the Wake
@@ -13,6 +13,6 @@ Rides the Wake carried herself like someone accustomed to moving through rough w
 
 She was not reckless in the way people imagine barbarians to be. There was a current of deliberate purpose beneath the fury, a sense that the rage, when it came, had been earned. Those who traveled with her described a quiet confidence that bordered on the serene, right up until it didn't. The name fit: she went where the force had been and held the line in the turbulence that followed.
 
-Shard C took her. The same relentless arithmetic that had nearly found her before — piercing and poison arriving faster than anyone could answer — completed its work. The margin that had held before did not hold this time. She went down fighting, which was the only way she knew how to go down, and this time when the others called her name, there was no answer. Someone in the aftermath said Leonard killed her, which is either the name of the thing that did it or a joke told too soon, the way people talk when they are still shaking.
+Shard C took her. The same relentless arithmetic that had nearly found her before — piercing and poison arriving faster than anyone could answer — completed its work. A Healing Word had bought her a breath, a handful of hit points, a few more seconds of standing. It was not enough. The margin that had held before did not hold this time. She went down fighting, which was the only way she knew how to go down, and this time when the others called her name, there was no answer.
 
-What remains is the absence itself, and the party's knowledge of exactly how narrow the space between alive and not has always been. Rides the Wake did not go quietly, and the wake she leaves behind is its own kind of turbulence — the kind that doesn't settle quickly, and shouldn't.
+Someone in the aftermath said Leonard killed her — either the name of the thing that did it, or a joke made at the worst possible moment by people who cope through irreverence. Either way, the name is wrong. Rides the Wake was not killed by anything small enough to have a name like Leonard. She was killed by the accumulated weight of a fight that did not stop coming. That's a more honest accounting. The party will remember which one feels true.
