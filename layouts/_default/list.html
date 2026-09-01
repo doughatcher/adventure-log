@@ -4,7 +4,18 @@
   {{ with .Content }}<div>{{ . }}</div>{{ end }}
 </div>
 
-{{ if eq .Section "characters" }}
+{{ $isCampaignIndex := and (eq .Kind "section") (not .Params.campaign) }}
+
+{{ if $isCampaignIndex }}
+  {{/* /sessions/ and /characters/ — the campaign chooser, not a flat list. */}}
+  {{ range sort .Sections "Params.weight" }}
+  <div class="campaign-link">
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    {{ with .Content }}<div class="campaign-blurb">{{ . }}</div>{{ end }}
+    <div class="session-meta">{{ len .Pages }} {{ if eq .Section "characters" }}character{{ else }}session{{ end }}{{ if ne (len .Pages) 1 }}s{{ end }}</div>
+  </div>
+  {{ end }}
+{{ else if eq .Section "characters" }}
 <div class="char-grid">
   {{ range .Pages }}{{ partial "char-card.html" . }}{{ end }}
 </div>

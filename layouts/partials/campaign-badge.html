@@ -1,0 +1,11 @@
+{{/* Names the campaign a page belongs to. Two campaigns share this site and
+     a session entry read on its own is otherwise ambiguous. */}}
+{{ with .Params.campaign }}
+  {{ $slug := . }}
+  {{ range where $.Site.Data.campaigns "slug" $slug }}
+  <div class="campaign-badge">
+    <a href="{{ (printf "sessions/%s/" $slug) | relURL }}">{{ .title }}</a>
+    <span class="campaign-status {{ .status }}">{{ .status }}</span>
+  </div>
+  {{ end }}
+{{ end }}

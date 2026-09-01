@@ -1,9 +1,11 @@
 ---
 ac: 0
+campaign: courts-of-the-shadow-fey
 class: Druid / Circle of Dreams
 hp_current: 0
 hp_max: 0
 last_updated: '2026-09-01'
+player: 'Richard (Jonan)'
 slug: magnolia-reed
 status: alive
 title: Magnolia Reed

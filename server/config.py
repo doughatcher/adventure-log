@@ -4,11 +4,23 @@ from pathlib import Path
 BASE_DIR = Path(__file__).parent.parent
 SESSION_DIR = BASE_DIR / "session"
 DATA_DIR = BASE_DIR / "data"
-CHARACTERS_DIR = DATA_DIR / "characters"
 SESSIONS_ARCHIVE_DIR = DATA_DIR / "sessions"
-
 CONTEXT_DIR = BASE_DIR / "context"
-NEXT_SESSION_BRIEF_FILE = CONTEXT_DIR / "next-session-brief.md"
+
+# ── Which game is at the table ──
+# The table runs two campaigns and alternates between them, so "the party" and
+# "the story so far" are questions with two answers. Everything downstream of
+# this — the roster the tracker loads, the brief the model is primed with, the
+# campaign stamped into the session archive — is scoped by it. Set it in .env
+# and change it when the game changes; getting it wrong files a night of the
+# fey court under a party that was never there.
+# Slugs are the ones in data/campaigns.yaml.
+CAMPAIGN = os.environ.get("CAMPAIGN", "courts-of-the-shadow-fey")
+
+CHARACTERS_DIR = DATA_DIR / "characters" / CAMPAIGN
+CAMPAIGN_CONTEXT_DIR = CONTEXT_DIR / "campaigns" / CAMPAIGN
+NEXT_SESSION_BRIEF_FILE = CAMPAIGN_CONTEXT_DIR / "next-session-brief.md"
+CAMPAIGN_HISTORY_FILE = CAMPAIGN_CONTEXT_DIR / "campaign-history.md"
 
 # ── GitHub release publishing ──
 GITHUB_REPO  = os.environ.get("GITHUB_REPO",  "doughatcher/adventure-log")

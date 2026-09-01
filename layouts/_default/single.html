@@ -6,6 +6,7 @@
   {{ if gt $max 0 }}{{ $pct = div (mul $hp 100) $max }}{{ end }}
   {{ $low := lt $pct 30 }}
   <h1>{{ .Title }}</h1>
+  {{ partial "campaign-badge.html" . }}
   <div class="char-page">
     <article class="content">{{ .Content }}</article>
     <aside class="sidebar">
@@ -32,6 +33,7 @@
 {{ else }}
   <article>
     <h1>{{ .Title }}</h1>
+    {{ partial "campaign-badge.html" . }}
     <div class="meta">
       <span>&#9676; {{ .Date.Format "January 2, 2006" }}</span>
       {{ with .Params.location }}<span>&#8982; {{ . }}</span>{{ end }}

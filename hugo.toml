@@ -1,14 +1,30 @@
 baseURL = "https://doughatcher.github.io/adventure-log/"
 languageCode = "en-us"
-title = "The Adventure Begins"
+title = "Adventure Log"
 
 [params]
-  description = "A living campaign journal — generated from live session telemetry"
-  campaign = "The Adventure Begins"
-  campaign_system = "D&D 5e (2024)"
-  campaign_setting = "The Shard Sea"
-  party_level = 7
-  current_shard = "Shard C — Sea of Governance"
+  description = "Two campaigns, one table — living journals generated from live session telemetry"
+
+# Per-campaign facts live in data/campaigns.yaml, not here. There is more than
+# one campaign and site params can only describe one of them, which is how the
+# front page ended up advertising a game the table had not played in months.
+
+# `data/` is the live app's working directory as well as Hugo's data directory.
+# Hugo only walks it once a template reads .Site.Data — which the campaign
+# templates do — and it cannot parse the session archives and character sheets
+# it finds there. Mount the directory but hide the app's half of it. Declaring
+# any mount replaces the defaults, so content and layouts are re-declared too.
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "data"
+    target = "data"
+    excludeFiles = ["characters/**", "sessions/**"]
 
 [markup.goldmark.renderer]
   unsafe = true

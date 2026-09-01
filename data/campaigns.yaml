@@ -1,0 +1,42 @@
+# The campaigns this journal covers.
+#
+# One table, two games. They run in alternation rather than in sequence — the
+# group returns to whichever one has a DM available — so neither is "the past"
+# and nothing here should be written as though a campaign that is paused is
+# over. Every session archive, journal entry and character page names its
+# campaign; this file is what those names resolve to.
+#
+# `slug` is load-bearing: it is the directory name under content/sessions/,
+# content/characters/ and context/campaigns/, and the value of the `campaign`
+# key in a session archive's state.json. Renaming one is a directory move.
+
+- slug: courts-of-the-shadow-fey
+  title: Courts of the Shadow Fey
+  status: active
+  system: D&D 5e (2024)
+  setting: The Free City of Zobeck and the Shadow Realm
+  dm: Vargr Stormcaller (Chris)
+  party_level: 8
+  current_location: Shadow Fey Realm — the lower court
+  weight: 1
+  blurb: >-
+    Zobeck was a free city until the Shadow Fey came to collect on a
+    hundred-year-old grant of sovereignty. Four adventurers followed the
+    Shadow Road into the fey realm to argue the point at court, where rank is
+    currency and the season itself is turning against them.
+
+- slug: shard-sea
+  title: The Adventure Begins
+  status: paused
+  system: D&D 5e (2024)
+  setting: The Shard Sea
+  dm: Richard (TheShantyman)
+  party_level: 7
+  current_location: Shard C — the Sea of Governance
+  weight: 2
+  blurb: >-
+    A world of fractured seas, each saturated with a different fundamental
+    force, crossed by ship and by politics. The party cleared the Shardsea of
+    Elements and the Shardsea of Nature's Wrath before making landfall in the
+    Sea of Governance, where the danger stopped being weather and started
+    being people.

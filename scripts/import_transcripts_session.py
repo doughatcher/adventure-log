@@ -9,9 +9,18 @@ main — the repository is public, and a session should be looked at by a person
 before it is.
 
     scripts/import_transcripts_session.py \
+        --campaign courts-of-the-shadow-fey \
         --slug 2026-08-31-1927 \
         --started-at 2026-08-31T23:27:53Z \
         --transcripts "$(cat paths.txt)"
+
+The table runs two campaigns in alternation, so `--campaign` is required rather
+than defaulted. A default would be right most weeks and quietly wrong the week
+the group switches games, and the cost of being wrong is a night filed under a
+party that was not there — which is exactly the mess this flag exists to
+prevent. Give each campaign its own session profile in Transcripts' routing.json
+and let `${sessionID}` supply the value; picking the session then *is* picking
+the game.
 
 The one rule worth stating plainly: **nothing before the session start is
 published.** A recording often begins well before the game does — the recorder
@@ -30,15 +39,30 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import json
 import re
 import subprocess
 import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
+CAMPAIGNS_FILE = REPO / "data" / "campaigns.yaml"
 
 # `**Speaker:** [1:02:03] text` or `**Speaker:** [12:04] text`
 TURN = re.compile(r"^\*\*(?P<speaker>[^*]+):\*\*\s*(?:\[(?P<stamp>\d+:\d{2}(?::\d{2})?)\]\s*)?(?P<text>.*)$")
+
+
+def known_campaigns() -> list[str]:
+    """Campaign slugs from data/campaigns.yaml.
+
+    Parsed by hand rather than with PyYAML: this script runs from a Transcripts
+    hook on a Mac that has no say in this repository's Python environment, and
+    a missing dependency here fails the import of a session that has already
+    happened and cannot be recorded again.
+    """
+    if not CAMPAIGNS_FILE.exists():
+        return []
+    return re.findall(r"^-?\s*slug:\s*(\S+)", CAMPAIGNS_FILE.read_text(), re.MULTILINE)
 
 
 def parse_iso(value: str) -> dt.datetime:
@@ -163,6 +187,8 @@ def run(cmd: list[str], **kw) -> subprocess.CompletedProcess:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
+    ap.add_argument("--campaign", required=True,
+                    help="Which campaign was played — a slug from data/campaigns.yaml")
     ap.add_argument("--slug", required=True, help="Archive folder name, e.g. 2026-08-31-1927")
     ap.add_argument("--started-at", required=True)
     ap.add_argument("--ended-at")
@@ -172,6 +198,11 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true", help="Write nothing; print what would happen")
     ap.add_argument("--no-pr", action="store_true", help="Write and commit locally, open no PR")
     args = ap.parse_args()
+
+    campaigns = known_campaigns()
+    if campaigns and args.campaign not in campaigns:
+        print(f"✗ unknown campaign '{args.campaign}'. Known: {', '.join(campaigns)}", file=sys.stderr)
+        return 1
 
     session_start = parse_iso(args.started_at)
     session_end = parse_iso(args.ended_at) if args.ended_at else None
@@ -210,28 +241,43 @@ def main() -> int:
     (out_dir / "transcript.md").write_text(doc, encoding="utf-8")
     print(f"✓ wrote {out_dir / 'transcript.md'}")
 
+    # The journal generator reads the campaign from state.json and refuses to
+    # guess when it is absent, so an import that skipped this would sit
+    # unprocessed. Merge rather than overwrite: a state.json may already be here
+    # if the live app archived the session first.
+    state_path = out_dir / "state.json"
+    state = {}
+    if state_path.exists():
+        try:
+            state = json.loads(state_path.read_text())
+        except Exception:
+            state = {}
+    state["campaign"] = args.campaign
+    state_path.write_text(json.dumps(state, indent=2) + "\n", encoding="utf-8")
+    print(f"✓ recorded campaign '{args.campaign}' in {state_path.name}")
+
     # The journal generator skips any session page whose frontmatter says
     # `generated: false` — it reads that as "a person wrote this, leave it
     # alone". A scheduling stub carries the same flag, so it silently blocks its
     # own session from ever being written. Clear it, but only when the stub has
     # no prose worth protecting.
-    unblocked = unblock_stub(session_start.strftime("%Y-%m-%d"))
+    unblocked = unblock_stub(args.campaign, session_start.strftime("%Y-%m-%d"))
     if unblocked:
         print(f"✓ cleared the generated:false flag on {unblocked.name} so the journal can write it")
 
     if args.no_pr:
         return 0
-    return open_pr(args.slug, args.branch or f"session/{args.slug}", stats)
+    return open_pr(args.slug, args.branch or f"session/{args.slug}", stats, args.campaign)
 
 
-def unblock_stub(date_str: str) -> Path | None:
+def unblock_stub(campaign: str, date_str: str) -> Path | None:
     """Let the generator write a date's page, if only a stub stands there.
 
     Deliberately conservative: a page with real prose is left exactly as it is,
     because `generated: false` is also how a hand-written entry protects itself
     and overwriting one would be the worst thing this script could do.
     """
-    sessions = REPO / "content" / "sessions"
+    sessions = REPO / "content" / "sessions" / campaign
     for path in sorted(sessions.glob(f"{date_str}*.md")):
         text = path.read_text(encoding="utf-8")
         end = text.find("\n---\n", 4)
@@ -250,7 +296,7 @@ def unblock_stub(date_str: str) -> Path | None:
     return None
 
 
-def open_pr(slug: str, branch: str, stats: dict) -> int:
+def open_pr(slug: str, branch: str, stats: dict, campaign: str) -> int:
     run(["git", "checkout", "-B", branch])
     run(["git", "add", "data/sessions", "content/sessions"])
     status = run(["git", "status", "--porcelain"])
@@ -259,7 +305,7 @@ def open_pr(slug: str, branch: str, stats: dict) -> int:
         return 0
 
     message = (
-        f"Add session archive {slug}\n\n"
+        f"Add session archive {slug} ({campaign})\n\n"
         f"Imported from Transcripts: {stats['kept']} turns across {stats['documents']} recording(s).\n"
         f"{stats['dropped_before_session']} turns recorded before the session started were excluded."
     )
@@ -275,9 +321,10 @@ def open_pr(slug: str, branch: str, stats: dict) -> int:
 
     pr = run([
         "gh", "pr", "create",
-        "--title", f"Session archive {slug}",
+        "--title", f"Session archive {slug} ({campaign})",
         "--body",
         "Imported from Transcripts by `scripts/import_transcripts_session.py`.\n\n"
+        f"- Campaign: **{campaign}**\n"
         f"- {stats['kept']} turns across {stats['documents']} recording(s)\n"
         f"- {stats['dropped_before_session']} turns from before the session start were excluded\n\n"
         "Merging this to `main` triggers the campaign-journal workflow, which generates the "
