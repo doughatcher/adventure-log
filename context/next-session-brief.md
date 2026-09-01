@@ -2,34 +2,44 @@
 
 *Auto-generated. Do not edit — will be overwritten after each session.*
 
-LOCATION: Shardsea of Governance — lower city streets (exact node unknown)
+LOCATION: Shadow Fey Realm — lower court / palace service level, after a long rest
 PARTY:
-Rides the Wake (Barbarian/Berserker) 1/50 HP AC 12
-Granit (Cleric/Life Domain) 52/52 HP AC 18
-Lyvriele Enafrya (Fighter/Samurai) 58/58 HP AC 17
-Vargr Stormcaller (Bard/College of Spirits) 49/49 HP AC 14
+Aldric Voss (Wizard/Divination) HP unknown AC 13, Level 8
+Magnolia Reed (Druid/Circle of Dreams) HP unknown AC unknown, Level 8
+Tam Holloway (Ranger/Fey Wanderer) HP unknown AC unknown, Level 8
+Judith "ShankSpeare" Quiney (Rogue/Swashbuckler) HP unknown AC unknown, Level 8
 
 RECENT EVENTS:
-- Rides the Wake is at 1 HP (critically wounded, near-death state; official max per campaign history is 68, tracker shows 50 — reconcile with DM)
-- Poison-dagger ambush in lower city streets dropped Granit, Rides the Wake, and Vargr; Lyvriele held the line alone
-- Ambush assailants used coordinated poison tactics — suggests professional hire, not opportunistic mugging
-- Cael Duren (bounty collector, Shattered Reach) issued veiled threat at Pier Seven before ambush — patron unknown, timing suspicious
-- Unnamed rebels made non-hostile contact in lower streets following the fight — willing to talk
-- Party has not yet established contact with any formal power broker, merchant house, or naval authority in Shard C
-- Rations, sea charts, and equipment maintenance remain unpurchased/unresolved from arrival
-- Grim Reaper flagged as most powerful known monster — context unclear, may be Shard C-relevant threat or lore drop
+- Session 7 resumed the Courts of the Shadow Fey arc after two cancellations (2026-08-17 and 2026-08-24).
+- Party is trying to climb Shadow Fey court status from the lower court toward access to the Queen / high court.
+- Aldric repaired and improved the Shadow Road wardstone he damaged with his fireball; Ten-Pound Hammer accepted the repair.
+- King Mago used Aldric as Reader of the Lower Court. Aldric successfully defended Billoc, a mute goblin accused of theft.
+- Billoc was freed and promised the party would not regret helping him. Potential ally, likely unreliable / pickpocket-adjacent.
+- Magnolia honored her kitchen obligation and supplied 50 goodberries; the head cook crushed them into soup.
+- Tam befriended the Black Prince's hunting dogs and met Kolya, their kennel master.
+- Party learned Lazulin, the large blue horse, belongs to the Black Prince and is dangerous to strangers.
+- Kolya described the Black Prince's hunt: high-court activity, dogs and Lazulin involved, quarry conjured by Count Samus Hollowgrand.
+- Guard hall contained Shadow Fey soldiers from Allosis under Captain Memorethian; party learned little else.
+- End status ranking mentioned at table: Tam 5, Judith 5, Magnolia 7, Aldric 7.
 
 OPEN THREADS:
-- Who hired the poisoners? Cael Duren's patron is unnamed — the ambush timing implicates a connection
-- The rebels want to talk — what do they know, what do they want, and what are they willing to trade?
-- What is the party's actual objective in the Shardsea of Governance? Institutional/authority-level threat not yet identified
-- Inventory check, rations, and sea charts still needed before next leg of travel
-- Ship upgrade options (cannons, ballista, figurehead) available in Shard C — not yet acted upon
+- How can the party gain enough status to enter the middle/high court without provoking another monolith guard fight?
+- Can Billoc provide information, theft, access, or trouble?
+- Can Kolya / the dogs / Lazulin connect the party to the Black Prince's hunt?
+- What status threshold or invitation is needed to join the hunt?
+- What can the party offer the Summer Queen once they reach her?
+- Seasonal transition toward Winter remains the clock. How much time remains before authority shifts?
+- Zobeck remains under Shadow Fey occupation; High Priest Oleg / Temple of Kors unresolved.
 
 KEY NPCS:
-- Cael Duren: Freelance bounty collector, Shattered Reach, no Guild affiliation; threatened party at Pier Seven; patron unnamed; composure cracked slightly under Vargr's pressure; at large
-- The Rebels (unnamed): Lower city faction; non-hostile to party; agenda and affiliation unknown; ready to talk; primary intelligence asset available next session
+- King Mago: Goblin king / lower-court authority. Crude, transactional, but responsive to competent service. Granted Aldric standing.
+- Ten-Pound Hammer: Goblin blacksmith. Demanded repayment for broken wardstone; satisfied by Aldric's magical repair.
+- Billoc: Mute goblin accused of theft. Freed after party advocacy. Communicates by sign/gesture; potential ally.
+- Kolya: Kennel master, not a goblin or Shadow Fey. Handles the Black Prince's hunting dogs; friendly to Tam after dog-befriending.
+- Lazulin: Black Prince's massive blue horse. Valuable, dangerous, central to the hunt.
+- Count Samus Hollowgrand: Master Summoner; also royal standard bearer/herald/master of defense/lord of fallen archers/lord of broken swords. Conjures quarry for the Black Prince's hunt.
+- Captain Memorethian: Leader/contact for Shadow Fey soldiers from Allosis guarding the palace.
 
-PARTY CONDITION: Rides the Wake is barely alive at 1 HP; the rest of the party is at or near full HP following recovery, but poison exposure and a near-wipe mean healing resources and morale have been tested. Next session must begin with a short or long rest decision — Rides the Wake cannot engage any threat at current HP.
+PARTY CONDITION: No HP changes or loot captured in transcript. Spell/resource note: Aldric spent magic repairing the wardstone; Magnolia spent multiple spell slots producing goodberries for the kitchen. Party morale: amused, improvisational, wary of direct combat after monolith/duel setbacks.
 
-CAMPAIGN CONTEXT: The Shardsea of Governance controls trade routes, naval authority, and civilization's political nervous system — power here is institutional, not elemental. The party is operating in a city where competing factions (bounty networks, rebel movements, unnamed patrons) are already in motion around them. Two prior Shardseas followed a pattern of escalating corruption and elemental disruption; whatever is broken in this one will be political rather than primal. The Compass of Lost Tides previously revealed corrupted arcane leylines spreading across the world — Shard C likely contains a node or power structure connected to that spread. The rebels may be the fastest path to understanding the local shape of that threat.
+CAMPAIGN CONTEXT: Interim campaign: Courts of the Shadow Fey, DM Vargr, Level 8 party in the Shadow Fey realm. Zobeck is occupied under an old fey claim; party seeks audience with the Summer Queen for a peaceful resolution. Court status is the operative mechanic. Direct force has already failed or looked costly; service, social leverage, court titles, and exploiting ritual obligations are the likely path upward.
