@@ -1,9 +1,11 @@
 ---
 ac: 15
+campaign: shard-sea
 class: Fighter / Samurai (crossbow)
 hp_current: 53
 hp_max: 53
 last_updated: '2026-05-19'
+player: 'Dan (dpottergg)'
 race: Eladrin
 slug: lyvriele-enafrya
 status: alive

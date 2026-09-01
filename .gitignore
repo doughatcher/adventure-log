@@ -22,8 +22,11 @@ session/next-steps.md
 session/map.md
 session/audio/
 
-# Character data — populated at runtime
-data/characters/*.md
+# Character rosters (data/characters/<campaign>/*.md) are TRACKED. They define
+# who is in each party, which is exactly the thing the two campaigns kept
+# getting confused about, so it belongs in version control. The live app writes
+# HP back into them during a session; commit those updates or discard them, but
+# do not ignore the files.
 
 # Session archives — track text/state, ignore large audio files
 data/sessions/**/*.mp3

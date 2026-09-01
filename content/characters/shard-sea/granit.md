@@ -1,9 +1,11 @@
 ---
 ac: 17
+campaign: shard-sea
 class: Cleric / Life Domain
 hp_current: 27
 hp_max: 38
 last_updated: '2026-05-19'
+player: 'LesCubistes'
 race: Dwarf
 slug: granit
 status: alive

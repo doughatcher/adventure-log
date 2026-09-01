@@ -16,7 +16,7 @@ from pydantic import BaseModel
 from watchfiles import awatch
 
 from .config import (
-    BASE_DIR, SESSION_DIR, CHARACTERS_DIR, SESSIONS_ARCHIVE_DIR,
+    BASE_DIR, SESSION_DIR, CHARACTERS_DIR, SESSIONS_ARCHIVE_DIR, CAMPAIGN,
     PANEL_FILES, TRANSCRIPT_FILE, STATE_FILE, AUDIO_DIR,
     GITHUB_REPO, GITHUB_TOKEN
 )
@@ -419,7 +419,16 @@ async def end_session(req: EndSessionRequest = None):
     if TRANSCRIPT_FILE.exists():
         (archive_dir / "transcript.md").write_text(TRANSCRIPT_FILE.read_text())
     if STATE_FILE.exists():
-        (archive_dir / "state.json").write_text(STATE_FILE.read_text())
+        # The archive is the only thing the journal generator sees, and it has
+        # no other way to tell a night in the fey court from a night at sea.
+        # Stamp the campaign in rather than leaving it to be inferred from the
+        # folder name or the character list.
+        try:
+            archived_state = json.loads(STATE_FILE.read_text())
+        except Exception:
+            archived_state = {}
+        archived_state["campaign"] = CAMPAIGN
+        (archive_dir / "state.json").write_text(json.dumps(archived_state, indent=2) + "\n")
 
     # Concatenate audio chunks into MP3
     recording_path = None

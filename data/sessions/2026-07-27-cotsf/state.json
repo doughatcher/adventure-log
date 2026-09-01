@@ -1,4 +1,5 @@
 {
+  "campaign": "courts-of-the-shadow-fey",
   "characters": {
     "magnolia-reed": {
       "ac": null,
@@ -19,7 +20,7 @@
       "is_enemy": false,
       "max_hp": null,
       "name": "Tam Holloway",
-      "notes": "Human ranger, played by Ryan. Hostile stance toward fey authority — liability in court.",
+      "notes": "Human ranger, played by Ryan. Hostile stance toward fey authority \u2014 liability in court.",
       "status": "alive"
     },
     "judith-quiney": {
@@ -48,6 +49,6 @@
   "combat_active": false,
   "initiative_order": [],
   "level": 8,
-  "location": "Shadow Fey Realm — Summer Court (arrived Session 5, 2026-07-27)",
+  "location": "Shadow Fey Realm \u2014 Summer Court (arrived Session 5, 2026-07-27)",
   "round": 0
 }

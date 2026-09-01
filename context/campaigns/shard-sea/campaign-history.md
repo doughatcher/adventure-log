@@ -1,7 +1,16 @@
-# Campaign Background & World Context
+# The Adventure Begins — Campaign Background
 
-This file provides persistent campaign context for the AI session companion.
-Keep it updated as the world evolves. The AI uses this to generate accurate narrative panels.
+Persistent world context for the **shard-sea** campaign. DM: Richard
+(TheShantyman). Doug plays Rides the Wake.
+
+**Status: paused.** The table alternates between this campaign and Courts of the
+Shadow Fey; Richard stepped back for a work crunch after the 2026-05-18 session
+and the group has been playing CotSF since. Paused is not finished — nothing
+here should be written in the past tense on the assumption the party is not
+coming back to it.
+
+Nothing about Courts of the Shadow Fey belongs in this file. It has its own,
+under `context/campaigns/courts-of-the-shadow-fey/`.
 
 ---
 
@@ -35,7 +44,7 @@ The world is organized around Shardseas — regions of concentrated elemental or
 ### Rides the Wake
 - **Class:** Barbarian / Path of the Berserker
 - **Race:** Human
-- **HP:** 68 | **AC:** 12
+- **HP:** 1 / 54 (downed and stabilised, 2026-05-18) | **AC:** 12
 - **Player:** superterran (Doug)
 - **Role:** Primary frontline striker. The party's first choice when something needs to hit very hard very fast.
 - **Combat notes:** Initiative +3. STR 17+, CON 14+, WIS 14. Rage provides STR bonus to damage, resistance to physical damage. Danger Sense gives advantage on DEX saves vs visible threats. Frenzy (Berserker) allows bonus action attack but causes Exhaustion — used sparingly.
@@ -44,7 +53,7 @@ The world is organized around Shardseas — regions of concentrated elemental or
 ### Granit
 - **Class:** Cleric / Life Domain
 - **Race:** Dwarf
-- **HP:** 52 | **AC:** 18
+- **HP:** 27 / 38 | **AC:** 17
 - **Player:** LesCubistes
 - **Role:** Primary healer and divine anchor. Heavy armor, high AC, steady presence.
 - **Combat notes:** Life Domain amplifies healing spells — Cure Wounds, Healing Word, Mass Cure Wounds all heal for more. Blessed Healer means healing others also heals Granit. Channel Divinity: Preserve Life for emergency mass stabilization.
@@ -53,7 +62,7 @@ The world is organized around Shardseas — regions of concentrated elemental or
 ### Lyvriele Enafrya
 - **Class:** Fighter / Samurai (XGtE)
 - **Race:** Eladrin (Fey)
-- **HP:** 58 | **AC:** 17
+- **HP:** 53 / 53 | **AC:** 15
 - **Player:** dpottergg
 - **Role:** Precision striker and action economy powerhouse. Action Surge and multiple attacks per round.
 - **Combat notes:** Samurai's Fighting Spirit grants advantage on attacks and temp HP as bonus action. Extra Attack (2 attacks at level 7). Action Surge for additional action. Eladrin Fey Step for teleportation (can disengage/reposition freely).
@@ -62,7 +71,7 @@ The world is organized around Shardseas — regions of concentrated elemental or
 ### Vargr Stormcaller, the Melodious
 - **Class:** Bard / College of Spirits (VRGtR)
 - **Race:** Goliath
-- **HP:** 49 | **AC:** 14
+- **HP:** 38 / 45 | **AC:** 15
 - **Player:** chrispotter
 - **Role:** Support, control, knowledge. Jack of all trades, Bardic Inspiration, spirit-channeled abilities.
 - **Combat notes:** College of Spirits: Spiritual Focus for spell bonus, Tales from Beyond to channel spirit table effects via Bardic Inspiration. Countercharm, Jack of All Trades on all skills. Spellcasting (CHA-based).
@@ -82,22 +91,20 @@ The world is organized around Shardseas — regions of concentrated elemental or
 
 ---
 
-## Current Situation (as of Session 1, 2026-04-20)
+## Current Situation (as of the 2026-05-18 session, where the campaign paused)
 
-**Location:** Shardsea of Governance. The party has just arrived. They are at a port, waystation, or administrative hub — the exact node is TBD but it is a place where ships dock and power is brokered.
+**Location:** Shard C, the Sea of Governance — the city of **Solithar**, in a cellar beneath the Leaky Tap in the western district, facing the rebels.
 
-**Party condition:** Full HP, no active conditions. Long rest completed on arrival. Spell slots and class features should be fully restored.
+Solithar is large and advanced, has five districts, and its northern (political) district is restricted. A dwarven woman met the party on arrival and told them to "get out soon as you can." The guard presence is heavy and the citizens are frightened.
 
-**Immediate needs (logged from session):**
-- Rations must be purchased before the next leg of the journey
-- Local sea charts need to be obtained — destination or next objective unclear
-- Weapons/equipment maintenance
-- The party has not yet made contact with any local figures, factions, or power brokers at Shard C
+**Party condition:** Battered and unrested. Granit, Rides the Wake and Vargr were all put down by poisoned daggers; only Lyvriele stayed on her feet. Wake is at 1 HP. No confirmed long rest. Granit and Vargr were synced from D&D Beyond afterwards (27/38 and 38/45); Wake was not.
 
 **Open threads:**
-- What is the objective at Shard C specifically? Governance is the theme — something about authority, law, or institutional power is under threat or in play.
-- Who are the local power players? Shard C has merchants, naval authority, political figures, and shard-based interests all competing.
-- The pattern of Shards suggests escalation: Shard A was nature, Shard B was corruption, Shard C is civilization. What comes after?
+- Who hired Cael Duren? He met the party at Pier Seven with no Guild marks and no named patron. Unresolved.
+- What was in the hold that Duren's people wanted?
+- Who commissioned the ambush? Three professionals with poison, coordinated — targeted, not opportunistic.
+- The rebels the party found in the lower city were willing to talk. What they want is unknown.
+- The pattern of Shardseas suggests escalation: Elements, then Nature's Wrath, then Governance. What comes after?
 
 ---
 
@@ -117,7 +124,18 @@ The world is organized around Shardseas — regions of concentrated elemental or
 
 **Cael Duren** — Freelance bounty collector, Shattered Reach. Not Guild-affiliated. Appeared at Pier Seven with two companions on the party's first night in Shard C. Issued a veiled threat ("the people I represent want what's in your hold"), named no patron, made no immediate move. Composure cracked slightly under Vargr's Performance pressure but held. Status: at large.
 
-**The Rebels (unnamed)** — Encountered in the city's lower streets following the bandit ambush. Non-hostile to the party. Identity, affiliation, and agenda unknown. Initial contact appears cautiously positive.
+**The Rebels** — Encountered in the city's lower streets following the bandit ambush. Non-hostile. Contacted through **Eric Thorn**, the bronze dragonborn bartender at the **Leaky Tap** in the rough western district, who revealed a secret passage and took the party down a spiral staircase to a room of about six armed people. A tiefling woman with a broken horn and facial scars received them: *"Welcome to my abode. Shall we talk?"* That is where the session ended.
+
+**Governor Elrion Voss** — Rules the city. His guard, the **Silver Spears**, turned oppressive roughly six months before the party arrived: ignoring serious crime, punishing the innocent for small offences. What changed in him is the central mystery of the arc.
+
+**Nira Solven** — Half-elf innkeeper of **The Evening Nip** in the western district. Spoke to the party privately, confirmed the guards' turn, and pointed them at the Leaky Tap. Took 20 gold to feed others.
+
+**Leonard** — A bandit in the ambush, killed by Toll the Dead. Nothing more. Recorded here because the name has twice been misread as something that killed a party member.
+
+> Sourced from the Plaud transcript of the 2026-05-18 session
+> (`Dungeons and Dragons/transcripts/plaud-2026-05-18-...-weekly-meeting-rpg-session-and-pop-culture-discussion.md`
+> in the vault), which is far more detailed than the journal entry written from
+> the Slack debrief. Not confirmed with the DM.
 
 ---
 
@@ -142,25 +160,3 @@ Deeper in the city, three bandits with poison-coated daggers found them. The amb
 **NPCs introduced:** Cael Duren (bounty collector, Shattered Reach; patron unknown). Unnamed rebels (lower city; non-hostile to party).
 
 ---
-
-## Courts of the Shadow Fey (Interim Campaign — DM: Vargr)
-
-A second campaign running concurrently with the Shardsea arc. Vargr is DMing while the main campaign's DM (Richard) continues as a player. Setting: the published adventure *Courts of the Shadow Fey*, set in the Free City of Zobeck and the Shadow Fey realm.
-
-**Party (all Level 8 as of 2026-07-27):**
-- Magnolia Reed — Elven Druid (Circle of Dreams) — played by Richard
-- Tam Holloway — Human Ranger (Fey Wanderer) — played by Ryan
-- Judith "ShankSpeare" Quiney — Human Rogue (Swashbuckler) — played by Dan
-- Aldric Voss — Human Wizard (Divination) — played by Doug
-
-### Session log
-
-**Sessions 1–3 (2026-06-01, 2026-06-08, 2026-06-15):** No post-session notes captured. Party established in Zobeck, Shadow Fey occupation of the city began, temple of Kors attacked by Shadow Fey assassins (high priest Oleg protected). Shadow Fey bard encountered — bard mind-controlled Magnolia Reed, who attacked the party; Judith killed the bard rather than retaliating against her companion. Research and diplomacy phase undertaken.
-
-**Session 4 (2026-06-22):** Party met with the Shadow Fey ambassador Glanen Thelamandryne at his residence. Tense negotiation produced a fragile "barely friends" status. Owl in the ambassador's office revealed as fey in disguise — gifted party bracers of defense. Ambassador explained the fey political structure (Summer Court: Queen currently in power; Winter Court: King; Shadow Fey seasons independent of Material Realm calendar) and how to access the Shadow Realm via the Shadow Road. Party determined to make the crossing. Campaign paused ~4 weeks (Vargr and Richard both unavailable).
-
-**Session 5 (2026-07-27):** Party leveled to 8 and crossed into the Shadow Fey realm via the Shadow Road. Portal successfully created and opened. Formidable combat encountered during the crossing; foes not documented. Aldric Voss died by self-inflicted fireball and was revived. Party arrived in the Shadow Fey realm with the Summer Court in session and the seasonal transition toward Winter in progress.
-
-**Session 6 (2026-08-03):** Party entered the Shadow Fey Summer Court at Level 8 to seek audience with the Summer Queen. Seasonal transition toward the Winter King was in progress, narrowing the party's negotiating window. No audio capture available; player debrief pending. Session log archived as stub — to be updated when notes arrive.
-
-**Session 7 (2026-08-31):** Party worked the Shadow Fey lower court rather than forcing its way upward. Aldric answered for the wardstone he damaged on the Shadow Road, repaired it with magic, and earned King Mago's trust enough to serve as Reader of the Lower Court. In that role he helped free Billoc, a mute goblin accused of theft, by recognizing that the bound prisoner could not defend himself without his hands. Magnolia honored her kitchen promise and turned spell slots into goodberry soup for the court. Tam found a safer ladder through the stables, befriending the Black Prince's hunting dogs and meeting kennel master Kolya. The party learned that the Black Prince's hunt, with Lazulin the blue horse and Count Samus Hollowgrand's conjured quarry, may be a path toward higher status and eventually the Queen.
