@@ -2,44 +2,38 @@
 
 *Auto-generated. Do not edit — will be overwritten after each session.*
 
-LOCATION: Shadow Fey Realm — lower court / palace service level, after a long rest
+LOCATION: Shadow Fey Realm — lower court / palace service level
 PARTY:
-Aldric Voss (Wizard/Divination) HP unknown AC 13, Level 8
-Magnolia Reed (Druid/Circle of Dreams) HP unknown AC unknown, Level 8
-Tam Holloway (Ranger/Fey Wanderer) HP unknown AC unknown, Level 8
-Judith "ShankSpeare" Quiney (Rogue/Swashbuckler) HP unknown AC unknown, Level 8
+- Aldric Voss (Wizard/Divination) HP: unknown AC: 13 | Court Status: 7
+- Magnolia Reed (Druid/Circle of Dreams) HP: unknown AC: unknown | Court Status: 7
+- Tam Holloway (Ranger/Fey Wanderer) HP: unknown AC: unknown | Court Status: 5
+- Judith "ShankSpeare" Quiney (Rogue/Swashbuckler) HP: unknown AC: unknown | Court Status: 5
 
 RECENT EVENTS:
-- Session 7 resumed the Courts of the Shadow Fey arc after two cancellations (2026-08-17 and 2026-08-24).
-- Party is trying to climb Shadow Fey court status from the lower court toward access to the Queen / high court.
-- Aldric repaired and improved the Shadow Road wardstone he damaged with his fireball; Ten-Pound Hammer accepted the repair.
-- King Mago used Aldric as Reader of the Lower Court. Aldric successfully defended Billoc, a mute goblin accused of theft.
-- Billoc was freed and promised the party would not regret helping him. Potential ally, likely unreliable / pickpocket-adjacent.
-- Magnolia honored her kitchen obligation and supplied 50 goodberries; the head cook crushed them into soup.
-- Tam befriended the Black Prince's hunting dogs and met Kolya, their kennel master.
-- Party learned Lazulin, the large blue horse, belongs to the Black Prince and is dangerous to strangers.
-- Kolya described the Black Prince's hunt: high-court activity, dogs and Lazulin involved, quarry conjured by Count Samus Hollowgrand.
-- Guard hall contained Shadow Fey soldiers from Allosis under Captain Memorethian; party learned little else.
-- End status ranking mentioned at table: Tam 5, Judith 5, Magnolia 7, Aldric 7.
+- Aldric repaired the wardstone damaged by his Shadow Road fireball; King Mago responded by appointing him Reader of the Lower Court — significant trust earned.
+- Aldric (as Reader) recognized Billoc the mute goblin could not defend himself with bound hands; secured his release; Billoc is now a potential ally and information source.
+- Magnolia fulfilled her kitchen promise with fifty goodberries crushed into soup; raised court status (Magnolia now 7).
+- Tam befriended the Black Prince's hunting dogs via meat and Animal Speech; met kennel master Kolya; identified Lazulin (the Black Prince's large blue horse).
+- Party learned the Black Prince's hunt uses conjured quarry from Count Samus Hollowgrand and is a high-court event — possible status ladder.
+- Party identified Shadow Fey soldiers from Allosis under Captain Memorethian in the guard hall; little additional intelligence gathered.
+- Court status confirmed: Aldric 7, Magnolia 7, Tam 5, Judith 5. Access to higher court tiers is status-gated.
+- Judith has taken no individual status-raising actions yet; her route upward is undefined.
 
 OPEN THREADS:
-- How can the party gain enough status to enter the middle/high court without provoking another monolith guard fight?
-- Can Billoc provide information, theft, access, or trouble?
-- Can Kolya / the dogs / Lazulin connect the party to the Black Prince's hunt?
-- What status threshold or invitation is needed to join the hunt?
-- What can the party offer the Summer Queen once they reach her?
-- Seasonal transition toward Winter remains the clock. How much time remains before authority shifts?
-- Zobeck remains under Shadow Fey occupation; High Priest Oleg / Temple of Kors unresolved.
+- Route from lower court to middle/high court without direct combat — duels are an option but losses cost status; noncombat paths needed.
+- Billoc's whereabouts post-release; may carry hidden-route knowledge or actionable court gossip.
+- Black Prince's hunt as status vehicle — party must learn invitation requirements, what participation costs, and what it yields.
+- Judith needs a status-raising opportunity; no clear path identified yet.
+- Seasonal transition toward Winter King's authority is ongoing — the negotiating window with the Summer Queen is contracting.
 
 KEY NPCS:
-- King Mago: Goblin king / lower-court authority. Crude, transactional, but responsive to competent service. Granted Aldric standing.
-- Ten-Pound Hammer: Goblin blacksmith. Demanded repayment for broken wardstone; satisfied by Aldric's magical repair.
-- Billoc: Mute goblin accused of theft. Freed after party advocacy. Communicates by sign/gesture; potential ally.
-- Kolya: Kennel master, not a goblin or Shadow Fey. Handles the Black Prince's hunting dogs; friendly to Tam after dog-befriending.
-- Lazulin: Black Prince's massive blue horse. Valuable, dangerous, central to the hunt.
-- Count Samus Hollowgrand: Master Summoner; also royal standard bearer/herald/master of defense/lord of fallen archers/lord of broken swords. Conjures quarry for the Black Prince's hunt.
-- Captain Memorethian: Leader/contact for Shadow Fey soldiers from Allosis guarding the palace.
+- King Mago: Goblin king of the lower court; now trusts Aldric as Reader; authority is real but bounded below the high court.
+- Ten-Pound Hammer: Goblin blacksmith; accepted Aldric's wardstone repair; debt resolved, relationship neutral-positive.
+- Billoc: Mute goblin, recently freed by party advocacy; grateful, potentially useful; location unknown — find him before he disappears into the court.
+- Kolya: Kennel master for the Black Prince's hunting dogs; Tam has rapport; key contact for hunt access.
+- Count Samus Hollowgrand: Master Summoner who conjures quarry for the hunt; associated with the Black Prince; not yet contacted.
+- Captain Memorethian: Commander of Allosis Shadow Fey soldiers in the guard hall; observed only, no relationship established.
 
-PARTY CONDITION: No HP changes or loot captured in transcript. Spell/resource note: Aldric spent magic repairing the wardstone; Magnolia spent multiple spell slots producing goodberries for the kitchen. Party morale: amused, improvisational, wary of direct combat after monolith/duel setbacks.
+PARTY CONDITION: No HP or spell slot data recorded; assume partial resource expenditure from active court navigation. Morale appears high — two characters advanced to status 7, a concrete foothold toward the upper court. Tam and Judith trail by two status points and need targeted action next session.
 
-CAMPAIGN CONTEXT: Interim campaign: Courts of the Shadow Fey, DM Vargr, Level 8 party in the Shadow Fey realm. Zobeck is occupied under an old fey claim; party seeks audience with the Summer Queen for a peaceful resolution. Court status is the operative mechanic. Direct force has already failed or looked costly; service, social leverage, court titles, and exploiting ritual obligations are the likely path upward.
+CAMPAIGN CONTEXT: The party is embedded in the Shadow Fey lower court, playing a social and political game where rank is currency and every action is legible to court observers. The Summer Queen holds power now but the seasonal clock is running — Winter King's authority rises with each passing session, shrinking the window for favorable negotiation. Zobeck remains under Shadow Fey occupation and High Priest Oleg's situation is unresolved in the material world, applying distant but real pressure. The hunt represents the party's clearest upward path: a high-court event with visibility, status reward, and faction entanglement through Hollowgrand and the Black Prince. The party must decide whether to climb via the hunt, via Billoc's intelligence, via dueling (high risk), or some combination — before the seasonal transition closes the Summer Court's doors.
