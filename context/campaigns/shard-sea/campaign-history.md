@@ -93,7 +93,9 @@ The world is organized around Shardseas — regions of concentrated elemental or
 
 ## Current Situation (as of the 2026-05-18 session, where the campaign paused)
 
-**Location:** Shard C, the Sea of Governance — the city, in the lower streets, after the bandit ambush.
+**Location:** Shard C, the Sea of Governance — the city of **Solithar**, in a cellar beneath the Leaky Tap in the western district, facing the rebels.
+
+Solithar is large and advanced, has five districts, and its northern (political) district is restricted. A dwarven woman met the party on arrival and told them to "get out soon as you can." The guard presence is heavy and the citizens are frightened.
 
 **Party condition:** Battered and unrested. Granit, Rides the Wake and Vargr were all put down by poisoned daggers; only Lyvriele stayed on her feet. Wake is at 1 HP. No confirmed long rest. Granit and Vargr were synced from D&D Beyond afterwards (27/38 and 38/45); Wake was not.
 
@@ -122,7 +124,18 @@ The world is organized around Shardseas — regions of concentrated elemental or
 
 **Cael Duren** — Freelance bounty collector, Shattered Reach. Not Guild-affiliated. Appeared at Pier Seven with two companions on the party's first night in Shard C. Issued a veiled threat ("the people I represent want what's in your hold"), named no patron, made no immediate move. Composure cracked slightly under Vargr's Performance pressure but held. Status: at large.
 
-**The Rebels (unnamed)** — Encountered in the city's lower streets following the bandit ambush. Non-hostile to the party. Identity, affiliation, and agenda unknown. Initial contact appears cautiously positive.
+**The Rebels** — Encountered in the city's lower streets following the bandit ambush. Non-hostile. Contacted through **Eric Thorn**, the bronze dragonborn bartender at the **Leaky Tap** in the rough western district, who revealed a secret passage and took the party down a spiral staircase to a room of about six armed people. A tiefling woman with a broken horn and facial scars received them: *"Welcome to my abode. Shall we talk?"* That is where the session ended.
+
+**Governor Elrion Voss** — Rules the city. His guard, the **Silver Spears**, turned oppressive roughly six months before the party arrived: ignoring serious crime, punishing the innocent for small offences. What changed in him is the central mystery of the arc.
+
+**Nira Solven** — Half-elf innkeeper of **The Evening Nip** in the western district. Spoke to the party privately, confirmed the guards' turn, and pointed them at the Leaky Tap. Took 20 gold to feed others.
+
+**Leonard** — A bandit in the ambush, killed by Toll the Dead. Nothing more. Recorded here because the name has twice been misread as something that killed a party member.
+
+> Sourced from the Plaud transcript of the 2026-05-18 session
+> (`Dungeons and Dragons/transcripts/plaud-2026-05-18-...-weekly-meeting-rpg-session-and-pop-culture-discussion.md`
+> in the vault), which is far more detailed than the journal entry written from
+> the Slack debrief. Not confirmed with the DM.
 
 ---
 
