@@ -1,6 +1,6 @@
 # Session transcript — 2026-08-31-dnd
 
-Recorded by Transcripts. Session ran from 2026-08-31 23:27 UTC to 01:01 UTC.
+Recorded by Transcripts. Session ran from 2026-08-31 23:27 UTC to 02:49 UTC.
 
 526 turns from 1 recording(s).
 237 turns recorded before the session started were left out — the recorder was running before the game began.
