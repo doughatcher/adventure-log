@@ -93,6 +93,19 @@ that ladder.
   name of Chris's *player character in the Shard Sea campaign*. In this campaign
   he is the DM and Vargr Stormcaller is not a PC.
 
+### Character creation
+
+Everyone started on **2500gp plus one free uncommon magic item**, priced per
+Richard's PDF, up to tier 2. Magnolia took a Moon Sickle +1, Tam an Amulet of
+Proof against Detection and Location, Judith a Ring of Protection. Aldric's
+starting item was never posted to the channel and is still unrecorded.
+
+> Durable facts belong in this file, not on a character page.
+> `content/characters/<campaign>/*.md` is regenerated wholesale after every
+> session — anything written there is prose the model replaces. What lives here
+> is fed back to it as context instead, so it shapes the writing rather than
+> being erased by it.
+
 ---
 
 ## Campaign Tone & Rules
