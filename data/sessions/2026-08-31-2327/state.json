@@ -1,0 +1,56 @@
+{
+  "campaign": "courts-of-the-shadow-fey",
+  "location": "Shadow Fey Realm — lower court / palace service level",
+  "session_date": "2026-08-31",
+  "characters": {
+    "aldric-voss": {
+      "name": "Aldric Voss",
+      "class": "Wizard / Divination",
+      "ac": 13,
+      "hp": null,
+      "max_hp": null,
+      "status": "alive",
+      "court_status": 7,
+      "is_enemy": false
+    },
+    "magnolia-reed": {
+      "name": "Magnolia Reed",
+      "class": "Druid / Circle of Dreams",
+      "ac": null,
+      "hp": null,
+      "max_hp": null,
+      "status": "alive",
+      "court_status": 7,
+      "is_enemy": false
+    },
+    "tam-holloway": {
+      "name": "Tam Holloway",
+      "class": "Ranger / Fey Wanderer",
+      "ac": null,
+      "hp": null,
+      "max_hp": null,
+      "status": "alive",
+      "court_status": 5,
+      "is_enemy": false
+    },
+    "judith-quiney": {
+      "name": "Judith \"ShankSpeare\" Quiney",
+      "class": "Rogue / Swashbuckler",
+      "ac": null,
+      "hp": null,
+      "max_hp": null,
+      "status": "alive",
+      "court_status": 5,
+      "is_enemy": false
+    }
+  },
+  "npcs": {
+    "king-mago": "Goblin king / lower court authority.",
+    "ten-pound-hammer": "Goblin blacksmith; accepted Aldric's repaired wardstone.",
+    "billoc": "Mute goblin accused of theft; freed after party advocacy; possible ally.",
+    "kolya": "Kennel master for the Black Prince's hunting dogs.",
+    "lazulin": "Black Prince's large blue horse.",
+    "count-samus-hollowgrand": "Master Summoner associated with the Black Prince's hunt.",
+    "captain-memorethian": "Commander/contact for Shadow Fey soldiers from Allosis."
+  }
+}
