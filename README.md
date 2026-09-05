@@ -62,6 +62,47 @@ Microphone → Speaches STT → transcript.md
 Optional: D&D Beyond → ddb_poll.py → PATCH /api/characters/{slug}
 ```
 
+### Two ways in
+
+The diagram above is the **live** path: the server listens during play, so hit
+points and conditions update while the fight is still happening.
+
+There is a second, quieter path for tables that record with
+[Transcripts](https://transcripts.doughatcher.com) instead of running the live
+server. Transcripts files one Markdown document per recording, and an evening is
+usually several of them — someone starts it before people settle, it stops for
+pizza, it starts again. When the session is genuinely over, the app's
+`onComplete` hook hands over every document at once, and
+`scripts/import_transcripts_session.py` folds them into the single
+`transcript.md` the journal generator already reads:
+
+```
+Transcripts (Mac) → onComplete hook → import_transcripts_session.py
+                                            ↓
+                              data/sessions/<slug>/transcript.md
+                                            ↓
+                              (rejoins the pipeline above)
+```
+
+Receiving the whole evening in one call is what makes this work. A hook that
+fired per recording would see four fragments with no way to know they were
+fragments, and the journal entry would read as four short sessions rather than
+one night.
+
+Two rules the importer will not bend, both because this repository is public:
+
+- **Nothing before the session start is published.** A recorder that ran all
+  afternoon has an afternoon in it. Each document's `recorded_at` plus its turn
+  timestamps give a real wall-clock time for every line, and anything earlier
+  than the session is dropped.
+- **A line it cannot place on that timeline stops the import.** Older documents
+  written before turns were stamped cannot be trimmed reliably, so it refuses
+  rather than guessing. It also opens a pull request instead of pushing, so a
+  person sees the session before the world does.
+
+Transcripts' own guide covers this from the other side, including the mechanics
+of the hook: [A worked example](https://transcripts.doughatcher.com/guide/worked-example/).
+
 ---
 
 ## Requirements
