@@ -2,43 +2,44 @@
 
 *Auto-generated. Do not edit — will be overwritten after each session.*
 
-LOCATION: Shadow Fey Realm — lower court / palace service level; dueling season ongoing (day 2 of 7, no armor/shields permitted)
+LOCATION: Shadow Fey Lower Court / Summer Court palace complex, Shadow Realm. Dueling season, day ~2 of 7.
 
 PARTY:
-- Aldric Voss (Wizard/Divination) HP/max unknown AC 13 — Court Status 7, Reader of the Lower Court
-- Magnolia Reed (Druid/Circle of Dreams) HP/max unknown AC unknown — Court Status 7
-- Tam Holloway (Ranger/Fey Wanderer) HP/max unknown AC unknown — Court Status 5
-- Judith "ShankSpeare" Quiney (Rogue/Swashbuckler) HP/max unknown AC unknown — Court Status 5
+- Aldric Voss (Wizard/Divination) HP: unknown/unknown AC: 13
+- Magnolia Reed (Druid/Circle of Dreams) HP: unknown/unknown AC: unknown
+- Tam Holloway (Ranger/Fey Wanderer) HP: unknown/unknown AC: unknown
+- Judith "ShankSpeare" Quiney (Rogue/Swashbuckler) HP: unknown/unknown AC: unknown
 
 RECENT EVENTS:
-- Judith defeated Vaelith Graveshade in the dueling ring; Vaelith broke conduct and attacked to kill afterward, shouting no one could know her secret, before being knocked out and expelled from court
-- Magnolia worked the infirmary during dueling season; treated a duelist with poison/necrotic aura, likely Vaelith's doing
-- Goblin messenger Amerilis relayed Princess Vailessia's request for a puppy; Aldric and Tam selected the runt of Kolya's litter for her
-- Vaelith's outburst ("no one can know her secret") is unresolved — identity, secret, and faction unknown
-- Rumors surfaced of Lady Sariel in the Winter Palace, moody, connected to some slight against Kolya's dogs, kept by Count Sammas Hallowgrin
-- First mention of Revich, an all-seeing angel reportedly residing in the Winter Palace's Tower of Light
-- Dueling season healing penalty active: healing spells cast during the season refund only half their spell slot on a long rest
-- Tam has standing rapport with Kolya and the Black Prince's hunting dogs; puppy errand deepens that connection
-- Vaelith believed the court thought Judith ran with the Ravens duelist faction — Judith has not confirmed or denied this
+- Judith defeated Vaelith Graveshade in the dueling ring; Vaelith broke conduct and attacked to kill, screaming no one could know her secret — knocked out and expelled from court
+- Magnolia treated a duelist with a poison/necrotic aura in the infirmary, suspected Vaelith's work; her role as court healer is established
+- Dueling season active: no armor/shields, long-rest healing slots half-refunded — tactical constraint in force
+- Party delivered the runt of Kolya's kennel litter to Princess Vailessia via goblin messenger Amerilis, establishing a connection to the Winter Palace
+- First mention of Revich, an all-seeing angel in the Winter Palace's Tower of Light
+- Lady Sariel surfaced in rumor — moody Winter Palace figure, troubled by some slight against Kolya's dogs, connected to Count Sammas Hallowgrin
+- Aldric holds Reader of the Lower Court appointment (status 7); earned via wardstone repair and Billoc's advocacy
+- Count Sammas Hallowgrin confirmed as the conjurer of the Black Prince's hunt quarry — not yet contacted
+- Billoc freed and grateful; whereabouts unknown
 
 OPEN THREADS:
-- Vaelith's secret: what did she not want known, and does her expulsion close that or detonate it
-- Deliver the puppy to Princess Vailessia; opens a route into the Winter Palace and potentially toward Revich or Lady Sariel
-- Lady Sariel's grievance involves Kolya's dogs and Count Sammas Hallowgrin — both already in the party's orbit; investigate
-- Tam and Judith still at Court Status 5; the dueling season is the live opportunity to raise both before it closes
-- The Black Prince's hunt (Hallowgrin conjures quarry, Lazulin is the Prince's horse) remains the identified high-status ladder; invitation requirements still unknown
+- Vaelith Graveshade's secret: she attacked to kill to protect it — what is it, and does it surface now she's expelled?
+- Princess Vailessia connection: puppy delivered, relationship nascent — leverage toward the Winter Palace or the Queen?
+- The Black Prince's hunt: Kolya rapport established, Lazulin named, Hallowgrin identified — hunt participation as status ladder still unpursued
+- Lady Sariel and the slight against Kolya's dogs: nature of the offense unknown, Hallowgrin's involvement unclear
+- Revich in the Tower of Light: all-seeing angel, Winter Palace — role, allegiance, and accessibility unknown
+- Dueling season closes in ~5 days: remaining status gains from wins must happen before it ends
 
 KEY NPCS:
-- King Mago: Goblin lower-court king; trusted Aldric enough to appoint him Reader; persuadable when argument is sound
-- Kolya: Kennel master; warm toward Tam; source of the puppy and the Lady Sariel/Hallowgrin rumor
-- Count Sammas Hallowgrin: Master Summoner for the Black Prince's hunt; connected to Lady Sariel's grievance; not yet contacted
-- Princess Vailessia: Eight-year-old ward of the Summer Court living in the Winter Palace; puppy request pending delivery; potential goodwill asset
-- Revich: All-seeing angel in the Winter Palace Tower of Light; first mention only; significance unknown
-- Lady Sariel: Winter Palace figure, disposition troubled, linked to a slight against Kolya's dogs; Hallowgrin connection
-- Amerilis: Goblin messenger who relayed Vailessia's request; reliable conduit to the Winter Palace
-- Billoc: Freed mute goblin, grateful, location unknown; potential gossip/route source not yet followed up
-- Captain Memorethian: Commands Allosis Shadow Fey soldiers in guard hall; observed only, no relationship
+- King Mago: Goblin lower-court king, persuadable, trusts Aldric; appointed him Reader — primary court authority the party has real standing with
+- Kolya: Kennel master, warmed to Tam, sourced Vailessia's puppy — best current path toward the Black Prince and the hunt
+- Count Sammas Hallowgrin: Master Summoner, conjures hunt quarry, connected to Lady Sariel — uncontacted but central to the hunt thread
+- Princess Vailessia: Eight-year-old ward of the Summer Court in the Winter Palace, puppy requested and delivered — emotional lever, Winter Palace access unknown
+- Lady Sariel: Winter Palace figure, moody, grievance involving Kolya's dogs, Hallowgrin-adjacent — motivations unknown, potentially useful or hostile
+- Revich: All-seeing angel, Tower of Light in the Winter Palace — unknown disposition, significant information risk
+- Amerilis: Goblin court messenger, relayed Vailessia's request — minor but reliable contact
+- Glanen Thelamandryne: Shadow Fey ambassador, "barely friends" — back in Zobeck, not immediately relevant
+- Oleg: High priest of Kors, survived assassins in Zobeck — situation unresolved in the material world
 
-PARTY CONDITION: HP and resources untracked this session; healing spells are operating at reduced efficiency for the remainder of the dueling week. Morale appears solid — Judith scored a court win, Magnolia built goodwill in the infirmary, and the puppy errand creates a warm diplomatic opening. The dueling season's restrictions are the primary tactical constraint entering next session.
+PARTY CONDITION: HP and spell slot totals unrecorded; healing is constrained by the dueling season's half-refund rule on long rests. Judith expelled a court enemy publicly, which raises her profile but may invite factional blowback from Vaelith's allies. Morale appears strong; the party has momentum in the lower court and multiple converging threads toward higher access.
 
-CAMPAIGN CONTEXT: The party is midway through the Shadow Fey lower court's dueling season, which runs five more days and remains the fastest available mechanism for Tam and Judith to close the status gap with Aldric and Magnolia. Court Status gates upward movement; the Summer Queen is the ultimate destination, but the seasonal clock ticking toward Winter King authority is the campaign's pressure. The Winter Palace is now directly relevant: Vailessia lives there, Revich watches from its Tower of Light, and Lady Sariel's unresolved grievance ties Hallowgrin — the party's best hunt contact — to events inside it. Vaelith's expulsion introduces an unknown destabilizing element. Back in Zobeck, High Priest Oleg's situation under Shadow Fey occupation remains unresolved and unreachable until the party concludes court business.
+CAMPAIGN CONTEXT: The Summer Court is in session but the seasonal transition toward the Winter King is actively narrowing the party's window with the Queen. Status at court is gated currency — the party holds Reader-level access (Aldric and Magnolia at status 7, Tam and Judith at 5) but the Queen requires higher standing than they currently possess. The dueling season offers ~5 more days of status gains via wins before it closes. The hunt represents the other main ladder: Kolya rapport is established but Hallowgrin and the Black Prince remain uncontacted. The Winter Palace — where Vailessia, Sariel, and Revich all reside — is emerging as a parallel axis of leverage. Vaelith's expulsion and her suppressed secret are a live wildcard. The occupation of Zobeck continues in the background; Oleg's unresolved situation
