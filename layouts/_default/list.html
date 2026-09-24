@@ -23,6 +23,7 @@
 <ul class="session-list">
   {{ range .Pages }}
   <li class="session-item">
+    {{ partial "session-art.html" (dict "page" . "class" "session-thumb" "link" true) }}
     <div class="session-title"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
     <div class="session-meta">
       {{ .Date.Format "January 2, 2006" }}

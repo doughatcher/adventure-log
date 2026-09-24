@@ -1,0 +1,17 @@
+{{/* A session's illustration, found by file name rather than front matter:
+     session pages are rewritten by the journal generator, and a key added to
+     one would not survive it. static/images/sessions/<campaign>/<page>.webp */}}
+{{ $p := .page }}
+{{ with $p.File }}
+  {{ $path := printf "images/sessions/%s/%s.webp" ($p.Params.campaign | default "") .ContentBaseName }}
+  {{ if fileExists (printf "static/%s" $path) }}
+    {{ if $.link }}
+    <a class="{{ $.class }}" href="{{ $p.Permalink }}" tabindex="-1" aria-hidden="true"><img src="{{ $path | relURL }}" alt="" loading="lazy" width="1344" height="768"></a>
+    {{ else }}
+    <figure class="{{ $.class }}">
+      <img src="{{ $path | relURL }}" alt="An illustration of this session" width="1344" height="768">
+      <figcaption>Illustration generated from this session's transcript.</figcaption>
+    </figure>
+    {{ end }}
+  {{ end }}
+{{ end }}
