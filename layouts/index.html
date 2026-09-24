@@ -1,8 +1,12 @@
 {{ define "main" }}
-<div class="home-hero">
-  <h1>{{ .Site.Title }}</h1>
-  <p class="tagline">{{ .Site.Params.description }}</p>
-</div>
+<header class="opener">
+  <img src="{{ "images/hero-new-moon-hall.webp" | relURL }}" alt="Four adventurers enter the New Moon Hall of the Shadow Fey court: a diviner holding up a black opal, a swashbuckler with a rapier, an elf druid with a herb-wrapped staff and a hooded ranger, under a vaulted sky full of crows" width="1344" height="768">
+  <div class="opener-text">
+    <h1>{{ .Site.Title }}</h1>
+    <p class="tagline">{{ .Site.Params.description }}</p>
+  </div>
+  <p class="opener-credit">Illustration generated from the 31 August session transcript with Z-Image Turbo.</p>
+</header>
 {{ .Content }}
 
 {{ range sort .Site.Data.campaigns "weight" }}

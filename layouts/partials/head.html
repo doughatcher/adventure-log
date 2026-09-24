@@ -1,6 +1,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
+{{- $desc := cond .IsHome .Site.Params.description (.Summary | plainify | truncate 180) }}
+<meta name="description" content="{{ $desc }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ "images/teaser.jpg" | absURL }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <style>
 /* The Transcripts family: the same tokens, type and chrome as
    transcripts.doughatcher.com, so the showcase built on Transcripts reads as
@@ -144,6 +155,30 @@ article .meta span { display: flex; align-items: center; gap: .3rem; }
 .section-header p { color: var(--text3); font-size: 1rem; }
 
 /* Home */
+/* The opener: session art, full-bleed, title over a dark fade. Dark in both
+   themes, because the art is. */
+.opener {
+  position: relative;
+  width: 100vw; margin: -3rem calc(50% - 50vw) 3rem;
+  aspect-ratio: 1344 / 620; max-height: 78vh; min-height: 22rem;
+  overflow: hidden; background: #0b0b10; color: #f3f3f7;
+}
+.opener img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+.opener::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(to bottom, rgba(11,11,16,0) 45%, rgba(11,11,16,.55) 72%, rgba(11,11,16,.92) 100%);
+}
+.opener-text {
+  position: absolute; z-index: 1; left: 0; right: 0; bottom: 0;
+  max-width: 52rem; margin: 0 auto; padding: 0 1.5rem 2.4rem;
+}
+.opener h1 { color: #fff; font-size: clamp(2.2rem, 5vw, 3.6rem); letter-spacing: -.03em; margin: 0; text-shadow: 0 2px 24px rgba(0,0,0,.5); }
+.opener .tagline { color: rgba(243,243,247,.86); font-size: 1.12rem; margin: .4rem 0 0; max-width: 36rem; }
+.opener-credit {
+  position: absolute; z-index: 1; right: .9rem; bottom: .6rem; margin: 0;
+  font-size: .68rem; color: rgba(243,243,247,.55);
+}
+@media (max-width: 640px) { .opener-credit { display: none; } .opener { min-height: 18rem; } }
 .home-hero { margin-bottom: 3rem; }
 .home-hero h1 { font-size: 2.4rem; letter-spacing: -.025em; }
 .home-hero .tagline { color: var(--text3); font-size: 1.1rem; margin-top: .4rem; max-width: 38rem; }
