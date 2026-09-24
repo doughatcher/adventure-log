@@ -32,6 +32,7 @@
   </div>
 {{ else }}
   <article>
+    {{ partial "session-art.html" (dict "page" . "class" "session-art") }}
     <h1>{{ .Title }}</h1>
     {{ partial "campaign-badge.html" . }}
     <div class="meta">

@@ -8,7 +8,9 @@
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:image" content="{{ "images/teaser.jpg" | absURL }}">
+{{- $og := "images/teaser.jpg" }}
+{{- with .File }}{{ $mine := printf "images/sessions/%s/%s.jpg" ($.Params.campaign | default "") .ContentBaseName }}{{ if fileExists (printf "static/%s" $mine) }}{{ $og = $mine }}{{ end }}{{ end }}
+<meta property="og:image" content="{{ $og | absURL }}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -180,6 +182,15 @@ article .meta span { display: flex; align-items: center; gap: .3rem; }
 }
 @media (max-width: 640px) { .opener-credit { display: none; } .opener { min-height: 18rem; } }
 .home-hero { margin-bottom: 3rem; }
+.session-art { margin: -1rem 0 2rem; }
+.session-art img { width: 100%; height: auto; border-radius: 14px; display: block; box-shadow: 0 10px 40px rgba(0,0,0,.25); }
+.session-art figcaption { font-size: .75rem; color: var(--text3); margin-top: .5rem; }
+.session-item { display: grid; grid-template-columns: 1fr; }
+.session-item:has(.session-thumb) { grid-template-columns: 9.5rem 1fr; column-gap: 1.1rem; align-items: center; }
+.session-item:has(.session-thumb) > :not(.session-thumb) { grid-column: 2; }
+.session-thumb { grid-row: 1 / span 2; display: block; }
+.session-thumb img { width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 8px; display: block; }
+@media (max-width: 480px) { .session-item:has(.session-thumb) { grid-template-columns: 6.5rem 1fr; } }
 .home-hero h1 { font-size: 2.4rem; letter-spacing: -.025em; }
 .home-hero .tagline { color: var(--text3); font-size: 1.1rem; margin-top: .4rem; max-width: 38rem; }
 .home-sections { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
