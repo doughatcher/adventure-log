@@ -22,6 +22,9 @@ title = "Adventure Log"
     source = "layouts"
     target = "layouts"
   [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
     source = "data"
     target = "data"
     excludeFiles = ["characters/**", "sessions/**"]
