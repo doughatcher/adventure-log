@@ -4,6 +4,9 @@
 <body>
 {{ partial "nav.html" . }}
 <main>{{ block "main" . }}{{ end }}</main>
-<footer><p>{{ .Site.Title }} &mdash; Campaign Journal &mdash; <a href="https://github.com/doughatcher/adventure-log">doughatcher/adventure-log</a></p></footer>
+<footer>
+  <p>{{ .Site.Title }} &mdash; <a href="https://github.com/doughatcher/adventure-log">doughatcher/adventure-log</a></p>
+  <p>Sessions are recorded and transcribed at the table with <a href="https://transcripts.doughatcher.com">Transcripts</a>, entirely on device.</p>
+</footer>
 </body>
 </html>
