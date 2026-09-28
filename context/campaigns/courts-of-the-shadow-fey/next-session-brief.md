@@ -2,13 +2,13 @@
 
 *Auto-generated. Do not edit — will be overwritten after each session.*
 
-LOCATION: Shadow Fey realm — lower court / court grounds, dueling season in progress (day ~2 of 7)
+LOCATION: Shadow Fey realm — lower court / court grounds, dueling season in progress (day 3 of 7); party at the ramp to the Winter Palace gate with Princess Vailessia's puppy
 
 PARTY:
-- Aldric Voss (Wizard/Divination) HP:unknown/unknown AC:13 | Court status 7 (Reader of the Lower Court)
-- Magnolia Reed (Druid/Dreams) HP:unknown/unknown AC:unknown | Court status 7
-- Tam Holloway (Ranger/Fey Wanderer) HP:unknown/unknown AC:unknown | Court status 5
-- Judith "ShankSpeare" Quiney (Rogue/Swashbuckler) HP:unknown/unknown AC:unknown | Court status 5
+- Aldric Voss (Wizard/Divination) HP:unknown/unknown AC:13 | Court status ~9, confirm (Reader of the Lower Court); one Portent die only during dueling season
+- Magnolia Reed (Druid/Dreams) HP:unknown/unknown AC:unknown | Court status 13
+- Tam Holloway (Ranger/Fey Wanderer) HP:unknown/unknown AC:unknown | Court status 7
+- Judith "ShankSpeare" Quiney (Rogue/Swashbuckler) HP:unknown/unknown AC:unknown | Court status 10 | necrotically wounded, capped at 35 HP
 
 RECENT EVENTS:
 - Judith defeated Vaelith Graveshade in the dueling ring; Vaelith broke conduct and attacked to kill post-match, screaming no one could know her secret, then was knocked out and expelled from court
@@ -39,4 +39,4 @@ KEY NPCS:
 
 PARTY CONDITION: HP and resource totals unrecorded. Dueling season healing penalty (half slot refund on long rest) is an active drain on Magnolia especially. Morale appears functional — Judith scored a public win, Tam has a stable relationship with Kolya, and the puppy errand gives the party a low-risk goodwill opportunity. No major losses this session.
 
-CAMPAIGN CONTEXT: The party is mid-ladder in the Shadow Fey lower court, five days into a seven-day dueling season that rewards status gains for ring wins while penalizing magical recovery. The Summer Court's seasonal authority is eroding as the Winter King's claim rises — the party's window to negotiate with the Queen is the campaign's ticking clock, and every session spent at lower court level costs political time. The hunt under the Black Prince is the clearest path upward, gated through Kolya (warm) and Count Hallowgrin (uncontacted). The Winter Palace is emerging as a second axis of access: Vailessia, Sariel, and Revich all anchor there, and Hallowgrin connects both tracks. Vaelith's expulsion has created an unknown variable — her secret died with her court standing, or didn't.
+CAMPAIGN CONTEXT: The party is mid-ladder in the Shadow Fey lower court, two days into a seven-day dueling season that rewards status gains for ring wins while penalizing magical recovery. The Summer Court's seasonal authority is eroding as the Winter King's claim rises — the party's window to negotiate with the Queen is the campaign's ticking clock, and every session spent at lower court level costs political time. The hunt under the Black Prince is the clearest path upward, gated through Kolya (warm) and Count Hallowgrin (uncontacted). The Winter Palace is emerging as a second axis of access: Vailessia, Sariel, and Revich all anchor there, and Hallowgrin connects both tracks. Vaelith's expulsion has created an unknown variable — her secret died with her court standing, or didn't.
