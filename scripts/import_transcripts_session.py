@@ -276,6 +276,14 @@ def unblock_stub(campaign: str, date_str: str) -> Path | None:
     Deliberately conservative: a page with real prose is left exactly as it is,
     because `generated: false` is also how a hand-written entry protects itself
     and overwriting one would be the worst thing this script could do.
+
+    The one exception is a page whose frontmatter carries `notes_status:` —
+    that key is written only by the scheduling sweeps, never by a person or
+    the generator, so however long its status notes have grown it is a stub,
+    and its prose is attendance bookkeeping preserved in git history. Without
+    this, a sweep that narrates the scheduling chatter past ~900 chars
+    permanently blocks its own session's journal entry (Session 9 needed a
+    manual flip for exactly this reason).
     """
     sessions = REPO / "content" / "sessions" / campaign
     for path in sorted(sessions.glob(f"{date_str}*.md")):
@@ -283,10 +291,13 @@ def unblock_stub(campaign: str, date_str: str) -> Path | None:
         end = text.find("\n---\n", 4)
         if end == -1:
             continue
+        frontmatter = text[4:end]
+        is_sweep_stub = any(line.startswith("notes_status:") for line in frontmatter.splitlines())
         body = text[end + 5:].strip()
         # A stub is scheduling notes, not an account of a session. Anything
-        # substantial is somebody's writing.
-        if len(body) > 900:
+        # substantial is somebody's writing — unless the sweeps marked the
+        # page as theirs.
+        if not is_sweep_stub and len(body) > 900:
             print(f"  leaving {path.name} alone — it already has prose ({len(body)} chars)")
             continue
         if "generated: false" not in text:
