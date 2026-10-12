@@ -62,7 +62,7 @@ that ladder.
 ### Magnolia Reed
 - **Class:** Druid / Circle of Dreams
 - **Race:** Elf — the only non-human in the party
-- **Player:** Richard (Jonan, U60TTDYQJ)
+- **Player:** Richard (U60TTDYQJ)
 - **Court status:** 7
 - **Notes:** Herbalist. Carries a Moon Sickle +1 from character creation. Was
   mind-controlled by the Shadow Fey bard and turned on the party; Judith killed

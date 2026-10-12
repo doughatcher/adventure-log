@@ -5,7 +5,7 @@ class: Druid / Circle of Dreams
 hp_current: 0
 hp_max: 0
 last_updated: '2026-09-23'
-player: Richard (Jonan)
+player: Richard
 slug: magnolia-reed
 status: alive
 title: Magnolia Reed
