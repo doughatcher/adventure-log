@@ -46,12 +46,12 @@ that ladder.
 
 ---
 
-## The Party (all Level 8)
+## The Party (probably Level 9)
 
 ### Aldric Voss
 - **Class:** Wizard / School of Divination
 - **Race:** Human
-- **AC:** 13 | **HP:** unconfirmed at level 8
+- **AC:** 13 | **HP:** unconfirmed at probably level 9
 - **Player:** Doug (superterran, U60UZB2FN) — also the host
 - **Court status:** 7 (Reader of the Lower Court)
 - **Notes:** INT 18. Portent, Expert Divination, Ritual Adept (Detect Magic,
@@ -170,4 +170,4 @@ His situation back in the material world is unresolved.
 
 **Session 8 (2026-09-21):** Third scheduled attempt, after two prior bye weeks (Labor Day, then Dan sick), finally ran. The party found the court two days into a week-long dueling season (no armor or shields, wins raise standing; healing spells cast during the season only refund half their slot on a long rest). Magnolia worked the infirmary and treated a duelist afflicted with a poison/necrotic aura, suspected to be the work of Vaelith Graveshade. Judith, believed to run with the court's Ravens duelist faction, beat Vaelith Graveshade (not a Raven) in the ring; Vaelith broke conduct and attacked to kill afterward, shouting that no one could know her secret, before Judith knocked her out and had her thrown from court. Separately, a goblin messenger named Amerilis relayed a request from Princess Vailessia, an eight-year-old ward of the Summer Court living in the Winter Palace, for a puppy; Aldric and Tam picked the runt of kennel master Kolya's litter for her. The errand surfaced rumors of a Lady Sariel, a moody figure in the Winter Palace troubled by some slight against Kolya's dogs, kept by Count Sammas Hallowgrin (the same NPC previously recorded as Count Samus Hollowgrand — Vargr confirmed Hallowgrin is correct), and a first mention of Revich, an all-seeing angel said to live in the Winter Palace's Tower of Light. No HP or status numbers were reported this session.
 
-**Session 9 (2026-09-28):** The live-capture app's completion hook didn't fire after a mid-recording auto-update, so this session was reconstructed from a hand-imported raw transcript (PR #14) rather than the usual structured capture — recap-heavy and light on new plot beats as a result. The party carried the puppy up to Executioner's Gate, the Winter Palace checkpoint that had turned them away a week earlier. The same monolith footman was on duty; Aldric presented the raven-insignia dagger and a formal greeting, and the footman bowed and stood aside. The party — and the puppy — passed through for the first time. The DM awarded each character a level-up on entry ("for entering the Winter Palace, finally"); exact new levels/HP were not stated on mic and aren't reflected in the character sheets yet. Vaelith Graveshade's secret, Lady Sariel, Count Hallowgrin, and Revich all remain open threads, untouched this session.
+**Session 9 (2026-09-28):** The live-capture app's completion hook didn't fire after a mid-recording auto-update, so this session was reconstructed from a hand-imported raw transcript (PR #14) rather than the usual structured capture — recap-heavy and light on new plot beats as a result. The party carried the puppy up to Executioner's Gate, the Winter Palace checkpoint that had turned them away a week earlier. The same monolith footman was on duty; Aldric presented the raven-insignia dagger and a formal greeting, and the footman bowed and stood aside. The party — and the puppy — passed through for the first time. The DM awarded each character a level-up on entry ("for entering the Winter Palace, finally"); a later #dnd reminder said everyone leveled up to "probably level 9," but exact HP was not confirmed. Vaelith Graveshade's secret, Lady Sariel, Count Hallowgrin, and Revich all remain open threads, untouched this session.

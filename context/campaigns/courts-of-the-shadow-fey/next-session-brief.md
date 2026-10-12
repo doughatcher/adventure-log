@@ -5,14 +5,14 @@
 LOCATION: Winter Palace, Shadow Realm — just inside Executioner's Gate; exact interior location unestablished.
 
 PARTY:
-- Aldric Voss (Wizard/Divination) HP: unknown/unknown AC: 13 — Court status 7; level-up pending
-- Magnolia Reed (Druid/Circle of Dreams) HP: unknown/unknown AC: unknown — Court status 7; level-up pending
-- Tam Holloway (Ranger/Fey Wanderer) HP: unknown/unknown AC: unknown — Court status 5; level-up pending
-- Judith "ShankSpeare" Quiney (Rogue/Swashbuckler) HP: unknown/unknown AC: unknown — Court status 5; level-up pending
+- Aldric Voss (Wizard/Divination) HP: unknown/unknown AC: 13 — Court status 7; probably level 9
+- Magnolia Reed (Druid/Circle of Dreams) HP: unknown/unknown AC: unknown — Court status 7; probably level 9
+- Tam Holloway (Ranger/Fey Wanderer) HP: unknown/unknown AC: unknown — Court status 5; probably level 9
+- Judith "ShankSpeare" Quiney (Rogue/Swashbuckler) HP: unknown/unknown AC: unknown — Court status 5; probably level 9
 
 RECENT EVENTS:
 - Party entered the Winter Palace for the first time; Executioner's Gate footman stood aside when Aldric presented the raven-insignia dagger with formal greeting
-- DM awarded a level-up to all characters on entry — new levels and HP not confirmed on mic
+- DM awarded a level-up to all characters on entry; later reminder in #dnd said everyone leveled up to "probably level 9" — HP still not confirmed
 - Aldric and Tam delivered the runt of Kolya's kennel litter to Princess Vailessia's messenger Amerilis, fulfilling her puppy request
 - Judith defeated Vaelith Graveshade in the dueling ring during the court's week-long dueling season
 - Vaelith broke conduct post-duel, attacked to kill, shouted that no one could know her secret — was knocked out and expelled from court
@@ -36,6 +36,6 @@ KEY NPCS:
 - Revich: All-seeing angel, Tower of Light; no contact; high-risk, high-information NPC
 - Vaelith Graveshade: Expelled duelist; knows the party; has a secret worth killing over; now an active threat outside the court
 
-PARTY CONDITION: HP, spell slots, and exact levels unconfirmed — level-up just awarded means resources are likely reset, but new maximums are not on record. Morale is high: Executioner's Gate passage is a significant milestone and the party is ascending the status ladder deliberately.
+PARTY CONDITION: HP, spell slots, and exact levels are not fully confirmed — DM's latest #dnd reminder says the party is probably level 9, and the level-up likely reset resources, but new maximums are not on record. Morale is high: Executioner's Gate passage is a significant milestone and the party is ascending the status ladder deliberately.
 
 CAMPAIGN CONTEXT: The Winter Palace is new territory. The party earned entry through accumulated social capital — the raven dagger, a fulfilled errand, a Reader appointment, court conduct during the dueling season — rather than force. The seasonal clock is still running: Summer Court is losing authority as the Winter King's season rises, and the Queen's window for negotiation over Zobeck's sovereignty contracts with it. Court rank remains the operative currency; Aldric and Magnolia sit at status 7, Tam and Judith at 5. The hunt — the Black Prince, Lazulin, Count Hallowgrin's conjured quarry — is the clearest identified path to the upper court, but Hallowgrin's involvement with Lady Sariel complicates that approach. Inside the Winter Palace, information asymmetry is extreme: Revich may already know the party is here.
